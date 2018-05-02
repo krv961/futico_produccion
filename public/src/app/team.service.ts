@@ -8,7 +8,7 @@ export class TeamService {
 
   constructor(private http: HttpClient) { }
 
-  private data = "";
+  private data = '';
   getLDA() {
     return this.http.get<any>(this.ldaUrl)
   }
