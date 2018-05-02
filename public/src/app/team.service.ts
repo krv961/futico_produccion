@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class TeamService {
 
-  private ldaUrl = '/api/lda';
+  private ldaUrl = '/lda';
 
   constructor(private http: HttpClient) { }
 
