@@ -1,0 +1,36 @@
+
+
+    <h1>{{ldaInfo.nombre}}</h1> <br>
+    <h4>Sigla: {{ldaInfo.sigla}} </h4><br>
+    <h4>Estadio: {{ldaInfo.estadio}}</h4>
+    <h4>Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
+    <h4>Titulos: {{ldaInfo.titulos}}</h4><br>
+    <h4>Director Tecnico: {{ldaInfo.dt}}</h4><br>
+    <h4>Historia</h4><br>
+    <p>{{ldaInfo.historia}}</p> 
+
+   
+
+    <h2>Panilla</h2>
+  <table class="table">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>#</th>
+    <th>Fecha de Nacimiento</th>
+    <th>Nacionalidad</th>
+    <th>Posicion</th>
+  </tr>
+  <tr *ngFor="let jugador of ldaInfo.jugadores">
+    <td>{{jugador.nombre}}</td>
+    <td>{{jugador.apellido}}</td>
+    <td>{{jugador.numero}}</td>
+    <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>
+    <td>{{jugador.nacionalidad}}</td>
+    <td>{{jugador.posicion}}</td>
+  </tr>
+  </table>
+
+
+
+
