@@ -1,12 +1,16 @@
 
 
-    <h1>{{ldaInfo.nombre}}</h1> <br>
-    <h4>Sigla: {{ldaInfo.sigla}} </h4><br>
-    <h4>Estadio: {{ldaInfo.estadio}}</h4>
-    <h4>Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
-    <h4>Titulos: {{ldaInfo.titulos}}</h4><br>
-    <h4>Director Tecnico: {{ldaInfo.dt}}</h4><br>
-    <h4>Historia</h4><br>
+   <head>
+      <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  </head>
+   
+   <h1 class="title">{{ldaInfo.nombre}}</h1> <br>
+    <h4 class="subtitle">Sigla: {{ldaInfo.sigla}} </h4><br>
+    <h4 class="stadium">Estadio: {{ldaInfo.estadio}}</h4>
+    <h4 class="date">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
+    <h4 class="championships">Titulos: {{ldaInfo.titulos}}</h4><br>
+    <h4 class="dt">Director Tecnico: {{ldaInfo.dt}}</h4><br>
+    <h4 class="histor">Historia</h4><br>
     <p>{{ldaInfo.historia}}</p> 
 
    
