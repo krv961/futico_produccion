@@ -114,12 +114,12 @@ footer{
 }
 
 .copyright{
-  color: #C7C7C7;
+  color: #101010;
 }
 
 .information{
   text-decoration: none;
-  color: #C7C7C7;
+  color: #101010;
 }
 
 @media screen and (max-width: 1100px;){
