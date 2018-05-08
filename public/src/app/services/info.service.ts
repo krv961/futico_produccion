@@ -23,4 +23,22 @@ export class InfoService {
                });
  }
 
+/*
+getLdaInfo(){
+  // tslint:disable-next-line:max-line-length
+  this._http.get(this._http.get('https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/info.json?api_key=wtm44z6e274xu7mva4kwjkry')
+  .subscribe(data => {
+         this.toutnamentName = data['tournament'].name;
+        // this.content = data.content;
+         console.log(this.toutnamentName);
+ });')
+  .subscribe(data => {
+         this.toutnamentName = data['tournament'].name;
+        // this.content = data.content;
+         console.log(this.toutnamentName);
+ });
+}
+ */
+
+
 }
