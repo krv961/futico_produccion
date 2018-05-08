@@ -9,22 +9,3 @@
     background-color: black;
     color: white;
 }
-
-.table tr:nth-child(even)
-{
-    background-color: #a80e0e;
-    color: white;
-}
-
-.table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #87b8de;
-    color: white;
-}
-
-.title{
-
-    font-family: 'Vollkorn', serif;
-}

@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const api = require('./routes/api');
+const goleo = require('./routes/goleo');
 var indexRouter = require('./routes/index');
 var app = express();
 
@@ -19,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'public/dist')));
 
 app.use('/', indexRouter);
 app.use('/api', api);
+app.use('/goleo', goleo );
 //mongoose db connection
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');//si no sirve poner <>

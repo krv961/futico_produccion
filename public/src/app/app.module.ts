@@ -32,6 +32,8 @@ import { HttpClient } from '@angular/common/http';
 import {HttpHandler} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { TeamService } from './team.service';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 @NgModule({
@@ -66,7 +68,8 @@ import { TeamService } from './team.service';
     AppRoutingModule,
     MatCardModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule
   ],
   providers: [HttpClientModule, HttpClient, HttpModule, TeamService],
   bootstrap: [AppComponent]
