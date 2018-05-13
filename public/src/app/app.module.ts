@@ -69,7 +69,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatCardModule,
     FlexLayoutModule,
     HttpClientModule,
-    MatTabsModule
+    MatTabsModule,
+    
   ],
   providers: [HttpClientModule, HttpClient, HttpModule, TeamService],
   bootstrap: [AppComponent]

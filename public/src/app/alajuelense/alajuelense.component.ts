@@ -9,14 +9,14 @@ import { TeamService } from '../team.service';
 export class AlajuelenseComponent implements OnInit {
 
   ldaInfo = []
-  constructor(private teamService : TeamService) { }
+  constructor(private teamService: TeamService) { }
 
   ngOnInit() {
-    this.teamService.getLDA()
+    this.teamService.getTeam('lda')
     .subscribe(
       res => this.ldaInfo = res,
       err => console.log(err)
-    )
+    );
   }
 
 }

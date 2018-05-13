@@ -1,0 +1,54 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .table{
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table tr:hover {
+    background-color: black;
+    color: white;
+}
+
+.title{
+    font-family: 'Vollkorn', serif;
+}
+
+.subtitle .stadium .date .championships .dt{
+    font-family: 'Cutive', serif;
+}
+.stadium{
+
+}
+.date {}
+.championships{}
+.dt {}

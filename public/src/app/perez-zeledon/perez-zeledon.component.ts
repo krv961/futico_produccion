@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamService } from '../team.service';
 
 @Component({
   selector: 'app-perez-zeledon',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerezZeledonComponent implements OnInit {
 
-  constructor() { }
+  info = []
+
+  constructor(private teamService: TeamService) { }
 
   ngOnInit() {
+    this.teamService.getTeam('pz')
+    .subscribe(
+      res => this.info = res,
+      err => console.log(err)
+    );
   }
-
 }

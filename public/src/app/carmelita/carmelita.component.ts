@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamService } from '../team.service';
 
 @Component({
   selector: 'app-carmelita',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carmelita.component.css']
 })
 export class CarmelitaComponent implements OnInit {
-
-  constructor() { }
+carmelitaInfo = []
+  constructor(private teamService: TeamService) { }
 
   ngOnInit() {
+    this.teamService.getTeam('carmelita')
+    .subscribe(
+      res => this.carmelitaInfo = res,
+      err => console.log(err)
+    );
   }
+
 
 }

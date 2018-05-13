@@ -1,3 +1,59 @@
-<p>
-  carmelita works!
-</p>
+<!--Tutorial para css bootstrap divs
+https://getbootstrap.com/docs/3.3/css/
+-->
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!--
+<div class="container-fluid"> 
+<div class="row">
+  <div class="col-sm-2"></div><img src="assets/img/carmelitalogo.png"></div>
+  <div class="col-sm-8">Info</div>
+  <div class="col-sm-2">Social Media</div>
+
+</div>
+-->
+<div class="container-fluid"> 
+ 
+  <div class="row ">
+    <div class="col-sm-3"><img src="assets/img/carmelitalogo.png"></div>
+    <div class="col-sm-6">
+        <h1 class="title"> texto {{carmelitaInfo.nombre}}</h1> <br>
+        <h4 class="subtitle">Sigla: {{carmelitaInfo.sigla}} </h4><br>
+        <h4 class="stadium">Estadio: {{carmelitaInfo.estadio}}</h4>
+        <h4 class="date">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
+        <h4 class="championships">Titulos: {{carmelitaInfo.titulos}}</h4><br>
+        <h4 class="dt">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">Imagen horizontal</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+  </div>
+  
+  </div>
+
+</body>
+</html>

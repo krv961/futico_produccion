@@ -56,7 +56,7 @@ var AlajuelenseComponent = /** @class */ (function () {
     }
     AlajuelenseComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.teamService.getLDA()
+        this.teamService.getTeam('lda')
             .subscribe(function (res) { return _this.ldaInfo = res; }, function (err) { return console.log(err); });
     };
     AlajuelenseComponent = __decorate([
@@ -329,7 +329,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_27__angular_material_card__["a" /* MatCardModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_flex_layout__["a" /* FlexLayoutModule */],
                 __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_32__angular_material_tabs__["a" /* MatTabsModule */]
+                __WEBPACK_IMPORTED_MODULE_32__angular_material_tabs__["a" /* MatTabsModule */],
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
@@ -345,14 +345,14 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/carmelita/carmelita.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".fa {\r\n    padding: 20px;\r\n    font-size: 30px;\r\n    width: 50px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    margin: 5px 2px;\r\n  }\r\n  \r\n  .fa:hover {\r\n      opacity: 0.7;\r\n  }\r\n  \r\n  .fa-facebook {\r\n    background: #3B5998;\r\n    color: white;\r\n\r\n  }\r\n  \r\n  .fa-twitter {\r\n    background: #55ACEE;\r\n    color: white;\r\n  }\r\n  \r\n  .fa-youtube {\r\n    background: #bb0000;\r\n    color: white;\r\n  }\r\n  \r\n  .table{\r\n\r\n    font-family: \"Trebuchet MS\", Arial, Helvetica, sans-serif;\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n}\r\n  \r\n  .table tr:hover {\r\n    background-color: black;\r\n    color: white;\r\n}\r\n  \r\n  .title{\r\n    font-family: 'Vollkorn', serif;\r\n}\r\n  \r\n  .subtitle .stadium .date .championships .dt{\r\n    font-family: 'Cutive', serif;\r\n}\r\n  \r\n  .stadium{\r\n\r\n}\r\n  \r\n  .date {}\r\n  \r\n  .championships{}\r\n  \r\n  .dt {}\r\n"
 
 /***/ }),
 
 /***/ "./src/app/carmelita/carmelita.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  carmelita works!\n</p>\n"
+module.exports = "<!--Tutorial para css bootstrap divs\nhttps://getbootstrap.com/docs/3.3/css/\n-->\n<html lang=\"en\">\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n\n  <!--\n<div class=\"container-fluid\"> \n<div class=\"row\">\n  <div class=\"col-sm-2\"></div><img src=\"assets/img/carmelitalogo.png\"></div>\n  <div class=\"col-sm-8\">Info</div>\n  <div class=\"col-sm-2\">Social Media</div>\n\n</div>\n-->\n<div class=\"container-fluid\"> \n \n  <div class=\"row \">\n    <div class=\"col-sm-3\"><img src=\"assets/img/carmelitalogo.png\"></div>\n    <div class=\"col-sm-6\">\n        <h1 class=\"title\"> texto {{carmelitaInfo.nombre}}</h1> <br>\n        <h4 class=\"subtitle\">Sigla: {{carmelitaInfo.sigla}} </h4><br>\n        <h4 class=\"stadium\">Estadio: {{carmelitaInfo.estadio}}</h4>\n        <h4 class=\"date\">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\n        <h4 class=\"championships\">Titulos: {{carmelitaInfo.titulos}}</h4><br>\n        <h4 class=\"dt\">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>\n    </div>\n    <div class=\"col-sm-3\">\n      <a href=\"#\" class=\"fa fa-facebook\"></a>\n<a href=\"#\" class=\"fa fa-twitter\"></a>\n<a href=\"#\" class=\"fa fa-youtube\"></a>\n      \n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-12\">Imagen horizontal</div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-6\">.col-md-6</div>\n    <div class=\"col-md-6\">.col-md-6</div>\n  </div>\n  \n  </div>\n\n</body>\n</html>\n"
 
 /***/ }),
 
@@ -362,6 +362,7 @@ module.exports = "<p>\n  carmelita works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CarmelitaComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -372,10 +373,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var CarmelitaComponent = /** @class */ (function () {
-    function CarmelitaComponent() {
+    function CarmelitaComponent(teamService) {
+        this.teamService = teamService;
+        this.carmelitaInfo = [];
     }
     CarmelitaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('carmelita')
+            .subscribe(function (res) { return _this.carmelitaInfo = res; }, function (err) { return console.log(err); });
     };
     CarmelitaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -383,7 +390,7 @@ var CarmelitaComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/carmelita/carmelita.component.html"),
             styles: [__webpack_require__("./src/app/carmelita/carmelita.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], CarmelitaComponent);
     return CarmelitaComponent;
 }());
@@ -412,6 +419,7 @@ module.exports = "<p>\n  cartagines works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartaginesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -422,10 +430,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var CartaginesComponent = /** @class */ (function () {
-    function CartaginesComponent() {
+    function CartaginesComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     CartaginesComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('csc')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     CartaginesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -433,7 +447,7 @@ var CartaginesComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/cartagines/cartagines.component.html"),
             styles: [__webpack_require__("./src/app/cartagines/cartagines.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], CartaginesComponent);
     return CartaginesComponent;
 }());
@@ -527,9 +541,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var GreciaComponent = /** @class */ (function () {
     function GreciaComponent(teamService) {
         this.teamService = teamService;
-        this.greciaInfo = [];
+        this.info = [];
     }
     GreciaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('gre')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     GreciaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -566,6 +583,7 @@ module.exports = "<p>\n  guadalupe works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuadalupeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -576,10 +594,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var GuadalupeComponent = /** @class */ (function () {
-    function GuadalupeComponent() {
+    function GuadalupeComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     GuadalupeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('gfc')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     GuadalupeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -587,7 +611,7 @@ var GuadalupeComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/guadalupe/guadalupe.component.html"),
             styles: [__webpack_require__("./src/app/guadalupe/guadalupe.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], GuadalupeComponent);
     return GuadalupeComponent;
 }());
@@ -666,6 +690,7 @@ module.exports = "<p>\n  herediano works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeredianoComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -676,10 +701,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HeredianoComponent = /** @class */ (function () {
-    function HeredianoComponent() {
+    function HeredianoComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     HeredianoComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('csh')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     HeredianoComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -687,7 +718,7 @@ var HeredianoComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/herediano/herediano.component.html"),
             styles: [__webpack_require__("./src/app/herediano/herediano.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], HeredianoComponent);
     return HeredianoComponent;
 }());
@@ -820,6 +851,7 @@ module.exports = "<p>\n  liberia works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LiberiaComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -830,10 +862,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var LiberiaComponent = /** @class */ (function () {
-    function LiberiaComponent() {
+    function LiberiaComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     LiberiaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('lib')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     LiberiaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -841,7 +879,7 @@ var LiberiaComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/liberia/liberia.component.html"),
             styles: [__webpack_require__("./src/app/liberia/liberia.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], LiberiaComponent);
     return LiberiaComponent;
 }());
@@ -870,6 +908,7 @@ module.exports = "<p>\n  limon works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LimonComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -880,10 +919,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var LimonComponent = /** @class */ (function () {
-    function LimonComponent() {
+    function LimonComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     LimonComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('lim')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     LimonComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -891,7 +936,7 @@ var LimonComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/limon/limon.component.html"),
             styles: [__webpack_require__("./src/app/limon/limon.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], LimonComponent);
     return LimonComponent;
 }());
@@ -1020,6 +1065,7 @@ module.exports = "<p>\n  perez-zeledon works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerezZeledonComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1030,10 +1076,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var PerezZeledonComponent = /** @class */ (function () {
-    function PerezZeledonComponent() {
+    function PerezZeledonComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     PerezZeledonComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('pz')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     PerezZeledonComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1041,7 +1093,7 @@ var PerezZeledonComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/perez-zeledon/perez-zeledon.component.html"),
             styles: [__webpack_require__("./src/app/perez-zeledon/perez-zeledon.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], PerezZeledonComponent);
     return PerezZeledonComponent;
 }());
@@ -1120,6 +1172,7 @@ module.exports = "<p>\n  santos works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SantosComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1130,10 +1183,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SantosComponent = /** @class */ (function () {
-    function SantosComponent() {
+    function SantosComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     SantosComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('san')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     SantosComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1141,7 +1200,7 @@ var SantosComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/santos/santos.component.html"),
             styles: [__webpack_require__("./src/app/santos/santos.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], SantosComponent);
     return SantosComponent;
 }());
@@ -1170,6 +1229,7 @@ module.exports = "<p>\n  saprissa works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SaprissaComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1180,10 +1240,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SaprissaComponent = /** @class */ (function () {
-    function SaprissaComponent() {
+    function SaprissaComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     SaprissaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('sap')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     SaprissaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1191,7 +1257,7 @@ var SaprissaComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/saprissa/saprissa.component.html"),
             styles: [__webpack_require__("./src/app/saprissa/saprissa.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], SaprissaComponent);
     return SaprissaComponent;
 }());
@@ -1365,11 +1431,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TeamService = /** @class */ (function () {
     function TeamService(http) {
         this.http = http;
-        this.ldaUrl = 'api/lda';
         this.data = '';
     }
-    TeamService.prototype.getLDA = function () {
-        return this.http.get(this.ldaUrl);
+    TeamService.prototype.getTeam = function (team) {
+        return this.http.get('api/' + team);
     };
     TeamService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
@@ -1402,6 +1467,7 @@ module.exports = "<p>\n  ucr works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UcrComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1412,10 +1478,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var UcrComponent = /** @class */ (function () {
-    function UcrComponent() {
+    function UcrComponent(teamService) {
+        this.teamService = teamService;
+        this.info = [];
     }
     UcrComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.teamService.getTeam('ucr')
+            .subscribe(function (res) { return _this.info = res; }, function (err) { return console.log(err); });
     };
     UcrComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1423,7 +1495,7 @@ var UcrComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/ucr/ucr.component.html"),
             styles: [__webpack_require__("./src/app/ucr/ucr.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], UcrComponent);
     return UcrComponent;
 }());
