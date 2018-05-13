@@ -254,12 +254,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__angular_material_tabs__ = __webpack_require__("./node_modules/@angular/material/esm5/tabs.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__angular_material_icon__ = __webpack_require__("./node_modules/@angular/material/esm5/icon.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__ = __webpack_require__("./src/app/services/goleo.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -335,9 +337,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_32__angular_material_tabs__["a" /* MatTabsModule */],
                 __WEBPACK_IMPORTED_MODULE_33__angular_material_icon__["a" /* MatIconModule */],
-                __WEBPACK_IMPORTED_MODULE_34__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
+                __WEBPACK_IMPORTED_MODULE_34__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_30__angular_http__["a" /* HttpModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__["a" /* GoleoService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -358,7 +361,7 @@ module.exports = ".fa {\r\n    padding: 20px;\r\n    font-size: 30px;\r\n    wid
 /***/ "./src/app/carmelita/carmelita.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--Tutorial para css bootstrap divs\nhttps://getbootstrap.com/docs/3.3/css/\n-->\n<html lang=\"en\">\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n\n  <!--\n<div class=\"container-fluid\"> \n<div class=\"row\">\n  <div class=\"col-sm-2\"></div><img src=\"assets/img/carmelitalogo.png\"></div>\n  <div class=\"col-sm-8\">Info</div>\n  <div class=\"col-sm-2\">Social Media</div>\n\n</div>\n-->\n<div class=\"container-fluid\"> \n \n  <div class=\"row \">\n    <div class=\"col-sm-3\"><img src=\"assets/img/carmelitalogo.png\"></div>\n    <div class=\"col-sm-6\">\n        <h1 class=\"title\"> {{carmelitaInfo.nombre}}</h1> <br>\n        <h4 class=\"subtitle\">Sigla: {{carmelitaInfo.sigla}} </h4><br>\n        <h4 class=\"stadium\">Estadio: {{carmelitaInfo.estadio}}</h4>\n        <h4 class=\"date\">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\n        <h4 class=\"championships\">Titulos: {{carmelitaInfo.titulos}}</h4><br>\n        <h4 class=\"dt\">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>\n    </div>\n    <div class=\"col-sm-3\">\n      <a href=\"#\" class=\"fa fa-facebook\"></a>\n<a href=\"#\" class=\"fa fa-twitter\"></a>\n<a href=\"#\" class=\"fa fa-youtube\"></a>\n      \n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-12\">Imagen horizontal</div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-3\">Resultados</div>\n    <div class=\"col-sm-6\">\n      \n        <mat-card class=\"tab\">\n            <mat-card-content>\n              <mat-tab-group class=\"demo-tab-group\">\n                <mat-tab label=\"Plantel\">\n                    <table class=\"table\">\n                        <tr>\n                          <th>Nombre</th>\n                          <th>Apellido</th>\n                          <th>#</th>\n                          <th>Fecha de Nacimiento</th>\n                          <th>Nacionalidad</th>\n                          <th>Posicion</th>\n                        </tr>\n                        <tr *ngFor=\"let jugador of carmelitaInfo.jugadores\">\n                          <td>{{jugador.nombre}}</td>\n                          <td>{{jugador.apellido}}</td>\n                          <td>{{jugador.numero}}</td>\n                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\n                          <td>{{jugador.nacionalidad}}</td>\n                          <td>{{jugador.posicion}}</td>\n                        </tr>\n                        </table>\n                </mat-tab>\n                <mat-tab label=\"Calendario\">\n                  <div class=\"demo-tab-content\">\n                    Calendario del equipo\n                  </div>  \n                </mat-tab>\n                <mat-tab label=\"Goleo\">\n                  <div class=\"demo-tab-content\">\n                   Goleadores del equipo\n                  </div>  \n                </mat-tab>\n                <mat-tab label=\"Asistencias\">\n                    <div class=\"demo-tab-content\">\n                        Asistencias del equipo\n                       </div>\n                </mat-tab>\n                <mat-tab label=\"Noticias\">\n                    <div class=\"demo-tab-content\">\n                        noticas del equipo\n                       </div>  \n                </mat-tab>\n                <mat-tab label=\"Historia\">\n                    <p>{{carmelitaInfo.historia}}</p>  \n                </mat-tab>\n              </mat-tab-group>\n            </mat-card-content>\n          </mat-card>\n\n\n    </div>\n    <div class=\"col-md-3\">twitter del equipo</div>\n  </div>\n  \n  </div>\n\n</body>\n</html>\n"
+module.exports = "<!--Tutorial para css bootstrap divs\nhttps://getbootstrap.com/docs/3.3/css/\n-->\n<html lang=\"en\">\n<head>\n  <title>Bootstrap Example</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n\n  <!--\n<div class=\"container-fluid\"> \n<div class=\"row\">\n  <div class=\"col-sm-2\"></div><img src=\"assets/img/carmelitalogo.png\"></div>\n  <div class=\"col-sm-8\">Info</div>\n  <div class=\"col-sm-2\">Social Media</div>\n\n</div>\n-->\n<div class=\"container-fluid\"> \n \n  <div class=\"row \">\n    <div class=\"col-sm-3\"><img src=\"assets/img/carmelitalogo.png\"></div>\n    <div class=\"col-sm-6\">\n        <h1 class=\"title\"> {{carmelitaInfo.nombre}}</h1> <br>\n        <h4 class=\"subtitle\">Sigla: {{carmelitaInfo.sigla}} </h4><br>\n        <h4 class=\"stadium\">Estadio: {{carmelitaInfo.estadio}}</h4>\n        <h4 class=\"date\">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\n        <h4 class=\"championships\">Titulos: {{carmelitaInfo.titulos}}</h4><br>\n        <h4 class=\"dt\">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>\n    </div>\n    <div class=\"col-sm-3\">\n      <a href=\"#\" class=\"fa fa-facebook\"></a>\n<a href=\"#\" class=\"fa fa-twitter\"></a>\n<a href=\"#\" class=\"fa fa-youtube\"></a>\n      \n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-12\">Imagen horizontal</div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-3\">Resultados</div>\n    <div class=\"col-sm-6\">\n      \n        <mat-card class=\"tab\">\n            <mat-card-content>\n              <mat-tab-group class=\"demo-tab-group\">\n                <mat-tab label=\"Plantel\">\n                    <table class=\"table\">\n                        <tr>\n                          <th>Nombre</th>\n                          <th>Apellido</th>\n                          <th>#</th>\n                          <th>Fecha de Nacimiento</th>\n                          <th>Nacionalidad</th>\n                          <th>Posicion</th>\n                        </tr>\n                        <tr *ngFor=\"let jugador of carmelitaInfo.jugadores\">\n                          <td>{{jugador.nombre}}</td>\n                          <td>{{jugador.apellido}}</td>\n                          <td>{{jugador.numero}}</td>\n                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\n                          <td>{{jugador.nacionalidad}}</td>\n                          <td>{{jugador.posicion}}</td>\n                        </tr>\n                        </table>\n                </mat-tab>\n                <mat-tab label=\"Calendario\">\n                  <div class=\"demo-tab-content\">\n                    Calendario del equipo\n                  </div>  \n                </mat-tab>\n                <mat-tab label=\"Goleo\">\n                  <div class=\"demo-tab-content\">\n                   Goleadores del equipo\n                   <table class=\"table\">\n                      <tr>\n                        <th>Nombre</th>\n                        <th>Equipo</th>\n                        <th>Goles</th>\n                        <th>Pie</th>\n                        <th>Cabeza</th>\n                        <th>Falta</th>\n                        <th>Penal</th>\n                      </tr>\n                      <tr *ngFor=\"let goleo of carmelitaGoleo.goleadores\">\n                        <td>{{goleo.nombre}}</td>\n                        <td>{{goleo.equipo}}</td>\n                        <td>{{goleo.goles}}</td>\n                        <td>{{goleo.pie}}</td>\n                        <td>{{goleo.cabeza}}</td>\n                        <td>{{goleo.falta}}</td>\n                        <td>{{goleo.penal}}</td>\n                      </tr>\n                      </table>\n                  </div>  \n                </mat-tab>\n                <mat-tab label=\"Asistencias\">\n                    <div class=\"demo-tab-content\">\n                        Asistencias del equipo\n                       </div>\n                </mat-tab>\n                <mat-tab label=\"Noticias\">\n                    <div class=\"demo-tab-content\">\n                        noticas del equipo\n                       </div>  \n                </mat-tab>\n                <mat-tab label=\"Historia\">\n                    <p>{{carmelitaInfo.historia}}</p>  \n                </mat-tab>\n              </mat-tab-group>\n            </mat-card-content>\n          </mat-card>\n\n\n    </div>\n    <div class=\"col-md-3\">twitter del equipo</div>\n  </div>\n  \n  </div>\n\n</body>\n</html>\n"
 
 /***/ }),
 
@@ -369,6 +372,7 @@ module.exports = "<!--Tutorial para css bootstrap divs\nhttps://getbootstrap.com
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CarmelitaComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_goleo_service__ = __webpack_require__("./src/app/services/goleo.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -380,15 +384,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var CarmelitaComponent = /** @class */ (function () {
-    function CarmelitaComponent(teamService) {
+    function CarmelitaComponent(teamService, goleoService) {
         this.teamService = teamService;
+        this.goleoService = goleoService;
         this.carmelitaInfo = [];
+        this.carmelitaGoleo = [];
     }
     CarmelitaComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.teamService.getTeam('carmelita')
             .subscribe(function (res) { return _this.carmelitaInfo = res; }, function (err) { return console.log(err); });
+        console.log(JSON.stringify(this, function (res) { return _this.carmelitaInfo; })); // '{}'
+        this.goleoService.getGoles('ADC')
+            .subscribe(function (res) { return _this.carmelitaGoleo = res; }, function (err) { return console.log(err); });
     };
     CarmelitaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -397,7 +407,7 @@ var CarmelitaComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/carmelita/carmelita.component.css")],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewEncapsulation */].None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_2__services_goleo_service__["a" /* GoleoService */]])
     ], CarmelitaComponent);
     return CarmelitaComponent;
 }());
@@ -1267,6 +1277,45 @@ var SaprissaComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */]])
     ], SaprissaComponent);
     return SaprissaComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/goleo.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoleoService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GoleoService = /** @class */ (function () {
+    function GoleoService(http) {
+        this.http = http;
+        this.data = '';
+    }
+    GoleoService.prototype.getGoles = function (team) {
+        console.log('goleo service tiene ' + JSON.stringify(this.http.get('goleo/' + team)));
+        console.log('se trae la siguiente url ' + 'goleo/' + team);
+        return this.http.get('goleo/' + team);
+    };
+    GoleoService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+    ], GoleoService);
+    return GoleoService;
 }());
 
 

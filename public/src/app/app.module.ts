@@ -35,6 +35,8 @@ import { TeamService } from './team.service';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoleoService } from './services/goleo.service';
+
 
 
 
@@ -73,10 +75,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     MatTabsModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpModule
     
   ],
-  providers: [HttpClientModule, HttpClient, HttpModule, TeamService],
+  providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
