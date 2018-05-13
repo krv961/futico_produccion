@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { TeamService } from '../team.service';
 
 @Component({
   selector: 'app-carmelita',
   templateUrl: './carmelita.component.html',
-  styleUrls: ['./carmelita.component.css']
+  styleUrls: ['./carmelita.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class CarmelitaComponent implements OnInit {
 carmelitaInfo = []
