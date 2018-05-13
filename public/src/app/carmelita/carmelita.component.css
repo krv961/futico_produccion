@@ -45,10 +45,35 @@
 
 .subtitle .stadium .date .championships .dt{
     font-family: 'Cutive', serif;
+    color: white;
 }
+
+h1, h4 {
+
+color: white;
+}
+
 .stadium{
 
 }
 .date {}
 .championships{}
 .dt {}
+
+.demo-tab-group {
+    border: 1px solid #e8e8e8;
+  }
+  
+  .demo-tab-content {
+    padding: 16px;
+  }
+  body{
+    background-color: #26a69a;
+  }
+
+  .table{
+      background-color: #e8e8e8;
+  }
+  .tab{
+    background-color: #e8e8e8;
+  }

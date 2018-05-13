@@ -31,7 +31,7 @@ https://getbootstrap.com/docs/3.3/css/
   <div class="row ">
     <div class="col-sm-3"><img src="assets/img/carmelitalogo.png"></div>
     <div class="col-sm-6">
-        <h1 class="title"> texto {{carmelitaInfo.nombre}}</h1> <br>
+        <h1 class="title"> {{carmelitaInfo.nombre}}</h1> <br>
         <h4 class="subtitle">Sigla: {{carmelitaInfo.sigla}} </h4><br>
         <h4 class="stadium">Estadio: {{carmelitaInfo.estadio}}</h4>
         <h4 class="date">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
@@ -49,8 +49,62 @@ https://getbootstrap.com/docs/3.3/css/
     <div class="col-sm-12">Imagen horizontal</div>
   </div>
   <div class="row">
-    <div class="col-md-6">.col-md-6</div>
-    <div class="col-md-6">.col-md-6</div>
+    <div class="col-sm-3">Resultados</div>
+    <div class="col-sm-6">
+      
+        <mat-card class="tab">
+            <mat-card-content>
+              <mat-tab-group class="demo-tab-group">
+                <mat-tab label="Plantel">
+                    <table class="table">
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Apellido</th>
+                          <th>#</th>
+                          <th>Fecha de Nacimiento</th>
+                          <th>Nacionalidad</th>
+                          <th>Posicion</th>
+                        </tr>
+                        <tr *ngFor="let jugador of carmelitaInfo.jugadores">
+                          <td>{{jugador.nombre}}</td>
+                          <td>{{jugador.apellido}}</td>
+                          <td>{{jugador.numero}}</td>
+                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>
+                          <td>{{jugador.nacionalidad}}</td>
+                          <td>{{jugador.posicion}}</td>
+                        </tr>
+                        </table>
+                </mat-tab>
+                <mat-tab label="Calendario">
+                  <div class="demo-tab-content">
+                    Calendario del equipo
+                  </div>  
+                </mat-tab>
+                <mat-tab label="Goleo">
+                  <div class="demo-tab-content">
+                   Goleadores del equipo
+                  </div>  
+                </mat-tab>
+                <mat-tab label="Asistencias">
+                    <div class="demo-tab-content">
+                        Asistencias del equipo
+                       </div>
+                </mat-tab>
+                <mat-tab label="Noticias">
+                    <div class="demo-tab-content">
+                        noticas del equipo
+                       </div>  
+                </mat-tab>
+                <mat-tab label="Historia">
+                    <p>{{carmelitaInfo.historia}}</p>  
+                </mat-tab>
+              </mat-tab-group>
+            </mat-card-content>
+          </mat-card>
+
+
+    </div>
+    <div class="col-md-3">twitter del equipo</div>
   </div>
   
   </div>

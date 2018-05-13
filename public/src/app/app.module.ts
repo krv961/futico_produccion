@@ -33,6 +33,8 @@ import {HttpHandler} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { TeamService } from './team.service';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -70,6 +72,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     FlexLayoutModule,
     HttpClientModule,
     MatTabsModule,
+    MatIconModule,
+    BrowserAnimationsModule
     
   ],
   providers: [HttpClientModule, HttpClient, HttpModule, TeamService],
