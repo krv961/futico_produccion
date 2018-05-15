@@ -6,7 +6,6 @@ https://getbootstrap.com/docs/3.3/css/
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -14,6 +13,7 @@ https://getbootstrap.com/docs/3.3/css/
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -29,28 +29,100 @@ https://getbootstrap.com/docs/3.3/css/
 <div class="container-fluid"> 
  
   <div class="row ">
-    <div class="col-sm-3"><img src="assets/img/carmelitalogo.png"></div>
+    <div class="col-sm-3"><img class="displayed focus pic" src="assets/img/carmelitalogo.png"></div>
     <div class="col-sm-6">
-        <h1 class="title"> {{carmelitaInfo.nombre}}</h1> <br>
+     <!--   <h1 class="title"> {{carmelitaInfo.nombre}}</h1> <br>
         <h4 class="subtitle">Sigla: {{carmelitaInfo.sigla}} </h4><br>
         <h4 class="stadium">Estadio: {{carmelitaInfo.estadio}}</h4>
         <h4 class="date">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
         <h4 class="championships">Titulos: {{carmelitaInfo.titulos}}</h4><br>
-        <h4 class="dt">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>
+        <h4 class="dt">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>-->
+
+        <div class="container">
+            <div class="row text-center">
+            <h2 class="carmen">{{carmelitaInfo.nombre}} </h2>
+                <p class="carmen">{{carmelitaInfo.sigla}}</p>
+          </div>
+            <div class="row">
+              <div class="col-sm-2">
+                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                    <p style="text-align:center;">
+                      <img src="https://image.ibb.co/fLYf0d/carmelita_Estadio.jpg" alt="carmelita_Estadio" class="img-responsive">
+                    </p>
+                    <div class="caption">
+                      <div class="blur"></div>
+                      <div class="caption-text">
+                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Estadio</h3>
+                        <p>{{carmelitaInfo.estadio}}</p>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+                <div class="col-sm-2">
+                      <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                    <p style="text-align:center;">
+                        <img src="https://image.ibb.co/jCGNDy/trofeo.jpg" alt="trofeo" class="img-responsive">
+                    </p>
+                    <div class="caption">
+                      <div class="blur"></div>
+                      <div class="caption-text">
+                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Titulos</h3>
+                        <p>{{carmelitaInfo.titulos}}</p>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+                <div class="col-sm-2">
+                      <div class="cuadro_intro_hover" style="background-color:#cccccc;">
+                    <p style="text-align:center;">
+                        <img src="https://image.ibb.co/kkEjty/mario_viquez.jpg" alt="mario_viquez" class="img-responsive">
+                    </p>
+                    <div class="caption">
+                      <div class="blur"></div>
+                      <div class="caption-text">
+                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">DT</h3>
+                        <p>{{carmelitaInfo.dt}}</p>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+        </div>
+
     </div>
     <div class="col-sm-3">
-      <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-youtube"></a>
+      <a href=" #" target="_blank" class="fa fa-facebook"></a>
+<a href="#" target="_blank" class="fa fa-twitter"></a>
+<a href="#" target="_blank" class="fa fa-youtube"></a>
       
     </div>
   </div>
+
   <div class="row">
-    <div class="col-sm-12">Imagen horizontal</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Resultados</div>
-    <div class="col-sm-6">
+    <div class="col-sm-5">
+      <table class="table">
+        <tr>
+          <th>Equipo Local</th>
+          <th>Equipo visita</th>
+          <th>Resultado</th>
+          <th>Fecha</th>
+          <th>Estadio</th>
+        </tr>
+        <tr *ngFor="let goleo of carmelitaGoleo.goleadores">
+          <td>{{goleo.nombre}}</td>
+          <td>{{goleo.equipo}}</td>
+          <td>{{goleo.goles}}</td>
+          <td>{{goleo.pie}}</td>
+          <td>{{goleo.cabeza}}</td>
+          <td>{{goleo.falta}}</td>
+          <td>{{goleo.penal}}</td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-sm-7">
       
         <mat-card class="tab">
             <mat-card-content>

@@ -38,6 +38,13 @@ getLdaInfo(){
          console.log(this.toutnamentName);
  });
 }
+
+https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/schedule.json?api_key=wtm44z6e274xu7mva4kwjkry
+
+
+resultados
+carmelita: https://api.sportradar.us/soccer-xt3/other/es/teams/sr:competitor:7042/results.json?api_key=wtm44z6e274xu7mva4kwjkry
+
  */
 
 

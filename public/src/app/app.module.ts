@@ -36,6 +36,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoleoService } from './services/goleo.service';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -76,7 +78,9 @@ import { GoleoService } from './services/goleo.service';
     MatTabsModule,
     MatIconModule,
     BrowserAnimationsModule,
-    HttpModule
+    HttpModule,
+    MatTableModule,
+    MatFormFieldModule
     
   ],
   providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService],
