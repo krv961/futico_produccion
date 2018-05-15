@@ -178,7 +178,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<app-header></app-header>\n<router-outlet></router-outlet>\n  <app-footer></app-footer>\n  "
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n<app-header></app-header>\r\n<router-outlet></router-outlet>\r\n  <app-footer></app-footer>\r\n  "
 
 /***/ }),
 
@@ -352,7 +352,7 @@ module.exports = ""
 /***/ "./src/app/carmelita/carmelita.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  carmelita works!\n</p>\n"
+module.exports = "<p>\r\n  carmelita works!\r\n</p>\r\n"
 
 /***/ }),
 
