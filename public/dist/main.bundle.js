@@ -27,11 +27,7 @@ module.exports = ".table{\r\n\r\n    font-family: \"Trebuchet MS\", Arial, Helve
 /***/ "./src/app/alajuelense/alajuelense.component.html":
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "\n\n   <head>\n      <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n       <!-- Compiled and minified CSS -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css\">\n\n    <!-- Compiled and minified JavaScript -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js\"></script>\n            \n  </head>\n\n\n   <h1 class=\"title\">{{ldaInfo.nombre}}</h1> <br>\n    <h4 class=\"subtitle\">Sigla: {{ldaInfo.sigla}} </h4><br>\n    <h4 class=\"stadium\">Estadio: {{ldaInfo.estadio}}</h4>\n    <h4 class=\"date\">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\n    <h4 class=\"championships\">Titulos: {{ldaInfo.titulos}}</h4><br>\n    <h4 class=\"dt\">Director Tecnico: {{ldaInfo.dt}}</h4><br>\n    <h4 class=\"histor\">Historia</h4><br>\n    <p>{{ldaInfo.historia}}</p> \n\n   \n\n    <h2>Panilla</h2>\n  <table class=\"table\">\n  <tr>\n    <th>Nombre</th>\n    <th>Apellido</th>\n    <th>#</th>\n    <th>Fecha de Nacimiento</th>\n    <th>Nacionalidad</th>\n    <th>Posicion</th>\n  </tr>\n  <tr *ngFor=\"let jugador of ldaInfo.jugadores\">\n    <td>{{jugador.nombre}}</td>\n    <td>{{jugador.apellido}}</td>\n    <td>{{jugador.numero}}</td>\n    <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\n    <td>{{jugador.nacionalidad}}</td>\n    <td>{{jugador.posicion}}</td>\n  </tr>\n  </table>\n\n\n\n\n"
-=======
-module.exports = "\r\n<!--\r\n\r\n-->\r\n\r\n\r\n<head>\r\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\r\n   <!-- Compiled and minified CSS -->\r\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css\">\r\n\r\n<!-- Compiled and minified JavaScript -->\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js\"></script>\r\n        \r\n  \r\n</head>\r\n\r\n\r\n<h1 class=\"title\">{{ldaInfo.nombre}}</h1> <br>\r\n<h4 class=\"subtitle\">Sigla: {{ldaInfo.sigla}} </h4><br>\r\n<h4 class=\"stadium\">Estadio: {{ldaInfo.estadio}}</h4>\r\n<h4 class=\"date\">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n<h4 class=\"championships\">Titulos: {{ldaInfo.titulos}}</h4><br>\r\n<h4 class=\"dt\">Director Tecnico: {{ldaInfo.dt}}</h4><br>\r\n<h4 class=\"histor\">Historia</h4><br>\r\n<p>{{ldaInfo.historia}}</p> \r\n\r\n\r\n\r\n<h2>Panilla</h2>\r\n<table class=\"table\">\r\n<tr>\r\n<th>Nombre</th>\r\n<th>Apellido</th>\r\n<th>#</th>\r\n<th>Fecha de Nacimiento</th>\r\n<th>Nacionalidad</th>\r\n<th>Posicion</th>\r\n</tr>\r\n<tr *ngFor=\"let jugador of ldaInfo.jugadores\">\r\n<td>{{jugador.nombre}}</td>\r\n<td>{{jugador.apellido}}</td>\r\n<td>{{jugador.numero}}</td>\r\n<td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n<td>{{jugador.nacionalidad}}</td>\r\n<td>{{jugador.posicion}}</td>\r\n</tr>\r\n</table>\r\n\r\n  \r\n\r\n\r\n<!--\r\n  <mat-tab-group>\r\n    <mat-tab label=\"Nombre\">\r\n      {{ldaInfo.nombre}}\r\n    </mat-tab>\r\n    <mat-tab label=\"Sigla\">\r\n        <div class=\"demo-tab-content\">\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.\r\n            Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.\r\n            In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,\r\n            feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,\r\n            orci enim rutrum enim, vel tempor sapien arcu a tellus.\r\n          </div>\r\n      {{ldaInfo.sigla}}\r\n    </mat-tab>\r\n    <mat-tab label=\"Estadio\">\r\n      {{ldaInfo.estadio}}\r\n    </mat-tab>\r\n    <mat-tab label=\"Año de creación\">\r\n      {{ldaInfo.ano_creacion  | date:'shortDate'}}\r\n    </mat-tab>\r\n    <mat-tab label=\"Historia\"> <p>{{ldaInfo.historia}}</p> </mat-tab>\r\n    <mat-tab label=\"Plantel\">\r\n      <table class=\"table\">\r\n        <tr>\r\n          <th>Nombre</th>\r\n          <th>Apellido</th>\r\n          <th>#</th>\r\n          <th>Fecha de Nacimiento</th>\r\n          <th>Nacionalidad</th>\r\n          <th>Posicion</th>\r\n        </tr>\r\n        <tr *ngFor=\"let jugador of ldaInfo.jugadores\">\r\n          <td>{{jugador.nombre}}</td>\r\n          <td>{{jugador.apellido}}</td>\r\n          <td>{{jugador.numero}}</td>\r\n          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n          <td>{{jugador.nacionalidad}}</td>\r\n          <td>{{jugador.posicion}}</td>\r\n        </tr>\r\n        </table>\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n\r\n   \r\n \r\n\r\n   <h1 class=\"title\">{{ldaInfo.nombre}}</h1> <br>\r\n    <h4 class=\"subtitle\">Sigla: {{ldaInfo.sigla}} </h4><br>\r\n    <h4 class=\"stadium\">Estadio: {{ldaInfo.estadio}}</h4>\r\n    <h4 class=\"date\">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n    <h4 class=\"championships\">Titulos: {{ldaInfo.titulos}}</h4><br>\r\n    <h4 class=\"dt\">Director Tecnico: {{ldaInfo.dt}}</h4><br>\r\n    <h4 class=\"histor\">Historia</h4><br>\r\n    <p>{{ldaInfo.historia}}</p> \r\n\r\n   \r\n\r\n    <h2>Panilla</h2>\r\n  <table class=\"table\">\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Apellido</th>\r\n    <th>#</th>\r\n    <th>Fecha de Nacimiento</th>\r\n    <th>Nacionalidad</th>\r\n    <th>Posicion</th>\r\n  </tr>\r\n  <tr *ngFor=\"let jugador of ldaInfo.jugadores\">\r\n    <td>{{jugador.nombre}}</td>\r\n    <td>{{jugador.apellido}}</td>\r\n    <td>{{jugador.numero}}</td>\r\n    <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n    <td>{{jugador.nacionalidad}}</td>\r\n    <td>{{jugador.posicion}}</td>\r\n  </tr>\r\n  </table>\r\n  !-->\r\n  \r\n\r\n\r\n\r\n\r\n"
->>>>>>> david
+module.exports = "<head>\r\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\r\n   <!-- Compiled and minified CSS -->\r\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css\">\r\n\r\n<!-- Compiled and minified JavaScript -->\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js\"></script>\r\n        \r\n</head>\r\n\r\n\r\n<h1 class=\"title\">{{ldaInfo.nombre}}</h1> <br>\r\n<h4 class=\"subtitle\">Sigla: {{ldaInfo.sigla}} </h4><br>\r\n<h4 class=\"stadium\">Estadio: {{ldaInfo.estadio}}</h4>\r\n<h4 class=\"date\">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n<h4 class=\"championships\">Titulos: {{ldaInfo.titulos}}</h4><br>\r\n<h4 class=\"dt\">Director Tecnico: {{ldaInfo.dt}}</h4><br>\r\n<h4 class=\"histor\">Historia</h4><br>\r\n<p>{{ldaInfo.historia}}</p> \r\n\r\n\r\n\r\n<h2>Panilla</h2>\r\n<table class=\"table\">\r\n<tr>\r\n<th>Nombre</th>\r\n<th>Apellido</th>\r\n<th>#</th>\r\n<th>Fecha de Nacimiento</th>\r\n<th>Nacionalidad</th>\r\n<th>Posicion</th>\r\n</tr>\r\n<tr *ngFor=\"let jugador of ldaInfo.jugadores\">\r\n<td>{{jugador.nombre}}</td>\r\n<td>{{jugador.apellido}}</td>\r\n<td>{{jugador.numero}}</td>\r\n<td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n<td>{{jugador.nacionalidad}}</td>\r\n<td>{{jugador.posicion}}</td>\r\n</tr>\r\n</table>\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -182,11 +178,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
 module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n<app-header></app-header>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>\r\n"
-=======
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n<app-header></app-header>\r\n<router-outlet></router-outlet>\r\n  <app-footer></app-footer>\r\n  "
->>>>>>> david
 
 /***/ }),
 
@@ -265,12 +257,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__ = __webpack_require__("./src/app/services/goleo.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__angular_material_table__ = __webpack_require__("./node_modules/@angular/material/esm5/table.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__angular_material_form_field__ = __webpack_require__("./node_modules/@angular/material/esm5/form-field.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__tabla_posiciones_service__ = __webpack_require__("./src/app/tabla-posiciones.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -350,11 +344,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_32__angular_material_tabs__["a" /* MatTabsModule */],
                 __WEBPACK_IMPORTED_MODULE_33__angular_material_icon__["a" /* MatIconModule */],
                 __WEBPACK_IMPORTED_MODULE_34__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_30__angular_http__["a" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_30__angular_http__["b" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_36__angular_material_table__["a" /* MatTableModule */],
                 __WEBPACK_IMPORTED_MODULE_37__angular_material_form_field__["a" /* MatFormFieldModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__["a" /* GoleoService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["b" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__["a" /* GoleoService */], __WEBPACK_IMPORTED_MODULE_38__tabla_posiciones_service__["a" /* TablaPosicionesService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -375,11 +369,7 @@ module.exports = ".fa {\r\n    padding: 20px;\r\n    font-size: 30px;\r\n    wid
 /***/ "./src/app/carmelita/carmelita.component.html":
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
 module.exports = "<!--Tutorial para css bootstrap divs\r\nhttps://getbootstrap.com/docs/3.3/css/\r\n-->\r\n<html lang=\"en\">\r\n<head>\r\n  <title>Bootstrap Example</title>\r\n  <meta charset=\"utf-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\r\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\r\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\r\n</head>\r\n<body>\r\n\r\n  <!--\r\n<div class=\"container-fluid\"> \r\n<div class=\"row\">\r\n  <div class=\"col-sm-2\"></div><img src=\"assets/img/carmelitalogo.png\"></div>\r\n  <div class=\"col-sm-8\">Info</div>\r\n  <div class=\"col-sm-2\">Social Media</div>\r\n\r\n</div>\r\n-->\r\n<div class=\"container-fluid\"> \r\n \r\n  <div class=\"row \">\r\n    <div class=\"col-sm-3\"><img class=\"displayed focus pic\" src=\"assets/img/carmelitalogo.png\"></div>\r\n    <div class=\"col-sm-6\">\r\n     <!--   <h1 class=\"title\"> {{carmelitaInfo.nombre}}</h1> <br>\r\n        <h4 class=\"subtitle\">Sigla: {{carmelitaInfo.sigla}} </h4><br>\r\n        <h4 class=\"stadium\">Estadio: {{carmelitaInfo.estadio}}</h4>\r\n        <h4 class=\"date\">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n        <h4 class=\"championships\">Titulos: {{carmelitaInfo.titulos}}</h4><br>\r\n        <h4 class=\"dt\">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>-->\r\n\r\n        <div class=\"container\">\r\n            <div class=\"row text-center\">\r\n            <h2 class=\"carmen\">{{carmelitaInfo.nombre}} </h2>\r\n                <p class=\"carmen\">{{carmelitaInfo.sigla}}</p>\r\n          </div>\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-2\">\r\n                    <div class=\"cuadro_intro_hover \" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                      <img src=\"https://image.ibb.co/fLYf0d/carmelita_Estadio.jpg\" alt=\"carmelita_Estadio\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">Estadio</h3>\r\n                        <p>{{carmelitaInfo.estadio}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n                <div class=\"col-sm-2\">\r\n                      <div class=\"cuadro_intro_hover \" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                        <img src=\"https://image.ibb.co/jCGNDy/trofeo.jpg\" alt=\"trofeo\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">Titulos</h3>\r\n                        <p>{{carmelitaInfo.titulos}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n                <div class=\"col-sm-2\">\r\n                      <div class=\"cuadro_intro_hover\" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                        <img src=\"https://image.ibb.co/kkEjty/mario_viquez.jpg\" alt=\"mario_viquez\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">DT</h3>\r\n                        <p>{{carmelitaInfo.dt}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n    <div class=\"col-sm-3\">\r\n      <a href=\" #\" target=\"_blank\" class=\"fa fa-facebook\"></a>\r\n<a href=\"#\" target=\"_blank\" class=\"fa fa-twitter\"></a>\r\n<a href=\"#\" target=\"_blank\" class=\"fa fa-youtube\"></a>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-5\">\r\n      <table class=\"table\">\r\n        <tr>\r\n          <th>Equipo Local</th>\r\n          <th>Equipo visita</th>\r\n          <th>Resultado</th>\r\n          <th>Fecha</th>\r\n          <th>Estadio</th>\r\n        </tr>\r\n        <tr *ngFor=\"let goleo of carmelitaGoleo.goleadores\">\r\n          <td>{{goleo.nombre}}</td>\r\n          <td>{{goleo.equipo}}</td>\r\n          <td>{{goleo.goles}}</td>\r\n          <td>{{goleo.pie}}</td>\r\n          <td>{{goleo.cabeza}}</td>\r\n          <td>{{goleo.falta}}</td>\r\n          <td>{{goleo.penal}}</td>\r\n        </tr>\r\n        </table>\r\n    </div>\r\n    <div class=\"col-sm-7\">\r\n      \r\n        <mat-card class=\"tab\">\r\n            <mat-card-content>\r\n              <mat-tab-group class=\"demo-tab-group\">\r\n                <mat-tab label=\"Plantel\">\r\n                    <table class=\"table\">\r\n                        <tr>\r\n                          <th>Nombre</th>\r\n                          <th>Apellido</th>\r\n                          <th>#</th>\r\n                          <th>Fecha de Nacimiento</th>\r\n                          <th>Nacionalidad</th>\r\n                          <th>Posicion</th>\r\n                        </tr>\r\n                        <tr *ngFor=\"let jugador of carmelitaInfo.jugadores\">\r\n                          <td>{{jugador.nombre}}</td>\r\n                          <td>{{jugador.apellido}}</td>\r\n                          <td>{{jugador.numero}}</td>\r\n                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n                          <td>{{jugador.nacionalidad}}</td>\r\n                          <td>{{jugador.posicion}}</td>\r\n                        </tr>\r\n                        </table>\r\n                </mat-tab>\r\n                <mat-tab label=\"Calendario\">\r\n                  <div class=\"demo-tab-content\">\r\n                    Calendario del equipo\r\n                  </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Goleo\">\r\n                  <div class=\"demo-tab-content\">\r\n                   Goleadores del equipo\r\n                   <table class=\"table\">\r\n                      <tr>\r\n                        <th>Nombre</th>\r\n                        <th>Equipo</th>\r\n                        <th>Goles</th>\r\n                        <th>Pie</th>\r\n                        <th>Cabeza</th>\r\n                        <th>Falta</th>\r\n                        <th>Penal</th>\r\n                      </tr>\r\n                      <tr *ngFor=\"let goleo of carmelitaGoleo.goleadores\">\r\n                        <td>{{goleo.nombre}}</td>\r\n                        <td>{{goleo.equipo}}</td>\r\n                        <td>{{goleo.goles}}</td>\r\n                        <td>{{goleo.pie}}</td>\r\n                        <td>{{goleo.cabeza}}</td>\r\n                        <td>{{goleo.falta}}</td>\r\n                        <td>{{goleo.penal}}</td>\r\n                      </tr>\r\n                      </table>\r\n                  </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Asistencias\">\r\n                    <div class=\"demo-tab-content\">\r\n                        Asistencias del equipo\r\n                       </div>\r\n                </mat-tab>\r\n                <mat-tab label=\"Noticias\">\r\n                    <div class=\"demo-tab-content\">\r\n                        noticas del equipo\r\n                       </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Historia\">\r\n                    <p>{{carmelitaInfo.historia}}</p>  \r\n                </mat-tab>\r\n              </mat-tab-group>\r\n            </mat-card-content>\r\n          </mat-card>\r\n\r\n\r\n    </div>\r\n    <div class=\"col-md-3\">twitter del equipo</div>\r\n  </div>\r\n  \r\n  </div>\r\n\r\n</body>\r\n</html>\r\n"
-=======
-module.exports = "<p>\r\n  carmelita works!\r\n</p>\r\n"
->>>>>>> david
 
 /***/ }),
 
@@ -1474,7 +1464,7 @@ module.exports = ""
 /***/ "./src/app/tabla-de-posiciones/tabla-de-posiciones.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  tabla-de-posiciones works!\r\n</p>\r\n"
+module.exports = "<p>\r\n  {{tablaInfo.schema}}\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1484,6 +1474,7 @@ module.exports = "<p>\r\n  tabla-de-posiciones works!\r\n</p>\r\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablaDePosicionesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabla_posiciones_service__ = __webpack_require__("./src/app/tabla-posiciones.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1494,10 +1485,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var TablaDePosicionesComponent = /** @class */ (function () {
-    function TablaDePosicionesComponent() {
+    function TablaDePosicionesComponent(service) {
+        this.service = service;
     }
+    TablaDePosicionesComponent.prototype.getTabla = function () {
+        var _this = this;
+        this.service.getTabla().subscribe(function (resultArray) { return _this.tablaInfo = resultArray; }, function (error) { return console.log("error: " + error); });
+        console.log(this.tablaInfo);
+    };
     TablaDePosicionesComponent.prototype.ngOnInit = function () {
+        this.getTabla();
     };
     TablaDePosicionesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1505,9 +1504,57 @@ var TablaDePosicionesComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/tabla-de-posiciones/tabla-de-posiciones.component.html"),
             styles: [__webpack_require__("./src/app/tabla-de-posiciones/tabla-de-posiciones.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__tabla_posiciones_service__["a" /* TablaPosicionesService */]])
     ], TablaDePosicionesComponent);
     return TablaDePosicionesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tabla-posiciones.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablaPosicionesService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__("./node_modules/rxjs/_esm5/Rx.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TablaPosicionesService = /** @class */ (function () {
+    function TablaPosicionesService(http) {
+        this.http = http;
+        this.url = "https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/standings.json?api_key=wtm44z6e274xu7mva4kwjkry";
+    }
+    TablaPosicionesService.prototype.getTabla = function () {
+        return this.http
+            .get(this.url).map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    TablaPosicionesService.prototype.handleError = function (error) {
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.statusText);
+    };
+    TablaPosicionesService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    ], TablaPosicionesService);
+    return TablaPosicionesService;
 }());
 
 

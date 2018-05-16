@@ -38,6 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoleoService } from './services/goleo.service';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { TablaPosicionesService } from './tabla-posiciones.service';
 
 
 
@@ -83,7 +84,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule
     
   ],
-  providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService],
+  providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService, TablaPosicionesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
