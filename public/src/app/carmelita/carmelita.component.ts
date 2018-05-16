@@ -16,7 +16,7 @@ carmelitaGoleo = [];
   constructor(private teamService: TeamService, private goleoService: GoleoService) { }
 
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
-  //dataSource = new MatTableDataSource(ELEMENT_DATA);
+  // dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(filterValue: string) {
     filterValue = filterValue.trim(); // Remove whitespace
