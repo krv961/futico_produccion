@@ -4,13 +4,13 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class TeamService {
 
-  private ldaUrl = 'api/lda';
+  private info = 'api/lda';
 
   constructor(private http: HttpClient) { }
 
   private data = '';
-  getLDA() {
-    return this.http.get<any>(this.ldaUrl)
+  getTeam(team) {
+    return this.http.get<any>('api/' + team);
   }
 
 }
