@@ -399,7 +399,8 @@ var CarmelitaComponent = /** @class */ (function () {
         this.carmelitaGoleo = [];
         this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
     }
-    //dataSource = new MatTableDataSource(ELEMENT_DATA);
+    // dataSource = new MatTableDataSource(ELEMENT_DATA);
+    // dataSource = new MatTableDataSource(ELEMENT_DATA);
     CarmelitaComponent.prototype.applyFilter = function (filterValue) {
         filterValue = filterValue.trim(); // Remove whitespace
         filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
@@ -1522,6 +1523,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TeamService = /** @class */ (function () {
     function TeamService(http) {
         this.http = http;
+        this.info = 'api/lda';
         this.data = '';
     }
     TeamService.prototype.getTeam = function (team) {

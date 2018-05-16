@@ -13,8 +13,4 @@ export class GoleoService {
     return this.http.get<any>('goleo/' + team);
 
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> kevin
