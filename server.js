@@ -24,7 +24,7 @@ app.use('/goleo', goleo );
 //mongoose db connection
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');//si no sirve poner <>
-mongoose.connect('mongodb://jdavidla:admin10@ds147659.mlab.com:47659/futicodb', { useMongoClient: true, promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://admin:admin@ds147659.mlab.com:47659/futicodb', { useMongoClient: true, promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 

@@ -33,6 +33,12 @@ import {HttpHandler} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { TeamService } from './team.service';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoleoService } from './services/goleo.service';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 
@@ -69,9 +75,15 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatCardModule,
     FlexLayoutModule,
     HttpClientModule,
-    MatTabsModule
+    MatTabsModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    HttpModule,
+    MatTableModule,
+    MatFormFieldModule
+    
   ],
-  providers: [HttpClientModule, HttpClient, HttpModule, TeamService],
+  providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

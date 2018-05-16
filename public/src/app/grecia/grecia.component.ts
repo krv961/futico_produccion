@@ -8,10 +8,17 @@ import { TeamService } from '../team.service';
 })
 export class GreciaComponent implements OnInit {
 
-  greciaInfo = []
-  constructor(private teamService : TeamService) { }
+  info = []
+
+  constructor(private teamService: TeamService) { }
 
   ngOnInit() {
+    this.teamService.getTeam('gre')
+    .subscribe(
+      res => this.info = res,
+      err => console.log(err)
+    );
   }
-
 }
+
+  
