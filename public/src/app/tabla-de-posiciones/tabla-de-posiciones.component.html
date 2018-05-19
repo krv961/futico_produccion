@@ -1,3 +1,61 @@
-<p>
-  {{tablaInfo.schema}}
-</p>
+<!--
+<p>{{tablaInfo.standings[0].groups[2].team_standings}}</p>
+ 
+-->
+ 
+  <h1>Cuadrangular Actual</h1>
+  <table class="table">
+    <tr>
+      <th>Posicion</th>
+      <th>Equipo</th>
+      <th>Puntos</th>
+      <th>PJ</th>
+      <th>PG</th>
+      <th>PE</th>
+      <th>PP</th>
+      <th>GF</th>
+      <th>GC</th>
+      <th>GD</th>
+    </tr>
+    <tr *ngFor="let equipo of tablaInfo.standings[0].groups[2].team_standings">
+      <td>{{equipo.rank}}</td>
+      <td>{{equipo.team.name}}</td>
+      <td>{{equipo.points}}</td>
+      <td>{{equipo.played}}</td>
+      <td>{{equipo.win}}</td>
+      <td>{{equipo.draw}}</td>
+      <td>{{equipo.loss}}</td>
+      <td>{{equipo.goals_for}}</td>
+      <td>{{equipo.goals_against}}</td>
+      <td>{{equipo.goal_diff}}</td>
+    </tr>
+    </table>
+
+    <h1>Clasificacion Actual</h1>
+    <table class="table">
+      <tr>
+        <th>Posicion</th>
+        <th>Equipo</th>
+        <th>Puntos</th>
+        <th>PJ</th>
+        <th>PG</th>
+        <th>PE</th>
+        <th>PP</th>
+        <th>GF</th>
+        <th>GC</th>
+        <th>GD</th>
+      </tr>
+      <tr *ngFor="let equipo of tablaInfo.standings[0].groups[3].team_standings">
+        <td>{{equipo.rank}}</td>
+        <td>{{equipo.team.name}}</td>
+        <td>{{equipo.points}}</td>
+        <td>{{equipo.played}}</td>
+        <td>{{equipo.win}}</td>
+        <td>{{equipo.draw}}</td>
+        <td>{{equipo.loss}}</td>
+        <td>{{equipo.goals_for}}</td>
+        <td>{{equipo.goals_against}}</td>
+        <td>{{equipo.goal_diff}}</td>
+      </tr>
+      </table>
+
