@@ -8,9 +8,7 @@ export class GoleoService {
 
   private data = '';
   getGoles(team) {
-    console.log('goleo service tiene ' + JSON.stringify(this.http.get<any>('goleo/' + team)));
     console.log('se trae la siguiente url ' + 'goleo/' + team);
-    return this.http.get<any>('goleo/' + team);
-
+    return this.http.get<any>('goleo');
   }
 }

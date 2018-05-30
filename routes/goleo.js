@@ -21,13 +21,10 @@ router.get('/', (req, res) => {
 )
 
 router.get('/:equipo', (req, res) => {
-    const nombre = req.params.equipo;
-    console.log("nombre : " + nombre)
-    Goleo.find({equipo: nombre})
+    const equipo = req.params.equipo;
+    Goleo.find({equipo: equipo})
       .exec()
       .then(doc => {
-        //console.log("From database", doc);
-        console.log('entra al goleo api');
         if (doc) {
           res.status(200).json(doc);
         } else {

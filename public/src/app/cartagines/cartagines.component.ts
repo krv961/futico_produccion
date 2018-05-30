@@ -8,7 +8,7 @@ import { TeamService } from '../team.service';
 })
 export class CartaginesComponent implements OnInit {
 
-  info = []
+  info = [];
 
   constructor(private teamService: TeamService) { }
 

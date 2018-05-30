@@ -30,10 +30,7 @@ carmelitaGoleo = [];
       res => this.carmelitaInfo = res,
       err => console.log(err)
     );
-
-    console.log(JSON.stringify(this,  res => this.carmelitaInfo));                  // '{}'
-
-
+    
     this.goleoService.getGoles('ADC')
     .subscribe(
       res => this.carmelitaGoleo = res,

@@ -13,5 +13,5 @@ const goleoSchema = new Schema({
    
 });
 
-module.exports = mongoose.model('goleo', goleoSchema, 'goleadores');
+module.exports = mongoose.model('goleadores', goleoSchema, 'goleadores');
 

@@ -30,6 +30,14 @@ https://getbootstrap.com/docs/3.3/css/
  
   <div class="row ">
     <div class="col-sm-3"><img class="displayed focus pic" src="assets/img/carmelitalogo.png"></div>
+
+    <div class="col-sm-6">
+    <div class="row">
+        <h2 class="example">{{carmelitaInfo.nombre}} </h2>
+        <h4 class="example">{{carmelitaInfo.sigla}}</h4>
+      </div>
+      </div>
+
     <div class="col-sm-6">
      <!--   <h1 class="title"> {{carmelitaInfo.nombre}}</h1> <br>
         <h4 class="subtitle">Sigla: {{carmelitaInfo.sigla}} </h4><br>
@@ -37,12 +45,8 @@ https://getbootstrap.com/docs/3.3/css/
         <h4 class="date">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
         <h4 class="championships">Titulos: {{carmelitaInfo.titulos}}</h4><br>
         <h4 class="dt">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>-->
-
+          
         <div class="container">
-            <div class="row text-center">
-            <h2 class="carmen">{{carmelitaInfo.nombre}} </h2>
-                <p class="carmen">{{carmelitaInfo.sigla}}</p>
-          </div>
             <div class="row">
               <div class="col-sm-2">
                     <div class="cuadro_intro_hover " style="background-color:#cccccc;">
@@ -90,19 +94,17 @@ https://getbootstrap.com/docs/3.3/css/
                 
               </div>
             </div>
-        </div>
 
     </div>
-    <div class="col-sm-3">
-      <a href=" #" target="_blank" class="fa fa-facebook"></a>
-<a href="#" target="_blank" class="fa fa-twitter"></a>
-<a href="#" target="_blank" class="fa fa-youtube"></a>
-      
-    </div>
+   
   </div>
-
+  <div class="col-sm-3">
+      <a href="https://www.facebook.com/ADCarmelitaCR/" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/ADCarmelitaCR" target="_blank" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/adcarmelitacr/?hl=es-la" target="_blank" class="fa fa-instagram"></a>
+    </div>
   <div class="row">
-    <div class="col-sm-5">
+    <div style="padding-top: 50px" class="col-sm-5">
       <table class="table">
         <tr>
           <th>Equipo Local</th>
@@ -122,7 +124,7 @@ https://getbootstrap.com/docs/3.3/css/
         </tr>
         </table>
     </div>
-    <div class="col-sm-7">
+    <div style="padding-top: 50px" class="col-sm-7">
       
         <mat-card class="tab">
             <mat-card-content>
@@ -200,6 +202,6 @@ https://getbootstrap.com/docs/3.3/css/
   </div>
   
   </div>
-
+</div>
 </body>
 </html>

@@ -22,8 +22,8 @@
     color: white;
   }
   
-  .fa-youtube {
-    background: #bb0000;
+  .fa-instagram {
+    background: #eb2525;
     color: white;
   }
 
@@ -157,30 +157,6 @@ example-container {
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,900,800,700,600);
 body{font-family: 'Raleway', sans-serif;}
-  h2 {
-  border-bottom: 10px solid red;
-  font-family: 'Raleway', sans-serif;
-  font-size: 65px;
-  font-weight: 900;
-  margin: 0 auto;
-  padding: 20px 0 3px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 40.2%;
-}
-
-
-.row.text-center p {
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  margin: 3px 0 30px;
-  text-transform: uppercase;
-}
-
-.text-center{
-  margin-left: 50px;
-}
 
 .h3, h3 {
   font-family: 'Raleway', sans-serif;
@@ -249,7 +225,18 @@ body{font-family: 'Raleway', sans-serif;}
 		top:-20px;
 		width: 100%;
   }
-  
-  .carmen{
-    margin-left: 50px;
+
+  .example {
+    text-align: center;
+  }
+
+  h2 {
+    border-bottom: 10px solid red;
+    font-family: 'Raleway', sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+    margin: 0 auto;
+    padding: 20px 0 3px;
+    text-transform: uppercase;
+    width: 40.2%;
   }
