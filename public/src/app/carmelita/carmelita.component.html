@@ -106,19 +106,20 @@ https://getbootstrap.com/docs/3.3/css/
       <table class="table">
         <tr>
           <th>Equipo Local</th>
+          <th>Goles</th>
+          <th>Goles</th>
           <th>Equipo visita</th>
-          <th>Resultado</th>
           <th>Fecha</th>
-          <th>Estadio</th>
         </tr>
-        <tr *ngFor="let goleo of carmelitaGoleo.goleadores">
-          <td>{{goleo.nombre}}</td>
-          <td>{{goleo.equipo}}</td>
-          <td>{{goleo.goles}}</td>
-          <td>{{goleo.pie}}</td>
-          <td>{{goleo.cabeza}}</td>
-          <td>{{goleo.falta}}</td>
-          <td>{{goleo.penal}}</td>
+        <!--
+          result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita'
+        -->
+        <tr *ngFor="let result of resultados.results">
+          <td *ngIf="(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[0].name}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.home_score}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.away_score}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[1].name}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.scheduled}}</td>
         </tr>
         </table>
     </div>

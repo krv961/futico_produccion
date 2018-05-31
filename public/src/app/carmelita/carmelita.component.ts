@@ -2,6 +2,8 @@ import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { TeamService } from '../team.service';
 import { GoleoService } from '../services/goleo.service';
 import {MatTableDataSource} from '@angular/material';
+import { calendarioInterface } from '../calendario/calendarioInterface';
+import { CalendarioService } from '../services/calendario.service';
 
 
 @Component({
@@ -13,7 +15,10 @@ import {MatTableDataSource} from '@angular/material';
 export class CarmelitaComponent implements OnInit {
 carmelitaInfo = [];
 carmelitaGoleo = [];
-  constructor(private teamService: TeamService, private goleoService: GoleoService) { }
+public resultados : calendarioInterface[];
+
+  constructor(private teamService: TeamService, private goleoService: GoleoService,
+              private resultService : CalendarioService) { }
 
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   // dataSource = new MatTableDataSource(ELEMENT_DATA);
@@ -40,6 +45,12 @@ carmelitaGoleo = [];
       res => this.carmelitaGoleo = res,
       err => console.log(err)
     );
+
+    this.resultService.getCalendario().subscribe(
+      resultArray => this.resultados = resultArray
+      , error => console.log("error: " + error)
+    )
+    console.log(this.resultados)
 
   }
 

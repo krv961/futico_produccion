@@ -86,20 +86,21 @@ var AlajuelenseComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sobre_nosotros_sobre_nosotros_component__ = __webpack_require__("./src/app/sobre-nosotros/sobre-nosotros.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__estadisticas_estadisticas_component__ = __webpack_require__("./src/app/estadisticas/estadisticas.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabla_de_posiciones_tabla_de_posiciones_component__ = __webpack_require__("./src/app/tabla-de-posiciones/tabla-de-posiciones.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__carmelita_carmelita_component__ = __webpack_require__("./src/app/carmelita/carmelita.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__alajuelense_alajuelense_component__ = __webpack_require__("./src/app/alajuelense/alajuelense.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__saprissa_saprissa_component__ = __webpack_require__("./src/app/saprissa/saprissa.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__herediano_herediano_component__ = __webpack_require__("./src/app/herediano/herediano.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cartagines_cartagines_component__ = __webpack_require__("./src/app/cartagines/cartagines.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__santos_santos_component__ = __webpack_require__("./src/app/santos/santos.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__perez_zeledon_perez_zeledon_component__ = __webpack_require__("./src/app/perez-zeledon/perez-zeledon.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__limon_limon_component__ = __webpack_require__("./src/app/limon/limon.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__guadalupe_guadalupe_component__ = __webpack_require__("./src/app/guadalupe/guadalupe.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__liberia_liberia_component__ = __webpack_require__("./src/app/liberia/liberia.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__grecia_grecia_component__ = __webpack_require__("./src/app/grecia/grecia.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ucr_ucr_component__ = __webpack_require__("./src/app/ucr/ucr.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__inicio_inicio_component__ = __webpack_require__("./src/app/inicio/inicio.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__no_encontrado_no_encontrado_component__ = __webpack_require__("./src/app/no-encontrado/no-encontrado.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__calendario_calendario_component__ = __webpack_require__("./src/app/calendario/calendario.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__carmelita_carmelita_component__ = __webpack_require__("./src/app/carmelita/carmelita.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__alajuelense_alajuelense_component__ = __webpack_require__("./src/app/alajuelense/alajuelense.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__saprissa_saprissa_component__ = __webpack_require__("./src/app/saprissa/saprissa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__herediano_herediano_component__ = __webpack_require__("./src/app/herediano/herediano.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__cartagines_cartagines_component__ = __webpack_require__("./src/app/cartagines/cartagines.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__santos_santos_component__ = __webpack_require__("./src/app/santos/santos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__perez_zeledon_perez_zeledon_component__ = __webpack_require__("./src/app/perez-zeledon/perez-zeledon.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__limon_limon_component__ = __webpack_require__("./src/app/limon/limon.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__guadalupe_guadalupe_component__ = __webpack_require__("./src/app/guadalupe/guadalupe.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__liberia_liberia_component__ = __webpack_require__("./src/app/liberia/liberia.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__grecia_grecia_component__ = __webpack_require__("./src/app/grecia/grecia.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ucr_ucr_component__ = __webpack_require__("./src/app/ucr/ucr.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__inicio_inicio_component__ = __webpack_require__("./src/app/inicio/inicio.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__no_encontrado_no_encontrado_component__ = __webpack_require__("./src/app/no-encontrado/no-encontrado.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -126,26 +127,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/inicio', pathMatch: 'full' },
     { path: 'noticias', component: __WEBPACK_IMPORTED_MODULE_2__noticias_noticias_component__["a" /* NoticiasComponent */] },
     { path: 'sobre-nosotros', component: __WEBPACK_IMPORTED_MODULE_3__sobre_nosotros_sobre_nosotros_component__["a" /* SobreNosotrosComponent */] },
     { path: 'estadisticas', component: __WEBPACK_IMPORTED_MODULE_4__estadisticas_estadisticas_component__["a" /* EstadisticasComponent */] },
     { path: 'tabla-de-posiciones', component: __WEBPACK_IMPORTED_MODULE_5__tabla_de_posiciones_tabla_de_posiciones_component__["a" /* TablaDePosicionesComponent */] },
-    { path: 'alajuelense', component: __WEBPACK_IMPORTED_MODULE_7__alajuelense_alajuelense_component__["a" /* AlajuelenseComponent */] },
-    { path: 'saprissa', component: __WEBPACK_IMPORTED_MODULE_8__saprissa_saprissa_component__["a" /* SaprissaComponent */] },
-    { path: 'herediano', component: __WEBPACK_IMPORTED_MODULE_9__herediano_herediano_component__["a" /* HeredianoComponent */] },
-    { path: 'cartagines', component: __WEBPACK_IMPORTED_MODULE_10__cartagines_cartagines_component__["a" /* CartaginesComponent */] },
-    { path: 'santos', component: __WEBPACK_IMPORTED_MODULE_11__santos_santos_component__["a" /* SantosComponent */] },
-    { path: 'liberia', component: __WEBPACK_IMPORTED_MODULE_15__liberia_liberia_component__["a" /* LiberiaComponent */] },
-    { path: 'perez-zeledon', component: __WEBPACK_IMPORTED_MODULE_12__perez_zeledon_perez_zeledon_component__["a" /* PerezZeledonComponent */] },
-    { path: 'grecia', component: __WEBPACK_IMPORTED_MODULE_16__grecia_grecia_component__["a" /* GreciaComponent */] },
-    { path: 'guadalupe', component: __WEBPACK_IMPORTED_MODULE_14__guadalupe_guadalupe_component__["a" /* GuadalupeComponent */] },
-    { path: 'carmelita', component: __WEBPACK_IMPORTED_MODULE_6__carmelita_carmelita_component__["a" /* CarmelitaComponent */] },
-    { path: 'limon', component: __WEBPACK_IMPORTED_MODULE_13__limon_limon_component__["a" /* LimonComponent */] },
-    { path: 'ucr', component: __WEBPACK_IMPORTED_MODULE_17__ucr_ucr_component__["a" /* UcrComponent */] },
-    { path: 'inicio', component: __WEBPACK_IMPORTED_MODULE_18__inicio_inicio_component__["a" /* InicioComponent */] },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_19__no_encontrado_no_encontrado_component__["a" /* NoEncontradoComponent */] }
+    { path: 'calendario', component: __WEBPACK_IMPORTED_MODULE_6__calendario_calendario_component__["a" /* CalendarioComponent */] },
+    { path: 'alajuelense', component: __WEBPACK_IMPORTED_MODULE_8__alajuelense_alajuelense_component__["a" /* AlajuelenseComponent */] },
+    { path: 'saprissa', component: __WEBPACK_IMPORTED_MODULE_9__saprissa_saprissa_component__["a" /* SaprissaComponent */] },
+    { path: 'herediano', component: __WEBPACK_IMPORTED_MODULE_10__herediano_herediano_component__["a" /* HeredianoComponent */] },
+    { path: 'cartagines', component: __WEBPACK_IMPORTED_MODULE_11__cartagines_cartagines_component__["a" /* CartaginesComponent */] },
+    { path: 'santos', component: __WEBPACK_IMPORTED_MODULE_12__santos_santos_component__["a" /* SantosComponent */] },
+    { path: 'liberia', component: __WEBPACK_IMPORTED_MODULE_16__liberia_liberia_component__["a" /* LiberiaComponent */] },
+    { path: 'perez-zeledon', component: __WEBPACK_IMPORTED_MODULE_13__perez_zeledon_perez_zeledon_component__["a" /* PerezZeledonComponent */] },
+    { path: 'grecia', component: __WEBPACK_IMPORTED_MODULE_17__grecia_grecia_component__["a" /* GreciaComponent */] },
+    { path: 'guadalupe', component: __WEBPACK_IMPORTED_MODULE_15__guadalupe_guadalupe_component__["a" /* GuadalupeComponent */] },
+    { path: 'carmelita', component: __WEBPACK_IMPORTED_MODULE_7__carmelita_carmelita_component__["a" /* CarmelitaComponent */] },
+    { path: 'limon', component: __WEBPACK_IMPORTED_MODULE_14__limon_limon_component__["a" /* LimonComponent */] },
+    { path: 'ucr', component: __WEBPACK_IMPORTED_MODULE_18__ucr_ucr_component__["a" /* UcrComponent */] },
+    { path: 'inicio', component: __WEBPACK_IMPORTED_MODULE_19__inicio_inicio_component__["a" /* InicioComponent */] },
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_20__no_encontrado_no_encontrado_component__["a" /* NoEncontradoComponent */] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -160,10 +163,10 @@ var AppRoutingModule = /** @class */ (function () {
 }());
 
 var routingComponents = [__WEBPACK_IMPORTED_MODULE_2__noticias_noticias_component__["a" /* NoticiasComponent */], __WEBPACK_IMPORTED_MODULE_3__sobre_nosotros_sobre_nosotros_component__["a" /* SobreNosotrosComponent */], __WEBPACK_IMPORTED_MODULE_4__estadisticas_estadisticas_component__["a" /* EstadisticasComponent */], __WEBPACK_IMPORTED_MODULE_5__tabla_de_posiciones_tabla_de_posiciones_component__["a" /* TablaDePosicionesComponent */],
-    __WEBPACK_IMPORTED_MODULE_7__alajuelense_alajuelense_component__["a" /* AlajuelenseComponent */], __WEBPACK_IMPORTED_MODULE_8__saprissa_saprissa_component__["a" /* SaprissaComponent */], __WEBPACK_IMPORTED_MODULE_9__herediano_herediano_component__["a" /* HeredianoComponent */], __WEBPACK_IMPORTED_MODULE_10__cartagines_cartagines_component__["a" /* CartaginesComponent */], __WEBPACK_IMPORTED_MODULE_11__santos_santos_component__["a" /* SantosComponent */],
-    __WEBPACK_IMPORTED_MODULE_12__perez_zeledon_perez_zeledon_component__["a" /* PerezZeledonComponent */], __WEBPACK_IMPORTED_MODULE_15__liberia_liberia_component__["a" /* LiberiaComponent */], __WEBPACK_IMPORTED_MODULE_13__limon_limon_component__["a" /* LimonComponent */], __WEBPACK_IMPORTED_MODULE_14__guadalupe_guadalupe_component__["a" /* GuadalupeComponent */], __WEBPACK_IMPORTED_MODULE_6__carmelita_carmelita_component__["a" /* CarmelitaComponent */],
-    __WEBPACK_IMPORTED_MODULE_16__grecia_grecia_component__["a" /* GreciaComponent */], __WEBPACK_IMPORTED_MODULE_17__ucr_ucr_component__["a" /* UcrComponent */], __WEBPACK_IMPORTED_MODULE_18__inicio_inicio_component__["a" /* InicioComponent */],
-    __WEBPACK_IMPORTED_MODULE_19__no_encontrado_no_encontrado_component__["a" /* NoEncontradoComponent */]];
+    __WEBPACK_IMPORTED_MODULE_8__alajuelense_alajuelense_component__["a" /* AlajuelenseComponent */], __WEBPACK_IMPORTED_MODULE_9__saprissa_saprissa_component__["a" /* SaprissaComponent */], __WEBPACK_IMPORTED_MODULE_10__herediano_herediano_component__["a" /* HeredianoComponent */], __WEBPACK_IMPORTED_MODULE_11__cartagines_cartagines_component__["a" /* CartaginesComponent */], __WEBPACK_IMPORTED_MODULE_12__santos_santos_component__["a" /* SantosComponent */],
+    __WEBPACK_IMPORTED_MODULE_13__perez_zeledon_perez_zeledon_component__["a" /* PerezZeledonComponent */], __WEBPACK_IMPORTED_MODULE_16__liberia_liberia_component__["a" /* LiberiaComponent */], __WEBPACK_IMPORTED_MODULE_14__limon_limon_component__["a" /* LimonComponent */], __WEBPACK_IMPORTED_MODULE_15__guadalupe_guadalupe_component__["a" /* GuadalupeComponent */], __WEBPACK_IMPORTED_MODULE_7__carmelita_carmelita_component__["a" /* CarmelitaComponent */],
+    __WEBPACK_IMPORTED_MODULE_17__grecia_grecia_component__["a" /* GreciaComponent */], __WEBPACK_IMPORTED_MODULE_18__ucr_ucr_component__["a" /* UcrComponent */], __WEBPACK_IMPORTED_MODULE_19__inicio_inicio_component__["a" /* InicioComponent */], __WEBPACK_IMPORTED_MODULE_6__calendario_calendario_component__["a" /* CalendarioComponent */],
+    __WEBPACK_IMPORTED_MODULE_20__no_encontrado_no_encontrado_component__["a" /* NoEncontradoComponent */]];
 
 
 /***/ }),
@@ -257,13 +260,17 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__ = __webpack_require__("./src/app/services/goleo.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__angular_material_table__ = __webpack_require__("./node_modules/@angular/material/esm5/table.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__angular_material_form_field__ = __webpack_require__("./node_modules/@angular/material/esm5/form-field.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__tabla_posiciones_service__ = __webpack_require__("./src/app/tabla-posiciones.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__services_tabla_posiciones_service__ = __webpack_require__("./src/app/services/tabla-posiciones.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__calendario_calendario_component__ = __webpack_require__("./src/app/calendario/calendario.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__services_calendario_service__ = __webpack_require__("./src/app/services/calendario.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -333,7 +340,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_24__layouts_footer_footer_component__["a" /* FooterComponent */],
                 __WEBPACK_IMPORTED_MODULE_25_ng_sticky__["a" /* NgStickyDirective */],
                 __WEBPACK_IMPORTED_MODULE_26__inicio_inicio_component__["a" /* InicioComponent */],
-                __WEBPACK_IMPORTED_MODULE_29__rest_rest_component__["a" /* RestComponent */]
+                __WEBPACK_IMPORTED_MODULE_29__rest_rest_component__["a" /* RestComponent */],
+                __WEBPACK_IMPORTED_MODULE_39__calendario_calendario_component__["a" /* CalendarioComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -348,11 +356,71 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_36__angular_material_table__["a" /* MatTableModule */],
                 __WEBPACK_IMPORTED_MODULE_37__angular_material_form_field__["a" /* MatFormFieldModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["b" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__["a" /* GoleoService */], __WEBPACK_IMPORTED_MODULE_38__tabla_posiciones_service__["a" /* TablaPosicionesService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_28__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_28__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_30__angular_http__["b" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_31__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_35__services_goleo_service__["a" /* GoleoService */], __WEBPACK_IMPORTED_MODULE_38__services_tabla_posiciones_service__["a" /* TablaPosicionesService */],
+                __WEBPACK_IMPORTED_MODULE_40__services_calendario_service__["a" /* CalendarioService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/calendario/calendario.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/calendario/calendario.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!--\r\n<td>{{info.competitors[0].name}}</td>\r\n    <td>{{info.competitors[1].name}}</td>\r\n    <td *ngIf=\"info.venue != null\">{{info.venue.name}}</td>\r\n-->\r\n\r\n  <!-- \r\n*ngIf=\"info.sport_event_status.status !== 'cancelled'\"\r\n  info.sport_event_status.status !== 'cancelled'\r\n  \r\n  <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.venue != null && info.sport_event.tournament_round.number === 1; else Desconocido\">{{info.sport_event.venue.name}}</td>\r\n    <ng-template #Desconocido>\r\n      <td>Desconocido</td>\r\n    </ng-template>\r\n\r\n    newDate('info.sport_event.scheduled') | date > newDate('2018-01-01T10:02:32.273') | date && \r\n    info.sport_event.scheduled | date > '01/01/2018 | date' && \r\n  -->\r\n\r\n\r\n<p>\r\n  {{calendarioInfo.schema}}\r\n</p>\r\n\r\n<h1>Jornada 1</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Casa</th>\r\n    <th>Goles</th>\r\n    <th>Goles</th>\r\n    <th>Visitante</th>\r\n    <th>Fecha</th>\r\n  </tr>\r\n  <tr *ngFor=\"let info of calendarioInfo.results\">\r\n    <td *ngIf=\"(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1\">{{info.sport_event.competitors[0].name}}</td>\r\n    <td *ngIf=\"(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1\">{{info.sport_event_status.home_score}}</td>\r\n    <td *ngIf=\"(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1\">{{info.sport_event_status.away_score}}</td>\r\n    <td *ngIf=\"(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1\">{{info.sport_event.competitors[1].name}}</td>\r\n    <td *ngIf=\"(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1\">{{info.sport_event.scheduled}}</td>\r\n  </tr>\r\n</table>\r\n\r\n\r\n\r\n<h1>Jornada 2</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Casa</th>\r\n    <th>Goles</th>\r\n    <th>Goles</th>\r\n    <th>Visitante</th>\r\n  </tr>\r\n  <tr *ngFor=\"let info of calendarioInfo.results\">\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2\">{{info.sport_event.competitors[0].name}}</td>\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2\">{{info.sport_event_status.home_score}}</td>\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2\">{{info.sport_event_status.away_score}}</td>\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2\">{{info.sport_event.competitors[1].name}}</td>\r\n  </tr>\r\n</table>\r\n\r\n<h1>Jornada 3</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Casa</th>\r\n    <th>Goles</th>\r\n    <th>Goles</th>\r\n    <th>Visitante</th>\r\n  </tr>\r\n  <tr *ngFor=\"let info of calendarioInfo.results\">\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3\">{{info.sport_event.competitors[0].name}}</td>\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3\">{{info.sport_event_status.home_score}}</td>\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3\">{{info.sport_event_status.away_score}}</td>\r\n    <td *ngIf=\"info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3\">{{info.sport_event.competitors[1].name}}</td>\r\n  </tr>\r\n</table>"
+
+/***/ }),
+
+/***/ "./src/app/calendario/calendario.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarioComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_calendario_service__ = __webpack_require__("./src/app/services/calendario.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CalendarioComponent = /** @class */ (function () {
+    function CalendarioComponent(service) {
+        this.service = service;
+    }
+    CalendarioComponent.prototype.getCalendario = function () {
+        var _this = this;
+        this.service.getCalendario().subscribe(function (resultArray) { return _this.calendarioInfo = resultArray; }, function (error) { return console.log("error: " + error); });
+        console.log(this.calendarioInfo);
+    };
+    CalendarioComponent.prototype.ngOnInit = function () {
+        this.getCalendario();
+    };
+    CalendarioComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-calendario',
+            template: __webpack_require__("./src/app/calendario/calendario.component.html"),
+            styles: [__webpack_require__("./src/app/calendario/calendario.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_calendario_service__["a" /* CalendarioService */]])
+    ], CalendarioComponent);
+    return CalendarioComponent;
 }());
 
 
@@ -369,7 +437,7 @@ module.exports = ".fa {\r\n    padding: 20px;\r\n    font-size: 30px;\r\n    wid
 /***/ "./src/app/carmelita/carmelita.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--Tutorial para css bootstrap divs\r\nhttps://getbootstrap.com/docs/3.3/css/\r\n-->\r\n<html lang=\"en\">\r\n<head>\r\n  <title>Bootstrap Example</title>\r\n  <meta charset=\"utf-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\r\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\r\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\r\n</head>\r\n<body>\r\n\r\n  <!--\r\n<div class=\"container-fluid\"> \r\n<div class=\"row\">\r\n  <div class=\"col-sm-2\"></div><img src=\"assets/img/carmelitalogo.png\"></div>\r\n  <div class=\"col-sm-8\">Info</div>\r\n  <div class=\"col-sm-2\">Social Media</div>\r\n\r\n</div>\r\n-->\r\n<div class=\"container-fluid\"> \r\n \r\n  <div class=\"row \">\r\n    <div class=\"col-sm-3\"><img class=\"displayed focus pic\" src=\"assets/img/carmelitalogo.png\"></div>\r\n    <div class=\"col-sm-6\">\r\n     <!--   <h1 class=\"title\"> {{carmelitaInfo.nombre}}</h1> <br>\r\n        <h4 class=\"subtitle\">Sigla: {{carmelitaInfo.sigla}} </h4><br>\r\n        <h4 class=\"stadium\">Estadio: {{carmelitaInfo.estadio}}</h4>\r\n        <h4 class=\"date\">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n        <h4 class=\"championships\">Titulos: {{carmelitaInfo.titulos}}</h4><br>\r\n        <h4 class=\"dt\">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>-->\r\n\r\n        <div class=\"container\">\r\n            <div class=\"row text-center\">\r\n            <h2 class=\"carmen\">{{carmelitaInfo.nombre}} </h2>\r\n                <p class=\"carmen\">{{carmelitaInfo.sigla}}</p>\r\n          </div>\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-2\">\r\n                    <div class=\"cuadro_intro_hover \" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                      <img src=\"https://image.ibb.co/fLYf0d/carmelita_Estadio.jpg\" alt=\"carmelita_Estadio\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">Estadio</h3>\r\n                        <p>{{carmelitaInfo.estadio}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n                <div class=\"col-sm-2\">\r\n                      <div class=\"cuadro_intro_hover \" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                        <img src=\"https://image.ibb.co/jCGNDy/trofeo.jpg\" alt=\"trofeo\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">Titulos</h3>\r\n                        <p>{{carmelitaInfo.titulos}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n                <div class=\"col-sm-2\">\r\n                      <div class=\"cuadro_intro_hover\" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                        <img src=\"https://image.ibb.co/kkEjty/mario_viquez.jpg\" alt=\"mario_viquez\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">DT</h3>\r\n                        <p>{{carmelitaInfo.dt}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n    <div class=\"col-sm-3\">\r\n      <a href=\" #\" target=\"_blank\" class=\"fa fa-facebook\"></a>\r\n<a href=\"#\" target=\"_blank\" class=\"fa fa-twitter\"></a>\r\n<a href=\"#\" target=\"_blank\" class=\"fa fa-youtube\"></a>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-5\">\r\n      <table class=\"table\">\r\n        <tr>\r\n          <th>Equipo Local</th>\r\n          <th>Equipo visita</th>\r\n          <th>Resultado</th>\r\n          <th>Fecha</th>\r\n          <th>Estadio</th>\r\n        </tr>\r\n        <tr *ngFor=\"let goleo of carmelitaGoleo.goleadores\">\r\n          <td>{{goleo.nombre}}</td>\r\n          <td>{{goleo.equipo}}</td>\r\n          <td>{{goleo.goles}}</td>\r\n          <td>{{goleo.pie}}</td>\r\n          <td>{{goleo.cabeza}}</td>\r\n          <td>{{goleo.falta}}</td>\r\n          <td>{{goleo.penal}}</td>\r\n        </tr>\r\n        </table>\r\n    </div>\r\n    <div class=\"col-sm-7\">\r\n      \r\n        <mat-card class=\"tab\">\r\n            <mat-card-content>\r\n              <mat-tab-group class=\"demo-tab-group\">\r\n                <mat-tab label=\"Plantel\">\r\n                    <table class=\"table\">\r\n                        <tr>\r\n                          <th>Nombre</th>\r\n                          <th>Apellido</th>\r\n                          <th>#</th>\r\n                          <th>Fecha de Nacimiento</th>\r\n                          <th>Nacionalidad</th>\r\n                          <th>Posicion</th>\r\n                        </tr>\r\n                        <tr *ngFor=\"let jugador of carmelitaInfo.jugadores\">\r\n                          <td>{{jugador.nombre}}</td>\r\n                          <td>{{jugador.apellido}}</td>\r\n                          <td>{{jugador.numero}}</td>\r\n                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n                          <td>{{jugador.nacionalidad}}</td>\r\n                          <td>{{jugador.posicion}}</td>\r\n                        </tr>\r\n                        </table>\r\n                </mat-tab>\r\n                <mat-tab label=\"Calendario\">\r\n                  <div class=\"demo-tab-content\">\r\n                    Calendario del equipo\r\n                  </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Goleo\">\r\n                  <div class=\"demo-tab-content\">\r\n                   Goleadores del equipo\r\n                   <table class=\"table\">\r\n                      <tr>\r\n                        <th>Nombre</th>\r\n                        <th>Equipo</th>\r\n                        <th>Goles</th>\r\n                        <th>Pie</th>\r\n                        <th>Cabeza</th>\r\n                        <th>Falta</th>\r\n                        <th>Penal</th>\r\n                      </tr>\r\n                      <tr *ngFor=\"let goleo of carmelitaGoleo.goleadores\">\r\n                        <td>{{goleo.nombre}}</td>\r\n                        <td>{{goleo.equipo}}</td>\r\n                        <td>{{goleo.goles}}</td>\r\n                        <td>{{goleo.pie}}</td>\r\n                        <td>{{goleo.cabeza}}</td>\r\n                        <td>{{goleo.falta}}</td>\r\n                        <td>{{goleo.penal}}</td>\r\n                      </tr>\r\n                      </table>\r\n                  </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Asistencias\">\r\n                    <div class=\"demo-tab-content\">\r\n                        Asistencias del equipo\r\n                       </div>\r\n                </mat-tab>\r\n                <mat-tab label=\"Noticias\">\r\n                    <div class=\"demo-tab-content\">\r\n                        noticas del equipo\r\n                       </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Historia\">\r\n                    <p>{{carmelitaInfo.historia}}</p>  \r\n                </mat-tab>\r\n              </mat-tab-group>\r\n            </mat-card-content>\r\n          </mat-card>\r\n\r\n\r\n    </div>\r\n    <div class=\"col-md-3\">twitter del equipo</div>\r\n  </div>\r\n  \r\n  </div>\r\n\r\n</body>\r\n</html>\r\n"
+module.exports = "<!--Tutorial para css bootstrap divs\r\nhttps://getbootstrap.com/docs/3.3/css/\r\n-->\r\n<html lang=\"en\">\r\n<head>\r\n  <title>Bootstrap Example</title>\r\n  <meta charset=\"utf-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\r\n  <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\r\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\r\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\r\n</head>\r\n<body>\r\n\r\n  <!--\r\n<div class=\"container-fluid\"> \r\n<div class=\"row\">\r\n  <div class=\"col-sm-2\"></div><img src=\"assets/img/carmelitalogo.png\"></div>\r\n  <div class=\"col-sm-8\">Info</div>\r\n  <div class=\"col-sm-2\">Social Media</div>\r\n\r\n</div>\r\n-->\r\n<div class=\"container-fluid\"> \r\n \r\n  <div class=\"row \">\r\n    <div class=\"col-sm-3\"><img class=\"displayed focus pic\" src=\"assets/img/carmelitalogo.png\"></div>\r\n    <div class=\"col-sm-6\">\r\n     <!--   <h1 class=\"title\"> {{carmelitaInfo.nombre}}</h1> <br>\r\n        <h4 class=\"subtitle\">Sigla: {{carmelitaInfo.sigla}} </h4><br>\r\n        <h4 class=\"stadium\">Estadio: {{carmelitaInfo.estadio}}</h4>\r\n        <h4 class=\"date\">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n        <h4 class=\"championships\">Titulos: {{carmelitaInfo.titulos}}</h4><br>\r\n        <h4 class=\"dt\">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>-->\r\n\r\n        <div class=\"container\">\r\n            <div class=\"row text-center\">\r\n            <h2 class=\"carmen\">{{carmelitaInfo.nombre}} </h2>\r\n                <p class=\"carmen\">{{carmelitaInfo.sigla}}</p>\r\n          </div>\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-2\">\r\n                    <div class=\"cuadro_intro_hover \" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                      <img src=\"https://image.ibb.co/fLYf0d/carmelita_Estadio.jpg\" alt=\"carmelita_Estadio\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">Estadio</h3>\r\n                        <p>{{carmelitaInfo.estadio}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n                <div class=\"col-sm-2\">\r\n                      <div class=\"cuadro_intro_hover \" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                        <img src=\"https://image.ibb.co/jCGNDy/trofeo.jpg\" alt=\"trofeo\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">Titulos</h3>\r\n                        <p>{{carmelitaInfo.titulos}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n                <div class=\"col-sm-2\">\r\n                      <div class=\"cuadro_intro_hover\" style=\"background-color:#cccccc;\">\r\n                    <p style=\"text-align:center;\">\r\n                        <img src=\"https://image.ibb.co/kkEjty/mario_viquez.jpg\" alt=\"mario_viquez\" class=\"img-responsive\">\r\n                    </p>\r\n                    <div class=\"caption\">\r\n                      <div class=\"blur\"></div>\r\n                      <div class=\"caption-text\">\r\n                        <h3 style=\"border-top:2px solid white; border-bottom:2px solid white; padding:10px;\">DT</h3>\r\n                        <p>{{carmelitaInfo.dt}}</p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                \r\n              </div>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n    <div class=\"col-sm-3\">\r\n      <a href=\" #\" target=\"_blank\" class=\"fa fa-facebook\"></a>\r\n<a href=\"#\" target=\"_blank\" class=\"fa fa-twitter\"></a>\r\n<a href=\"#\" target=\"_blank\" class=\"fa fa-youtube\"></a>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-5\">\r\n      <table class=\"table\">\r\n        <tr>\r\n          <th>Equipo Local</th>\r\n          <th>Goles</th>\r\n          <th>Goles</th>\r\n          <th>Equipo visita</th>\r\n          <th>Fecha</th>\r\n        </tr>\r\n        <!--\r\n          result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita'\r\n        -->\r\n        <tr *ngFor=\"let result of resultados.results\">\r\n          <td *ngIf=\"(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'\">{{result.sport_event.competitors[0].name}}</td>\r\n          <td *ngIf=\"(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'\">{{result.sport_event_status.home_score}}</td>\r\n          <td *ngIf=\"(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'\">{{result.sport_event_status.away_score}}</td>\r\n          <td *ngIf=\"(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'\">{{result.sport_event.competitors[1].name}}</td>\r\n          <td *ngIf=\"(result.sport_event.competitors[0].name === 'AD Carmelita' || result.sport_event.competitors[1].name === 'AD Carmelita') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'\">{{result.sport_event.scheduled}}</td>\r\n        </tr>\r\n        </table>\r\n    </div>\r\n    <div class=\"col-sm-7\">\r\n      \r\n        <mat-card class=\"tab\">\r\n            <mat-card-content>\r\n              <mat-tab-group class=\"demo-tab-group\">\r\n                <mat-tab label=\"Plantel\">\r\n                    <table class=\"table\">\r\n                        <tr>\r\n                          <th>Nombre</th>\r\n                          <th>Apellido</th>\r\n                          <th>#</th>\r\n                          <th>Fecha de Nacimiento</th>\r\n                          <th>Nacionalidad</th>\r\n                          <th>Posicion</th>\r\n                        </tr>\r\n                        <tr *ngFor=\"let jugador of carmelitaInfo.jugadores\">\r\n                          <td>{{jugador.nombre}}</td>\r\n                          <td>{{jugador.apellido}}</td>\r\n                          <td>{{jugador.numero}}</td>\r\n                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n                          <td>{{jugador.nacionalidad}}</td>\r\n                          <td>{{jugador.posicion}}</td>\r\n                        </tr>\r\n                        </table>\r\n                </mat-tab>\r\n                <mat-tab label=\"Calendario\">\r\n                  <div class=\"demo-tab-content\">\r\n                    Calendario del equipo\r\n                  </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Goleo\">\r\n                  <div class=\"demo-tab-content\">\r\n                   Goleadores del equipo\r\n                   <table class=\"table\">\r\n                      <tr>\r\n                        <th>Nombre</th>\r\n                        <th>Equipo</th>\r\n                        <th>Goles</th>\r\n                        <th>Pie</th>\r\n                        <th>Cabeza</th>\r\n                        <th>Falta</th>\r\n                        <th>Penal</th>\r\n                      </tr>\r\n                      <tr *ngFor=\"let goleo of carmelitaGoleo.goleadores\">\r\n                        <td>{{goleo.nombre}}</td>\r\n                        <td>{{goleo.equipo}}</td>\r\n                        <td>{{goleo.goles}}</td>\r\n                        <td>{{goleo.pie}}</td>\r\n                        <td>{{goleo.cabeza}}</td>\r\n                        <td>{{goleo.falta}}</td>\r\n                        <td>{{goleo.penal}}</td>\r\n                      </tr>\r\n                      </table>\r\n                  </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Asistencias\">\r\n                    <div class=\"demo-tab-content\">\r\n                        Asistencias del equipo\r\n                       </div>\r\n                </mat-tab>\r\n                <mat-tab label=\"Noticias\">\r\n                    <div class=\"demo-tab-content\">\r\n                        noticas del equipo\r\n                       </div>  \r\n                </mat-tab>\r\n                <mat-tab label=\"Historia\">\r\n                    <p>{{carmelitaInfo.historia}}</p>  \r\n                </mat-tab>\r\n              </mat-tab-group>\r\n            </mat-card-content>\r\n          </mat-card>\r\n\r\n\r\n    </div>\r\n    <div class=\"col-md-3\">twitter del equipo</div>\r\n  </div>\r\n  \r\n  </div>\r\n\r\n</body>\r\n</html>\r\n"
 
 /***/ }),
 
@@ -381,6 +449,7 @@ module.exports = "<!--Tutorial para css bootstrap divs\r\nhttps://getbootstrap.c
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__team_service__ = __webpack_require__("./src/app/team.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_goleo_service__ = __webpack_require__("./src/app/services/goleo.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_calendario_service__ = __webpack_require__("./src/app/services/calendario.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -393,10 +462,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CarmelitaComponent = /** @class */ (function () {
-    function CarmelitaComponent(teamService, goleoService) {
+    function CarmelitaComponent(teamService, goleoService, resultService) {
         this.teamService = teamService;
         this.goleoService = goleoService;
+        this.resultService = resultService;
         this.carmelitaInfo = [];
         this.carmelitaGoleo = [];
         this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
@@ -415,6 +486,8 @@ var CarmelitaComponent = /** @class */ (function () {
         console.log(JSON.stringify(this, function (res) { return _this.carmelitaInfo; })); // '{}'
         this.goleoService.getGoles('ADC')
             .subscribe(function (res) { return _this.carmelitaGoleo = res; }, function (err) { return console.log(err); });
+        this.resultService.getCalendario().subscribe(function (resultArray) { return _this.resultados = resultArray; }, function (error) { return console.log("error: " + error); });
+        console.log(this.resultados);
     };
     CarmelitaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -423,7 +496,8 @@ var CarmelitaComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/carmelita/carmelita.component.css")],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewEncapsulation */].None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_2__services_goleo_service__["a" /* GoleoService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__team_service__["a" /* TeamService */], __WEBPACK_IMPORTED_MODULE_2__services_goleo_service__["a" /* GoleoService */],
+            __WEBPACK_IMPORTED_MODULE_3__services_calendario_service__["a" /* CalendarioService */]])
     ], CarmelitaComponent);
     return CarmelitaComponent;
 }());
@@ -714,7 +788,7 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/header/header.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<body>\r\n  <header class=\"header\">\r\n\r\n\r\n\r\n\r\n<nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#teambar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/img/logo1.png\" alt=\"LDA\" width=\"56px\" height=\"56\"></a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"teambar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li class=\"team hover\"><a routerLink=\"/alajuelense\" routerLinkActive=\"active\"><img src=\"assets/img/ldalogo.png\" alt=\"LDA\" width=\"42px\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/saprissa\" routerLinkActive=\"active\"><img src=\"assets/img/saprissalogo.png\" alt=\"SAP\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/herediano\" routerLinkActive=\"active\"><img src=\"assets/img/heredialogo.png\" alt=\"CSH\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/cartagines\" routerLinkActive=\"active\"><img src=\"assets/img/cartagologo.png\" alt=\"CSC\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/santos\" routerLinkActive=\"active\"><img src=\"assets/img/santoslogo.png\" alt=\"SAN\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/perez-zeledon\" routerLinkActive=\"active\"><img src=\"assets/img/pzlogo.png\" alt=\"PZ\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/grecia\" routerLinkActive=\"active\"><img src=\"assets/img/grecialogo.png\" alt=\"GRE\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/guadalupe\" routerLinkActive=\"active\"><img src=\"assets/img/guadalupelogo.png\" alt=\"GUA\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/limon\" routerLinkActive=\"active\"><img src=\"assets/img/limonlogo.png\" alt=\"LIM\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/liberia\" routerLinkActive=\"active\"><img src=\"assets/img/liberialogo.png\" alt=\"LIB\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/ucr\" routerLinkActive=\"active\"><img src=\"assets/img/ucrlogo.png\" alt=\"UCR\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/carmelita\" routerLinkActive=\"active\"><img src=\"assets/img/carmelitalogo.png\" alt=\"CAR\" width=\"42\" height=\"42\"></a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n\r\n  <nav class=\"navbar navbar-inverse\">\r\n    <div class=\"container-fluid\">\r\n      <div class=\"navbar-header\">\r\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#menubar\">\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>                        \r\n        </button>\r\n        <a class=\"navbar-brand\" href=\"#\">Futico</a>\r\n      </div>\r\n      <div class=\"collapse navbar-collapse\" id=\"menubar\">\r\n        <ul class=\"nav navbar-nav\">\r\n          <li class=\"options\"><a routerLink=\"/tabla-de-posiciones\" routerLinkActive=\"active\">Tabla de Posiciones</a></li>\r\n          <li class=\"options\"><a routerLink=\"/estadisticas\" routerLinkActive=\"active\">Estadisticas</a></li>\r\n          <li class=\"options\"><a routerLink=\"/noticias\" routerLinkActive=\"active\">Noticias</a></li>\r\n          <li class=\"options\"><a routerLink=\"/sobre-nosotros\" routerLinkActive=\"active\">Sobre Nosotros</a></li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n\r\n\r\n\r\n  \r\n\r\n</header>\r\n\r\n</body>\r\n\r\n</html>"
+module.exports = "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<body>\r\n  <header class=\"header\">\r\n\r\n\r\n\r\n\r\n<nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#teambar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/img/logo1.png\" alt=\"LDA\" width=\"56px\" height=\"56\"></a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"teambar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li class=\"team hover\"><a routerLink=\"/alajuelense\" routerLinkActive=\"active\"><img src=\"assets/img/ldalogo.png\" alt=\"LDA\" width=\"42px\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/saprissa\" routerLinkActive=\"active\"><img src=\"assets/img/saprissalogo.png\" alt=\"SAP\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/herediano\" routerLinkActive=\"active\"><img src=\"assets/img/heredialogo.png\" alt=\"CSH\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/cartagines\" routerLinkActive=\"active\"><img src=\"assets/img/cartagologo.png\" alt=\"CSC\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/santos\" routerLinkActive=\"active\"><img src=\"assets/img/santoslogo.png\" alt=\"SAN\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/perez-zeledon\" routerLinkActive=\"active\"><img src=\"assets/img/pzlogo.png\" alt=\"PZ\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/grecia\" routerLinkActive=\"active\"><img src=\"assets/img/grecialogo.png\" alt=\"GRE\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/guadalupe\" routerLinkActive=\"active\"><img src=\"assets/img/guadalupelogo.png\" alt=\"GUA\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/limon\" routerLinkActive=\"active\"><img src=\"assets/img/limonlogo.png\" alt=\"LIM\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/liberia\" routerLinkActive=\"active\"><img src=\"assets/img/liberialogo.png\" alt=\"LIB\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/ucr\" routerLinkActive=\"active\"><img src=\"assets/img/ucrlogo.png\" alt=\"UCR\" width=\"42\" height=\"42\"></a></li>\r\n        <li class=\"team hover\"><a routerLink=\"/carmelita\" routerLinkActive=\"active\"><img src=\"assets/img/carmelitalogo.png\" alt=\"CAR\" width=\"42\" height=\"42\"></a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n\r\n  <nav class=\"navbar navbar-inverse\">\r\n    <div class=\"container-fluid\">\r\n      <div class=\"navbar-header\">\r\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#menubar\">\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>                        \r\n        </button>\r\n        <a class=\"navbar-brand\" href=\"#\">Futico</a>\r\n      </div>\r\n      <div class=\"collapse navbar-collapse\" id=\"menubar\">\r\n        <ul class=\"nav navbar-nav\">\r\n          <li class=\"options\"><a routerLink=\"/tabla-de-posiciones\" routerLinkActive=\"active\">Tabla de Posiciones</a></li>\r\n          <li class=\"options\"><a routerLink=\"/calendario\" routerLinkActive=\"active\">Calendario</a></li>\r\n          <li class=\"options\"><a routerLink=\"/estadisticas\" routerLinkActive=\"active\">Estadisticas</a></li>\r\n          <li class=\"options\"><a routerLink=\"/noticias\" routerLinkActive=\"active\">Noticias</a></li>\r\n          <li class=\"options\"><a routerLink=\"/sobre-nosotros\" routerLinkActive=\"active\">Sobre Nosotros</a></li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n\r\n\r\n\r\n  \r\n\r\n</header>\r\n\r\n</body>\r\n\r\n</html>"
 
 /***/ }),
 
@@ -1321,6 +1395,54 @@ var SaprissaComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/calendario.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarioService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__("./node_modules/rxjs/_esm5/Rx.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CalendarioService = /** @class */ (function () {
+    function CalendarioService(http) {
+        this.http = http;
+        this.url = "https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/results.json?api_key=wtm44z6e274xu7mva4kwjkry";
+    }
+    CalendarioService.prototype.getCalendario = function () {
+        return this.http
+            .get(this.url).map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    CalendarioService.prototype.handleError = function (error) {
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.statusText);
+    };
+    CalendarioService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    ], CalendarioService);
+    return CalendarioService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/goleo.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1404,6 +1526,54 @@ var InfoService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/tabla-posiciones.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablaPosicionesService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__("./node_modules/rxjs/_esm5/Rx.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TablaPosicionesService = /** @class */ (function () {
+    function TablaPosicionesService(http) {
+        this.http = http;
+        this.url = "https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/standings.json?api_key=wtm44z6e274xu7mva4kwjkry";
+    }
+    TablaPosicionesService.prototype.getTabla = function () {
+        return this.http
+            .get(this.url).map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    TablaPosicionesService.prototype.handleError = function (error) {
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.statusText);
+    };
+    TablaPosicionesService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    ], TablaPosicionesService);
+    return TablaPosicionesService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/sobre-nosotros/sobre-nosotros.component.css":
 /***/ (function(module, exports) {
 
@@ -1464,7 +1634,7 @@ module.exports = ""
 /***/ "./src/app/tabla-de-posiciones/tabla-de-posiciones.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n<p>{{tablaInfo.standings[0].groups[2].team_standings}}</p>\r\n \r\n-->\r\n \r\n  <h1>Cuadrangular Actual</h1>\r\n  <table class=\"table\">\r\n    <tr>\r\n      <th>Posicion</th>\r\n      <th>Equipo</th>\r\n      <th>Puntos</th>\r\n      <th>PJ</th>\r\n      <th>PG</th>\r\n      <th>PE</th>\r\n      <th>PP</th>\r\n      <th>GF</th>\r\n      <th>GC</th>\r\n      <th>GD</th>\r\n    </tr>\r\n    <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[2].team_standings\">\r\n      <td>{{equipo.rank}}</td>\r\n      <td>{{equipo.team.name}}</td>\r\n      <td>{{equipo.points}}</td>\r\n      <td>{{equipo.played}}</td>\r\n      <td>{{equipo.win}}</td>\r\n      <td>{{equipo.draw}}</td>\r\n      <td>{{equipo.loss}}</td>\r\n      <td>{{equipo.goals_for}}</td>\r\n      <td>{{equipo.goals_against}}</td>\r\n      <td>{{equipo.goal_diff}}</td>\r\n    </tr>\r\n    </table>\r\n\r\n    <h1>Clasificacion Actual</h1>\r\n    <table class=\"table\">\r\n      <tr>\r\n        <th>Posicion</th>\r\n        <th>Equipo</th>\r\n        <th>Puntos</th>\r\n        <th>PJ</th>\r\n        <th>PG</th>\r\n        <th>PE</th>\r\n        <th>PP</th>\r\n        <th>GF</th>\r\n        <th>GC</th>\r\n        <th>GD</th>\r\n      </tr>\r\n      <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[3].team_standings\">\r\n        <td>{{equipo.rank}}</td>\r\n        <td>{{equipo.team.name}}</td>\r\n        <td>{{equipo.points}}</td>\r\n        <td>{{equipo.played}}</td>\r\n        <td>{{equipo.win}}</td>\r\n        <td>{{equipo.draw}}</td>\r\n        <td>{{equipo.loss}}</td>\r\n        <td>{{equipo.goals_for}}</td>\r\n        <td>{{equipo.goals_against}}</td>\r\n        <td>{{equipo.goal_diff}}</td>\r\n      </tr>\r\n      </table>\r\n\r\n"
+module.exports = "<!--\r\n<p>{{tablaInfo.standings[0].groups[2].team_standings}}</p>\r\n \r\n-->\r\n\r\n  <h1>Cuadrangular Actual</h1>\r\n  <table class=\"table\">\r\n    <tr>\r\n      <th>Posicion</th>\r\n      <th>Equipo</th>\r\n      <th>Puntos</th>\r\n      <th>PJ</th>\r\n      <th>PG</th>\r\n      <th>PE</th>\r\n      <th>PP</th>\r\n      <th>GF</th>\r\n      <th>GC</th>\r\n      <th>GD</th>\r\n    </tr>\r\n    <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[2].team_standings\">\r\n      <td>{{equipo.rank}}</td>\r\n      <td>{{equipo.team.name}}</td>\r\n      <td>{{equipo.points}}</td>\r\n      <td>{{equipo.played}}</td>\r\n      <td>{{equipo.win}}</td>\r\n      <td>{{equipo.draw}}</td>\r\n      <td>{{equipo.loss}}</td>\r\n      <td>{{equipo.goals_for}}</td>\r\n      <td>{{equipo.goals_against}}</td>\r\n      <td>{{equipo.goal_diff}}</td>\r\n    </tr>\r\n  </table>\r\n\r\n    <h1>Clasificacion Actual</h1>\r\n    <table class=\"table\">\r\n      <tr>\r\n        <th>Posicion</th>\r\n        <th>Equipo</th>\r\n        <th>Puntos</th>\r\n        <th>PJ</th>\r\n        <th>PG</th>\r\n        <th>PE</th>\r\n        <th>PP</th>\r\n        <th>GF</th>\r\n        <th>GC</th>\r\n        <th>GD</th>\r\n      </tr>\r\n      <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[3].team_standings\">\r\n        <td>{{equipo.rank}}</td>\r\n        <td>{{equipo.team.name}}</td>\r\n        <td>{{equipo.points}}</td>\r\n        <td>{{equipo.played}}</td>\r\n        <td>{{equipo.win}}</td>\r\n        <td>{{equipo.draw}}</td>\r\n        <td>{{equipo.loss}}</td>\r\n        <td>{{equipo.goals_for}}</td>\r\n        <td>{{equipo.goals_against}}</td>\r\n        <td>{{equipo.goal_diff}}</td>\r\n      </tr>\r\n    </table>\r\n\r\n"
 
 /***/ }),
 
@@ -1474,7 +1644,7 @@ module.exports = "<!--\r\n<p>{{tablaInfo.standings[0].groups[2].team_standings}}
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablaDePosicionesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabla_posiciones_service__ = __webpack_require__("./src/app/tabla-posiciones.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_tabla_posiciones_service__ = __webpack_require__("./src/app/services/tabla-posiciones.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1504,57 +1674,9 @@ var TablaDePosicionesComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/tabla-de-posiciones/tabla-de-posiciones.component.html"),
             styles: [__webpack_require__("./src/app/tabla-de-posiciones/tabla-de-posiciones.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__tabla_posiciones_service__["a" /* TablaPosicionesService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_tabla_posiciones_service__["a" /* TablaPosicionesService */]])
     ], TablaDePosicionesComponent);
     return TablaDePosicionesComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/tabla-posiciones.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablaPosicionesService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__("./node_modules/rxjs/_esm5/Rx.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TablaPosicionesService = /** @class */ (function () {
-    function TablaPosicionesService(http) {
-        this.http = http;
-        this.url = "https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/standings.json?api_key=wtm44z6e274xu7mva4kwjkry";
-    }
-    TablaPosicionesService.prototype.getTabla = function () {
-        return this.http
-            .get(this.url).map(function (response) {
-            return response.json();
-        })
-            .catch(this.handleError);
-    };
-    TablaPosicionesService.prototype.handleError = function (error) {
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.statusText);
-    };
-    TablaPosicionesService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
-    ], TablaPosicionesService);
-    return TablaPosicionesService;
 }());
 
 

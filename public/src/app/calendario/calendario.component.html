@@ -1,0 +1,75 @@
+<!--
+<td>{{info.competitors[0].name}}</td>
+    <td>{{info.competitors[1].name}}</td>
+    <td *ngIf="info.venue != null">{{info.venue.name}}</td>
+-->
+
+  <!-- 
+*ngIf="info.sport_event_status.status !== 'cancelled'"
+  info.sport_event_status.status !== 'cancelled'
+  
+  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.venue != null && info.sport_event.tournament_round.number === 1; else Desconocido">{{info.sport_event.venue.name}}</td>
+    <ng-template #Desconocido>
+      <td>Desconocido</td>
+    </ng-template>
+
+    newDate('info.sport_event.scheduled') | date > newDate('2018-01-01T10:02:32.273') | date && 
+    info.sport_event.scheduled | date > '01/01/2018 | date' && 
+  -->
+
+
+<p>
+  {{calendarioInfo.schema}}
+</p>
+
+<h1>Jornada 1</h1>
+<table class="table">
+  <tr>
+    <th>Casa</th>
+    <th>Goles</th>
+    <th>Goles</th>
+    <th>Visitante</th>
+    <th>Fecha</th>
+  </tr>
+  <tr *ngFor="let info of calendarioInfo.results">
+    <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[0].name}}</td>
+    <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.home_score}}</td>
+    <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.away_score}}</td>
+    <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[1].name}}</td>
+    <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.scheduled}}</td>
+  </tr>
+</table>
+
+
+
+<h1>Jornada 2</h1>
+<table class="table">
+  <tr>
+    <th>Casa</th>
+    <th>Goles</th>
+    <th>Goles</th>
+    <th>Visitante</th>
+  </tr>
+  <tr *ngFor="let info of calendarioInfo.results">
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[0].name}}</td>
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.home_score}}</td>
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.away_score}}</td>
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[1].name}}</td>
+  </tr>
+</table>
+
+<h1>Jornada 3</h1>
+<table class="table">
+  <tr>
+    <th>Casa</th>
+    <th>Goles</th>
+    <th>Goles</th>
+    <th>Visitante</th>
+  </tr>
+  <tr *ngFor="let info of calendarioInfo.results">
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[0].name}}</td>
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.home_score}}</td>
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.away_score}}</td>
+    <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[1].name}}</td>
+  </tr>
+</table>
