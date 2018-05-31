@@ -1,3 +1,182 @@
-<p>
-  liberia works!
-</p>
+<html lang="en">
+
+<head>
+  <title>Futico - Municipal Liberia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-sm-3">
+        <img class="displayed focus pic" src="assets/img/liberialogo.png" width="160" height="160">
+      </div>
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row text-center">
+            <h2 class="carmen">{{liberiaInfo.nombre}} </h2>
+            <p class="carmen">{{liberiaInfo.sigla}}</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center;">
+                  <img src="https://image.ibb.co/eZqBvd/Nuevo_Estadio_Edgardo_Baltodano_Brice_o.png" alt="Nuevo_Estadio_Edgardo_Baltodano_Brice_o" class="img-responsive" border="0">    
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Estadio</h3>
+                    <p>{{liberiaInfo.estadio}}</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm-2">
+              <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center;">
+                    <img src="https://image.ibb.co/guvpgJ/Costa_Rican_Primera_Division_Trophy_Icon.png" alt="trofeo" class="img-responsive" border="0">
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Titulos</h3>
+                    <p>{{liberiaInfo.titulos}}</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm-2">
+              <div class="cuadro_intro_hover" style="background-color:#cccccc;">
+                <p style="text-align:center;">
+                  <img src="https://image.ibb.co/b1Uwvd/Cr_II8g_KWAAEe2ld.jpg" alt="Cr_II8g_KWAAEe2ld" border="0" class="img-responsive">  
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">DT</h3>
+                    <p>{{liberiaInfo.dt}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <a href=" #" target="_blank" class="fa fa-facebook"></a>
+        <a href="#" target="_blank" class="fa fa-twitter"></a>
+        <a href="#" target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5">
+        <table class="table">
+          <tr>
+            <th>Equipo Local</th>
+            <th>Equipo visita</th>
+            <th>Resultado</th>
+            <th>Fecha</th>
+            <th>Estadio</th>
+          </tr>
+          <tr *ngFor="let goleo of liberiaGoleo.goleadores">
+            <td>{{goleo.nombre}}</td>
+            <td>{{goleo.equipo}}</td>
+            <td>{{goleo.goles}}</td>
+            <td>{{goleo.pie}}</td>
+            <td>{{goleo.cabeza}}</td>
+            <td>{{goleo.falta}}</td>
+            <td>{{goleo.penal}}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-7">
+        <mat-card class="tab">
+          <mat-card-content>
+            <mat-tab-group class="demo-tab-group">
+              <mat-tab label="Plantel">
+                <table class="table">
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>#</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Nacionalidad</th>
+                    <th>Posicion</th>
+                  </tr>
+                  <tr *ngFor="let jugador of liberiaInfo.jugadores">
+                    <td>{{jugador.nombre}}</td>
+                    <td>{{jugador.apellido}}</td>
+                    <td>{{jugador.numero}}</td>
+                    <td>{{jugador.fechaNacimiento | date:'shortDate'}}</td>
+                    <td>{{jugador.nacionalidad}}</td>
+                    <td>{{jugador.posicion}}</td>
+                  </tr>
+                </table>
+              </mat-tab>
+              <mat-tab label="Calendario">
+                <div class="demo-tab-content">
+                  Calendario del equipo
+                </div>
+              </mat-tab>
+              <mat-tab label="Goleo">
+                <div class="demo-tab-content">
+                  Goleadores del equipo
+                  <table class="table">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Equipo</th>
+                      <th>Goles</th>
+                      <th>Pie</th>
+                      <th>Cabeza</th>
+                      <th>Falta</th>
+                      <th>Penal</th>
+                    </tr>
+                    <tr *ngFor="let goleo of liberiaGoleo.goleadores">
+                      <td>{{goleo.nombre}}</td>
+                      <td>{{goleo.equipo}}</td>
+                      <td>{{goleo.goles}}</td>
+                      <td>{{goleo.pie}}</td>
+                      <td>{{goleo.cabeza}}</td>
+                      <td>{{goleo.falta}}</td>
+                      <td>{{goleo.penal}}</td>
+                    </tr>
+                  </table>
+                </div>
+              </mat-tab>
+              <mat-tab label="Asistencias">
+                <div class="demo-tab-content">
+                  Asistencias del equipo
+                </div>
+              </mat-tab>
+              <mat-tab label="Noticias">
+                <div class="demo-tab-content">
+                  Noticas del equipo
+                </div>
+              </mat-tab>
+              <mat-tab label="Historia">
+                <div class="demo-tab-content">
+                  {{liberiaInfo.historia}}
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-3">Twitter del Municipal Liberia</div>
+    </div>
+  </div>
+</body>
+</html>

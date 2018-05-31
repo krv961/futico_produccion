@@ -22,6 +22,91 @@
   {{calendarioInfo.schema}}
 </p>
 
+<div class="container">
+  <h2>Accordion</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Jornada 1</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                  <th>Casa</th>
+                  <th>Goles</th>
+                  <th>Goles</th>
+                  <th>Visitante</th>
+                </tr>
+                <tr id="pop" *ngFor="let info of calendarioInfo.results">
+                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[0].name}}</td>
+                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.home_score}}</td>
+                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.away_score}}</td>
+                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[1].name}}</td>
+                </tr>
+              </table>
+      </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Jornada 2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                  <th>Casa</th>
+                  <th>Goles</th>
+                  <th>Goles</th>
+                  <th>Visitante</th>
+                </tr>
+                <tr *ngFor="let info of calendarioInfo.results">
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[0].name}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.home_score}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.away_score}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[1].name}}</td>
+                </tr>
+              </table>
+      </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Jornada 3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                  <th>Casa</th>
+                  <th>Goles</th>
+                  <th>Goles</th>
+                  <th>Visitante</th>
+                </tr>
+                <tr *ngFor="let info of calendarioInfo.results">
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[0].name}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.home_score}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.away_score}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[1].name}}</td>
+                </tr>
+              </table>
+      </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+<!--
 <h1>Jornada 1</h1>
 <table class="table">
   <tr>
@@ -73,3 +158,12 @@
     <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[1].name}}</td>
   </tr>
 </table>
+-->
+<script>
+
+  function prueba(){
+
+    console.log("Prueba arriba!");
+  }
+
+</script>
