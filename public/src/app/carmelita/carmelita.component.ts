@@ -40,7 +40,7 @@ public resultados : calendarioInterface[];
     console.log(JSON.stringify(this,  res => this.carmelitaInfo));                  // '{}'
 
 
-    this.goleoService.getGoles('ADC')
+    this.goleoService.getAllGoles()
     .subscribe(
       res => this.carmelitaGoleo = res,
       err => console.log(err)

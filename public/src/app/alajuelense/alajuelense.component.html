@@ -31,10 +31,13 @@ https://getbootstrap.com/docs/3.3/css/
   <div class="row ">
     <div class="col-sm-3"><img class="displayed focus pic" src="assets/img/ldalogo.png" height="140" width="140"></div>
     <div class="col-sm-6">
+      
         <div class="row text-center">
             <h2 class="carmen">{{ldaInfo.nombre}} </h2>
                 <p class="carmen">{{ldaInfo.sigla}}</p>
           </div>
+
+
         <div class="container">
             <div class="row">
               <div class="col-sm-2">
@@ -104,14 +107,11 @@ https://getbootstrap.com/docs/3.3/css/
           <th>Fecha</th>
           <th>Estadio</th>
         </tr>
-        <tr *ngFor="let goleo of ldaGoleo.goleadores">
-          <td>{{goleo.nombre}}</td>
-          <td>{{goleo.equipo}}</td>
-          <td>{{goleo.goles}}</td>
-          <td>{{goleo.pie}}</td>
-          <td>{{goleo.cabeza}}</td>
-          <td>{{goleo.falta}}</td>
-          <td>{{goleo.penal}}</td>
+        <tr *ngFor="let result of resultados.results">
+          <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[0].name}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.home_score}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.away_score}}</td>
+          <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[1].name}}</td>
         </tr>
         </table>
     </div>
@@ -140,11 +140,6 @@ https://getbootstrap.com/docs/3.3/css/
                         </tr>
                         </table>
                 </mat-tab>
-                <mat-tab label="Calendario">
-                  <div class="demo-tab-content">
-                    Calendario del equipo
-                  </div>  
-                </mat-tab>
                 <mat-tab label="Goleo">
                   <div class="demo-tab-content">
                    Goleadores del equipo
@@ -159,26 +154,16 @@ https://getbootstrap.com/docs/3.3/css/
                         <th>Penal</th>
                       </tr>
                       <tr *ngFor="let goleo of ldaGoleo.goleadores">
-                        <td>{{goleo.nombre}}</td>
-                        <td>{{goleo.equipo}}</td>
-                        <td>{{goleo.goles}}</td>
-                        <td>{{goleo.pie}}</td>
-                        <td>{{goleo.cabeza}}</td>
-                        <td>{{goleo.falta}}</td>
-                        <td>{{goleo.penal}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.nombre}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.equipo}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.goles}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.pie}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.cabeza}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.falta}}</td>
+                        <td *ngIf="goleo.equipo === 'LDA'">{{goleo.penal}}</td>
                       </tr>
                       </table>
-                  </div>  
-                </mat-tab>
-                <mat-tab label="Asistencias">
-                    <div class="demo-tab-content">
-                        Asistencias del equipo
-                       </div>
-                </mat-tab>
-                <mat-tab label="Noticias">
-                    <div class="demo-tab-content">
-                        noticas del equipo
-                       </div>  
+                  </div>
                 </mat-tab>
                 <mat-tab label="Historia">
                   <div class="demo-tab-content">
@@ -189,9 +174,14 @@ https://getbootstrap.com/docs/3.3/css/
             </mat-card-content>
           </mat-card>
 
+          <!--
+            data-toggle="popover" data-trigger="focus" 
+            data-content="Pie {{goleo.pie}}
+            Cabeza {{goleo.cabeza}}"
+          -->
 
     </div>
-    <div class="col-md-3">twitter del equipo</div>
+    
   </div>
   
   </div>

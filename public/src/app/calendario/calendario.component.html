@@ -23,7 +23,7 @@
 </p>
 
 <div class="container">
-  <h2>Accordion</h2>
+  <h2>Resultados</h2>
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -41,10 +41,10 @@
                   <th>Visitante</th>
                 </tr>
                 <tr id="pop" *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="(info.sport_event.scheduled | date) >= ('2018-01-01T22:00:00+00:00' | date) && info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[1].name}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[0].name}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.home_score}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.away_score}}</td>
+                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[1].name}}</td>
                 </tr>
               </table>
       </div>
