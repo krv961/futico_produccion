@@ -13,8 +13,8 @@ import { CalendarioService } from '../services/calendario.service';
 })
 export class AlajuelenseComponent implements OnInit {
 
-  ldaInfo = [];
-  ldaGoleo = [];
+  info = [];
+  goleo = [];
   public resultados : calendarioInterface[];
 
   constructor(private teamService: TeamService, private goleoService: GoleoService,
@@ -23,16 +23,16 @@ export class AlajuelenseComponent implements OnInit {
   ngOnInit() {
     this.teamService.getTeam('lda')
     .subscribe(
-      res => this.ldaInfo = res,
+      res => this.info = res,
       err => console.log(err)
     );
 
-    console.log(JSON.stringify(this,  res => this.ldaInfo));                  // '{}'
+    console.log(JSON.stringify(this,  res => this.info));                  // '{}'
 
 
     this.goleoService.getAllGoles()
     .subscribe(
-      res => this.ldaGoleo = res,
+      res => this.goleo = res,
       err => console.log(err)
     );
 

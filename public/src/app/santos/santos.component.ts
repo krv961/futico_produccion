@@ -2,8 +2,8 @@ import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { TeamService } from '../team.service';
 import { GoleoService } from '../services/goleo.service';
 import {MatTableDataSource} from '@angular/material';
-
-
+import { calendarioInterface } from '../calendario/calendarioInterface';
+import { CalendarioService } from '../services/calendario.service';
 
 @Component({
   selector: 'app-santos',
@@ -13,26 +13,35 @@ import {MatTableDataSource} from '@angular/material';
 })
 export class SantosComponent implements OnInit {
 
-  santosInfo = [];
-  santosGoleo = [];
+  info = [];
+  goleo = [];
+  public resultados : calendarioInterface[];
 
-  constructor(private teamService: TeamService, private goleoService: GoleoService) { }
+  constructor(private teamService: TeamService, private goleoService: GoleoService,
+    private resultService : CalendarioService) { }
 
   ngOnInit() {
     this.teamService.getTeam('san')
     .subscribe(
-      res => this.santosInfo = res,
+      res => this.info = res,
       err => console.log(err)
     );
 
-    console.log(JSON.stringify(this,  res => this.santosInfo));                  // '{}'
+    console.log(JSON.stringify(this,  res => this.info));                  // '{}'
 
 
-    this.goleoService.getGoles('SAN')
+    this.goleoService.getAllGoles()
     .subscribe(
-      res => this.santosGoleo = res,
+      res => this.goleo = res,
       err => console.log(err)
     );
+
+    this.resultService.getCalendario().subscribe(
+      resultArray => this.resultados = resultArray
+      , error => console.log("error: " + error)
+    )
 
   }
+
 }
+
