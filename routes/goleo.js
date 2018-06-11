@@ -22,7 +22,8 @@ router.get('/', (req, res) => {
 
 router.get('/:equipo', (req, res) => {
     const equipo = req.params.equipo;
-    Goleo.find({equipo: equipo})
+    Goleo.find({goleadores:{equipo: 'LDA'}})
+   // Goleo.find({'goleadores.nombre': 'LDA'})
       .exec()
       .then(doc => {
         if (doc) {

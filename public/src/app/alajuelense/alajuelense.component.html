@@ -1,50 +1,200 @@
+<!--Tutorial para css bootstrap divs
+https://getbootstrap.com/docs/3.3/css/
+-->
+<html lang="en">
+<head>
+  <title>Futico - Alajuelense</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!--
+<div class="container-fluid"> 
+<div class="row">
+  <div class="col-sm-2"></div><img src="assets/img/carmelitalogo.png"></div>
+  <div class="col-sm-8">Info</div>
+  <div class="col-sm-2">Social Media</div>
+
+</div>
+-->
+<div class="container-fluid"> 
+ 
+  <div class="row ">
+    <div class="col-sm-3"><img class="displayed focus pic" src="assets/img/ldalogo.png" height="140" width="140"></div>
+    <div class="col-sm-6">
+        <div class="row text-center">
+            <h2 class="carmen">{{ldaInfo.nombre}} </h2>
+                <p class="carmen">{{ldaInfo.sigla}}</p>
+          </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-2">
+                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                    <p style="text-align:center;">
+                      <img src="https://image.ibb.co/iDv3ad/Alejandro_Morera_Soto_5.jpg" alt="carmelita_Estadio" class="img-responsive">
+                    </p>
+                    <div class="caption">
+                      <div class="blur"></div>
+                      <div class="caption-text">
+                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Estadio</h3>
+                        <p>{{ldaInfo.estadio}}</p>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+                <div class="col-sm-2">
+                      <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                    <p style="text-align:center;">
+                        <img src="https://image.ibb.co/jCGNDy/trofeo.jpg" alt="trofeo" class="img-responsive">
+                    </p>
+                    <div class="caption">
+                      <div class="blur"></div>
+                      <div class="caption-text">
+                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Titulos</h3>
+                        <p>{{ldaInfo.titulos}}</p>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+                <div class="col-sm-2">
+                      <div class="cuadro_intro_hover" style="background-color:#cccccc;">
+                    <p style="text-align:center;">
+                        <img src="https://image.ibb.co/fPxXGJ/Dcjdye_VX0_AAmsf7.jpg" alt="mario_viquez" class="img-responsive">
+                    </p>
+                    <div class="caption">
+                      <div class="blur"></div>
+                      <div class="caption-text">
+                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">DT</h3>
+                        <p>{{ldaInfo.dt}}</p>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-3">
+      <a href=" #" target="_blank" class="fa fa-facebook"></a>
+<a href="#" target="_blank" class="fa fa-twitter"></a>
+<a href="#" target="_blank" class="fa fa-instagram"></a>
+      
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-5">
+      <table class="table">
+        <tr>
+          <th>Equipo Local</th>
+          <th>Equipo visita</th>
+          <th>Resultado</th>
+          <th>Fecha</th>
+          <th>Estadio</th>
+        </tr>
+        <tr *ngFor="let goleo of ldaGoleo.goleadores">
+          <td>{{goleo.nombre}}</td>
+          <td>{{goleo.equipo}}</td>
+          <td>{{goleo.goles}}</td>
+          <td>{{goleo.pie}}</td>
+          <td>{{goleo.cabeza}}</td>
+          <td>{{goleo.falta}}</td>
+          <td>{{goleo.penal}}</td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-sm-7">
+      
+        <mat-card class="tab">
+            <mat-card-content>
+              <mat-tab-group class="demo-tab-group">
+                <mat-tab label="Plantel">
+                    <table class="table">
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Apellido</th>
+                          <th>#</th>
+                          <th>Fecha de Nacimiento</th>
+                          <th>Nacionalidad</th>
+                          <th>Posicion</th>
+                        </tr>
+                        <tr *ngFor="let jugador of ldaInfo.jugadores">
+                          <td>{{jugador.nombre}}</td>
+                          <td>{{jugador.apellido}}</td>
+                          <td>{{jugador.numero}}</td>
+                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>
+                          <td>{{jugador.nacionalidad}}</td>
+                          <td>{{jugador.posicion}}</td>
+                        </tr>
+                        </table>
+                </mat-tab>
+                <mat-tab label="Calendario">
+                  <div class="demo-tab-content">
+                    Calendario del equipo
+                  </div>  
+                </mat-tab>
+                <mat-tab label="Goleo">
+                  <div class="demo-tab-content">
+                   Goleadores del equipo
+                   <table class="table">
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Equipo</th>
+                        <th>Goles</th>
+                        <th>Pie</th>
+                        <th>Cabeza</th>
+                        <th>Falta</th>
+                        <th>Penal</th>
+                      </tr>
+                      <tr *ngFor="let goleo of ldaGoleo.goleadores">
+                        <td>{{goleo.nombre}}</td>
+                        <td>{{goleo.equipo}}</td>
+                        <td>{{goleo.goles}}</td>
+                        <td>{{goleo.pie}}</td>
+                        <td>{{goleo.cabeza}}</td>
+                        <td>{{goleo.falta}}</td>
+                        <td>{{goleo.penal}}</td>
+                      </tr>
+                      </table>
+                  </div>  
+                </mat-tab>
+                <mat-tab label="Asistencias">
+                    <div class="demo-tab-content">
+                        Asistencias del equipo
+                       </div>
+                </mat-tab>
+                <mat-tab label="Noticias">
+                    <div class="demo-tab-content">
+                        noticas del equipo
+                       </div>  
+                </mat-tab>
+                <mat-tab label="Historia">
+                  <div class="demo-tab-content">
+                    {{ldaInfo.historia}} 
+                    </div> 
+                </mat-tab>
+              </mat-tab-group>
+            </mat-card-content>
+          </mat-card>
 
 
-   <head>
-      <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-       <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    </div>
+    <div class="col-md-3">twitter del equipo</div>
+  </div>
+  
+  </div>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-            
-  </head>
-
-
-   <h1 class="title">{{ldaInfo.nombre}}</h1> <br>
-    <h4 class="subtitle">Sigla: {{ldaInfo.sigla}} </h4><br>
-    <h4 class="stadium">Estadio: {{ldaInfo.estadio}}</h4>
-    <h4 class="date">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
-    <h4 class="championships">Titulos: {{ldaInfo.titulos}}</h4><br>
-    <h4 class="dt">Director Tecnico: {{ldaInfo.dt}}</h4><br>
-    <h4 class="histor">Historia</h4><br>
-    <p>{{ldaInfo.historia}}</p> 
-
-   
-
-    <h2>Panilla</h2>
-  <table class="table">
-  <tr>
-    <th>Nombre</th>
-    <th>Apellido</th>
-    <th>#</th>
-    <th>Fecha de Nacimiento</th>
-    <th>Nacionalidad</th>
-    <th>Posicion</th>
-  </tr>
-  <tr *ngFor="let jugador of ldaInfo.jugadores">
-    <td>{{jugador.nombre}}</td>
-    <td>{{jugador.apellido}}</td>
-    <td>{{jugador.numero}}</td>
-    <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>
-    <td>{{jugador.nacionalidad}}</td>
-    <td>{{jugador.posicion}}</td>
-  </tr>
-  </table>
-
-
-
-
+</body>
+</html>

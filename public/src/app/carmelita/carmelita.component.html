@@ -30,22 +30,11 @@ https://getbootstrap.com/docs/3.3/css/
  
   <div class="row ">
     <div class="col-sm-3"><img class="displayed focus pic" src="assets/img/carmelitalogo.png"></div>
-
     <div class="col-sm-6">
-    <div class="row">
-        <h2 class="example">{{carmelitaInfo.nombre}} </h2>
-        <h4 class="example">{{carmelitaInfo.sigla}}</h4>
-      </div>
-      </div>
-
-    <div class="col-sm-6">
-     <!--   <h1 class="title"> {{carmelitaInfo.nombre}}</h1> <br>
-        <h4 class="subtitle">Sigla: {{carmelitaInfo.sigla}} </h4><br>
-        <h4 class="stadium">Estadio: {{carmelitaInfo.estadio}}</h4>
-        <h4 class="date">Año de creacion: {{carmelitaInfo.ano_creacion  | date:'shortDate'}}</h4><br>
-        <h4 class="championships">Titulos: {{carmelitaInfo.titulos}}</h4><br>
-        <h4 class="dt">Director Tecnico: {{carmelitaInfo.dt}}</h4><br>-->
-          
+        <div class="row text-center">
+            <h2 class="carmen">{{carmelitaInfo.nombre}} </h2>
+                <p class="carmen">{{carmelitaInfo.sigla}}</p>
+          </div>
         <div class="container">
             <div class="row">
               <div class="col-sm-2">
@@ -94,17 +83,19 @@ https://getbootstrap.com/docs/3.3/css/
                 
               </div>
             </div>
+        </div>
 
     </div>
-   
-  </div>
-  <div class="col-sm-3">
-      <a href="https://www.facebook.com/ADCarmelitaCR/" target="_blank" class="fa fa-facebook"></a>
-      <a href="https://twitter.com/ADCarmelitaCR" target="_blank" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/adcarmelitacr/?hl=es-la" target="_blank" class="fa fa-instagram"></a>
+    <div class="col-sm-3">
+      <a href=" #" target="_blank" class="fa fa-facebook"></a>
+<a href="#" target="_blank" class="fa fa-twitter"></a>
+<a href="#" target="_blank" class="fa fa-instagram"></a>
+      
     </div>
+  </div>
+
   <div class="row">
-    <div style="padding-top: 50px" class="col-sm-5">
+    <div class="col-sm-5">
       <table class="table">
         <tr>
           <th>Equipo Local</th>
@@ -124,7 +115,7 @@ https://getbootstrap.com/docs/3.3/css/
         </tr>
         </table>
     </div>
-    <div style="padding-top: 50px" class="col-sm-7">
+    <div class="col-sm-7">
       
         <mat-card class="tab">
             <mat-card-content>
@@ -190,7 +181,9 @@ https://getbootstrap.com/docs/3.3/css/
                        </div>  
                 </mat-tab>
                 <mat-tab label="Historia">
-                    <p>{{carmelitaInfo.historia}}</p>  
+                  <div class="demo-tab-content">
+                    {{carmelitaInfo.historia}} 
+                    </div> 
                 </mat-tab>
               </mat-tab-group>
             </mat-card-content>
@@ -202,6 +195,6 @@ https://getbootstrap.com/docs/3.3/css/
   </div>
   
   </div>
-</div>
+
 </body>
 </html>

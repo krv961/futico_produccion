@@ -17,6 +17,7 @@ carmelitaGoleo = [];
 
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   // dataSource = new MatTableDataSource(ELEMENT_DATA);
+  // dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(filterValue: string) {
     filterValue = filterValue.trim(); // Remove whitespace
@@ -30,7 +31,10 @@ carmelitaGoleo = [];
       res => this.carmelitaInfo = res,
       err => console.log(err)
     );
-    
+
+    console.log(JSON.stringify(this,  res => this.carmelitaInfo));                  // '{}'
+
+
     this.goleoService.getGoles('ADC')
     .subscribe(
       res => this.carmelitaGoleo = res,
