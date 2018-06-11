@@ -27,7 +27,7 @@ module.exports = ".table{\r\n\r\n    font-family: \"Trebuchet MS\", Arial, Helve
 /***/ "./src/app/alajuelense/alajuelense.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n   <head>\n      <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n       <!-- Compiled and minified CSS -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css\">\n\n    <!-- Compiled and minified JavaScript -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js\"></script>\n            \n  </head>\n\n\n   <h1 class=\"title\">{{ldaInfo.nombre}}</h1> <br>\n    <h4 class=\"subtitle\">Sigla: {{ldaInfo.sigla}} </h4><br>\n    <h4 class=\"stadium\">Estadio: {{ldaInfo.estadio}}</h4>\n    <h4 class=\"date\">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\n    <h4 class=\"championships\">Titulos: {{ldaInfo.titulos}}</h4><br>\n    <h4 class=\"dt\">Director Tecnico: {{ldaInfo.dt}}</h4><br>\n    <h4 class=\"histor\">Historia</h4><br>\n    <p>{{ldaInfo.historia}}</p> \n\n   \n\n    <h2>Panilla</h2>\n  <table class=\"table\">\n  <tr>\n    <th>Nombre</th>\n    <th>Apellido</th>\n    <th>#</th>\n    <th>Fecha de Nacimiento</th>\n    <th>Nacionalidad</th>\n    <th>Posicion</th>\n  </tr>\n  <tr *ngFor=\"let jugador of ldaInfo.jugadores\">\n    <td>{{jugador.nombre}}</td>\n    <td>{{jugador.apellido}}</td>\n    <td>{{jugador.numero}}</td>\n    <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\n    <td>{{jugador.nacionalidad}}</td>\n    <td>{{jugador.posicion}}</td>\n  </tr>\n  </table>\n\n\n\n\n"
+module.exports = "\r\n\r\n   <head>\r\n      <link href=\"https://fonts.googleapis.com/css?family=Vollkorn\" rel=\"stylesheet\">\r\n      <link href=\"https://fonts.googleapis.com/css?family=Cutive\" rel=\"stylesheet\">\r\n      <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">\r\n      <link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\r\n       <!-- Compiled and minified CSS -->\r\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css\">\r\n\r\n    <!-- Compiled and minified JavaScript -->\r\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js\"></script>\r\n            \r\n  </head>\r\n\r\n\r\n   <h1 class=\"title\">{{ldaInfo.nombre}}</h1> <br>\r\n    <h4 class=\"subtitle\">Sigla: {{ldaInfo.sigla}} </h4><br>\r\n    <h4 class=\"stadium\">Estadio: {{ldaInfo.estadio}}</h4>\r\n    <h4 class=\"date\">Año de creacion: {{ldaInfo.ano_creacion  | date:'shortDate'}}</h4><br>\r\n    <h4 class=\"championships\">Titulos: {{ldaInfo.titulos}}</h4><br>\r\n    <h4 class=\"dt\">Director Tecnico: {{ldaInfo.dt}}</h4><br>\r\n    <h4 class=\"histor\">Historia</h4><br>\r\n    <p>{{ldaInfo.historia}}</p> \r\n\r\n   \r\n\r\n    <h2>Panilla</h2>\r\n  <table class=\"table\">\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Apellido</th>\r\n    <th>#</th>\r\n    <th>Fecha de Nacimiento</th>\r\n    <th>Nacionalidad</th>\r\n    <th>Posicion</th>\r\n  </tr>\r\n  <tr *ngFor=\"let jugador of ldaInfo.jugadores\">\r\n    <td>{{jugador.nombre}}</td>\r\n    <td>{{jugador.apellido}}</td>\r\n    <td>{{jugador.numero}}</td>\r\n    <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>\r\n    <td>{{jugador.nacionalidad}}</td>\r\n    <td>{{jugador.posicion}}</td>\r\n  </tr>\r\n  </table>\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -626,7 +626,7 @@ module.exports = ""
 /***/ "./src/app/guadalupe/guadalupe.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  guadalupe works!\n</p>\n"
+module.exports = "<p>\r\n  guadalupe works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -733,7 +733,7 @@ module.exports = ""
 /***/ "./src/app/herediano/herediano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  herediano works!\n</p>\n"
+module.exports = "<p>\r\n  herediano works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -790,7 +790,7 @@ module.exports = ""
 /***/ "./src/app/inicio/inicio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- ============================================================== -->\n<!-- Simple four boxes Row -->\n<!-- ============================================================== -->\n<div fxLayout=\"row\" fxLayoutWrap=\"wrap\">\n    <!-- column -->    \n    <div fxFlex.gt-sm=\"100\" fxFlex.gt-xs=\"100\" fxFlex=\"100\">\n        <mat-card>\n            <mat-card-content>\n                <!-- Row -->\n                <div fxLayout=\"row\" fxLayoutWrap=\"wrap\">\n                    <!-- column -->\n                    <div fxFlex.gt-sm=\"50\" fxFlex.gt-xs=\"50\"> <!-- esto es para que cuando \n                        se haga mas pequeño, ocupe solamente la mitad de la pantalla, ejemplo:\n                        xl, then fallback to 'gt-sm' so the div sizing is 100%\n                        lg, then fallback to 'gt-sm' so the div sizing is 100%\n                        md, then fallback to 'gt-sm' so the div sizing is 100%\n                        sm, then fallback to the default fxFlex=\"50%\"; so the div sizing is 50%\n                        xs, then fallback to the default fxFlex=\"50%\"; so the div sizing is 50%\n                    -->\n                        Pagina de inicio\n                        Aquí irá una información acerca de algunas cosas sobre la página,\n                        algunos datos importantes sobre UNAFUT, AÑOS, PARTIDOS, ACTUAL CAMPEON , ETC.\n                    </div>                    \n                </div>   \n                \n                <div fxLayout=\"row\" fxLayoutWrap=\"wrap\">\n                        <!-- column -->\n                        <div fxFlex.gt-sm=\"50\" fxFlex.gt-xs=\"50\"> \n                            \n                            Pagina de inicio\n                            Aquí irá una información acerca de algunas cosas sobre la página,\n                            algunos datos importantes sobre UNAFUT, AÑOS, PARTIDOS, ACTUAL CAMPEON , ETC.\n                        </div>                    \n                    </div>   \n\n            </mat-card-content>\n        </mat-card>\n    </div>\n    <!-- column -->    \n</div>\n\n"
+module.exports = "<!-- ============================================================== -->\r\n<!-- Simple four boxes Row -->\r\n<!-- ============================================================== -->\r\n<div fxLayout=\"row\" fxLayoutWrap=\"wrap\">\r\n    <!-- column -->    \r\n    <div fxFlex.gt-sm=\"100\" fxFlex.gt-xs=\"100\" fxFlex=\"100\">\r\n        <mat-card>\r\n            <mat-card-content>\r\n                <!-- Row -->\r\n                <div fxLayout=\"row\" fxLayoutWrap=\"wrap\">\r\n                    <!-- column -->\r\n                    <div fxFlex.gt-sm=\"50\" fxFlex.gt-xs=\"50\"> <!-- esto es para que cuando \r\n                        se haga mas pequeño, ocupe solamente la mitad de la pantalla, ejemplo:\r\n                        xl, then fallback to 'gt-sm' so the div sizing is 100%\r\n                        lg, then fallback to 'gt-sm' so the div sizing is 100%\r\n                        md, then fallback to 'gt-sm' so the div sizing is 100%\r\n                        sm, then fallback to the default fxFlex=\"50%\"; so the div sizing is 50%\r\n                        xs, then fallback to the default fxFlex=\"50%\"; so the div sizing is 50%\r\n                    -->\r\n                        Pagina de inicio\r\n                        Aquí irá una información acerca de algunas cosas sobre la página,\r\n                        algunos datos importantes sobre UNAFUT, AÑOS, PARTIDOS, ACTUAL CAMPEON , ETC.\r\n                    </div>                    \r\n                </div>   \r\n                \r\n                <div fxLayout=\"row\" fxLayoutWrap=\"wrap\">\r\n                        <!-- column -->\r\n                        <div fxFlex.gt-sm=\"50\" fxFlex.gt-xs=\"50\"> \r\n                            \r\n                            Pagina de inicio\r\n                            Aquí irá una información acerca de algunas cosas sobre la página,\r\n                            algunos datos importantes sobre UNAFUT, AÑOS, PARTIDOS, ACTUAL CAMPEON , ETC.\r\n                        </div>                    \r\n                    </div>   \r\n\r\n            </mat-card-content>\r\n        </mat-card>\r\n    </div>\r\n    <!-- column -->    \r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -951,7 +951,7 @@ module.exports = ""
 /***/ "./src/app/limon/limon.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  limon works!\n</p>\n"
+module.exports = "<p>\r\n  limon works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -1215,7 +1215,7 @@ module.exports = ""
 /***/ "./src/app/santos/santos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  santos works!\n</p>\n"
+module.exports = "<p>\r\n  santos works!\r\n</p>\r\n"
 
 /***/ }),
 
