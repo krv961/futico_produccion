@@ -1,38 +1,228 @@
-/*
-HTML 5 Template Name: 
-File: About Us - 10 CSS
-Author: OS Templates
-Author URI: http://www.os-templates.com/
-Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
-*/
+.about {
+    padding: 5em 0;
+}
+.wthree_head_section {
+    margin-bottom: 5em;
+}
+.w3l_header {
+    font-size: 50px;
+    color: #99bc59;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.w3l_header:after {
+    border-top: 2px solid #99bc59;
+    display: block;
+    width: 81px;
+    content: "";
+    margin: 8px auto 0;
+}
+.wthree_head_section p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+	letter-spacing:1px;
+    color: #5e5e5e;
+    line-height: 1.8em;
+}
+.banner-bottom-girds {
+    border: 1px solid rgba(226, 226, 226, 0.56);
+    border-width: 0px 1px 1px;
+}
+.agileits-banner-grid:hover {
+	-webkit-box-shadow: 2px 15px 70px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 15px 70px 2px rgba(0,0,0,0.75);
+box-shadow: 2px 15px 70px 2px rgba(0,0,0,0.75);
 
-#about-us{display:block; width:100%; line-height:1.6em;}
-#about-us h2{margin-bottom:40px; padding-bottom:20px; border-bottom:1px solid #CCCCCC;} /* DEMO USE ONLY - CAN BE DELETED */
+}
+.agileits-banner-grid {
+    padding:3em 2em;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+.agileits-banner-grid:hover span.banner-icon, .bg-w3ls-active span.banner-icon {
+    color:#99bc59; 
+}
+.agileits-banner-grid h4 {
+    font-size: 30px;
+    margin: 1em 0 0;
+     color: #99bc59; 
+    font-weight: 600;
+}
+span.banner-icon {
+    color: #fff;
+    font-size: 2.5em;
+}
+.agileits-banner-grid:hover.agileits-banner-grid p,.bg-w3ls-active.agileits-banner-grid p {
+    color: #fff;
+}
+.agileits-banner-grid p {
+    line-height: 25px;
+    margin: 1em auto 2em;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+a.w3_play_icon1 {
+    border: none;
+    outline: none;
+    background: #99bc59;
+    padding:11px 14px;
+    color: #fff;
+	display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+}
+a.w3_play_icon1:hover {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+}
+.clr1{background:#8e43e7;}
+.clr2{background:#050f2c;}
+.clr3{background:#3369e7;}
+/*-- //about --*//* About */
 
-#about-us #about-intro{margin-bottom:50px;}
-#about-us #about-intro p{margin:20px 0 0 0; padding:0;}
-#about-us #about-intro p:first-child{margin-top:0;}
-
-#about-us #team{margin-bottom:30px;}
-#about-us #team ul{margin:0; padding:0; list-style:none; text-align:center;}
-#about-us #team ul li{margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #CCCCCC;}
-#about-us #team ul li figure{}
-#about-us #team ul li figure img{}
-#about-us #team ul li figure figcaption{}
-#about-us #team ul li p{margin:15px 0 0 0; padding:0;}
-#about-us #team ul li p:first-child{}
-#about-us #team ul li figure figcaption .team_name{font-weight:bold;}
-#about-us #team ul li figure figcaption .team_title{margin:0; font-size:11px; line-height:normal;}
-#about-us #team ul li figure figcaption .team_description{}
-#about-us #team ul ul{margin-top:20px;}
-#about-us #team ul ul li{display:inline; margin:0 0 0 6px; padding:0; border:none;}
-#about-us #team ul ul li:first-child{margin-left:0;}
-#about-us #team ul ul li a{}
-#about-us #team ul ul li a img{margin:0;}
-
-#about-us #client_logos{margin:0;}
-#about-us #client_logos ul{margin:0; padding:0; list-style:none;}
-#about-us #client_logos ul li{}
-#about-us #client_logos ul li:first-child{margin-left:0;}
-#about-us #client_logos ul li img{}
-
+.team img {
+    width: 100%;
+}
+.inner-team1{
+    box-shadow: 0 1px 1px #ddd;
+	padding:0 0 10px 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -webkit-box-shadow: 0 1px 1px #ddd;
+    -moz-box-shadow: 0 1px 1px #ddd;
+}
+.inner-team1:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+    -webkit-box-shadow: 0 0 40px #aaa;
+    -moz-box-shadow: 0 0 40px #aaa;
+    box-shadow: 0 0 40px #aaa;
+}
+.team1 h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #000;
+    text-transform: capitalize;
+}
+.team1 h4 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+    color: #99bc59;
+    font-weight: normal;
+}
+.team1 p {
+    color: #212121;
+    color: #757575;
+    line-height: 26px;
+    padding: 20px;
+    text-align: center;
+}
+.team1 {
+    padding: 8px;
+}
+.team-social a i {
+    color: #000;
+    font-size: 16px;
+    border: 1px solid #8a8a8a;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+}
+.inner-team1 {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+    border: 1px solid #d4d4d4;
+}
+.team-social{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.inner-team1:hover div.team-social {
+    display: block;
+    bottom: 100px;
+    left: 68px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.team i.fa.fa-twitter {
+	color: #1da1f2;
+}
+.team i.fa.fa-twitter:hover {
+    color: #fff;
+    background: #1da1f2;
+    border: 1px solid #1da1f2;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+	transition:1s all;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+}
+.team i.fa.fa-instagram{
+	color: #bd081c;
+}
+.team i.fa.fa-instagram:hover{
+    color: #fff;
+    background: #bd081c;
+    border: 1px solid #bd081c;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+	transition:1s all;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+}
+.team i.fa.fa-facebook{
+	color: blue;
+}
+.team i.fa.fa-facebook:hover{
+    color: #fff;
+    background: blue;
+    border:1px solid blue;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+	transition:1s all;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+}

@@ -6,7 +6,7 @@ import { InfoService } from '../services/info.service';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css'],
+  styleUrls: ['./inicio.component.css', 'bootstrap.css', 'nice-select.css', 'carousel.css', 'magnific-popup.css'],
   providers: [InfoService]
 })
 export class InicioComponent implements OnInit {

@@ -1,0 +1,3 @@
+#pop { position: relative; }
+#pop a span { display: none; color: #FFFFFF; }
+#pop a:hover span { display: block; position: absolute; width: 200px; height: 50px; left: 100px; top: -10px; color: #FFFFFF; padding: 0 5px; }
