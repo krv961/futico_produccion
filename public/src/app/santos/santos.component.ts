@@ -23,7 +23,7 @@ export class SantosComponent implements OnInit {
   ngOnInit() {
     this.teamService.getTeam('san')
     .subscribe(
-      res => this.santosInfo = res,
+      res => this.info = res,
       err => console.log(err)
     );
 
@@ -38,8 +38,8 @@ export class SantosComponent implements OnInit {
 
     this.resultService.getCalendario().subscribe(
       resultArray => this.resultados = resultArray
-      , error => console.log("error: " + error)
-    )
+      , error => console.log('error: ' + error)
+    );
 
   }
 

@@ -13,11 +13,8 @@ import { CalendarioService } from '../services/calendario.service';
 export class CartaginesComponent implements OnInit {
 
   info = [];
-<<<<<<< HEAD
-=======
   goleo = [];
   public resultados : calendarioInterface[];
->>>>>>> master
 
   constructor(private teamService: TeamService, private goleoService: GoleoService,
     private resultService : CalendarioService) { }
