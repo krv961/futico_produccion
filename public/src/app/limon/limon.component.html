@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 <!--Tutorial para css bootstrap divs
 https://getbootstrap.com/docs/3.3/css/
 -->
 <html lang="en">
 <head>
   <title>Futico - Limon Futbol Club</title>
+=======
+<html lang="en">
+<head>
+  <title>Grecia</title>
+>>>>>>> master
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
@@ -17,37 +23,33 @@ https://getbootstrap.com/docs/3.3/css/
 </head>
 <body>
 
-  <!--
-<div class="container-fluid"> 
-<div class="row">
-  <div class="col-sm-2"></div><img src="assets/img/carmelitalogo.png"></div>
-  <div class="col-sm-8">Info</div>
-  <div class="col-sm-2">Social Media</div>
-
-</div>
--->
 <div class="container-fluid"> 
  
   <div class="row ">
-    <div class="col-sm-3"><img class="displayed focus pic" src="assets/img/limonlogo.png" height="140" width="140"></div>
+    <div class="col-sm-3">
+     
+      <img class="displayed focus pic" src="assets/img/limonlogo.png" style="width:200px; height:200px" >
+     
+    </div>
     <div class="col-sm-6">
+
         <div class="row text-center">
-            <h2 class="carmen">{{limonInfo.nombre}} </h2>
-                <p class="carmen">{{limonInfo.sigla}}</p>
+            <h2 class="grecia">{{info.nombre}} </h2>
+            <p class="grecia">{{info.sigla}}</p>
           </div>
+
         <div class="container">
-           
             <div class="row">
               <div class="col-sm-2">
                     <div class="cuadro_intro_hover " style="background-color:#cccccc;">
                     <p style="text-align:center;">
-                      <img src="https://image.ibb.co/isuRTy/1200px_Estadio_Juan_Gob_n.jpg" alt="carmelita_Estadio" class="img-responsive">
+                      <img src="https://image.ibb.co/isuRTy/1200px_Estadio_Juan_Gob_n.jpg" alt="280517_Grecia_Full1"  class="img-responsive">
                     </p>
                     <div class="caption">
                       <div class="blur"></div>
                       <div class="caption-text">
                         <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Estadio</h3>
-                        <p>{{limonInfo.estadio}}</p>
+                        <p>{{info.estadio}}</p>
                       </div>
                     </div>
                   </div>
@@ -62,7 +64,7 @@ https://getbootstrap.com/docs/3.3/css/
                       <div class="blur"></div>
                       <div class="caption-text">
                         <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Titulos</h3>
-                        <p>{{limonInfo.titulos}}</p>
+                        <p>{{info.titulos}}</p>
                       </div>
                     </div>
                   </div>
@@ -71,13 +73,13 @@ https://getbootstrap.com/docs/3.3/css/
                 <div class="col-sm-2">
                       <div class="cuadro_intro_hover" style="background-color:#cccccc;">
                     <p style="text-align:center;">
-                        <img src="https://image.ibb.co/iRid8y/VUPFSJLDUBFL7_FJZIPDOKCSY3_Y.jpg" alt="mario_viquez" class="img-responsive">
+                        <img src="https://image.ibb.co/iRid8y/VUPFSJLDUBFL7_FJZIPDOKCSY3_Y.jpg" alt="2754548" class="img-responsive">
                     </p>
                     <div class="caption">
                       <div class="blur"></div>
                       <div class="caption-text">
                         <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">DT</h3>
-                        <p>{{limonInfo.dt}}</p>
+                        <p>{{info.dt}}</p>
                       </div>
                     </div>
                   </div>
@@ -88,114 +90,96 @@ https://getbootstrap.com/docs/3.3/css/
 
     </div>
     <div class="col-sm-3">
-      <a href=" #" target="_blank" class="fa fa-facebook"></a>
-<a href="#" target="_blank" class="fa fa-twitter"></a>
-<a href="#" target="_blank" class="fa fa-instagram"></a>
-      
+      <div class="row text-center">
+        <a href="https://www.facebook.com/limonfccr/" target="_blank" class="fa fa-facebook"></a>
+        <a href="" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/limonfc/" target="_blank" class="fa fa-instagram"></a>
+    </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-5">
-      <table class="table">
-        <tr>
-          <th>Equipo Local</th>
-          <th>Equipo visita</th>
-          <th>Resultado</th>
-          <th>Fecha</th>
-          <th>Estadio</th>
-        </tr>
-        <tr *ngFor="let goleo of limonGoleo.goleadores">
-          <td>{{goleo.nombre}}</td>
-          <td>{{goleo.equipo}}</td>
-          <td>{{goleo.goles}}</td>
-          <td>{{goleo.pie}}</td>
-          <td>{{goleo.cabeza}}</td>
-          <td>{{goleo.falta}}</td>
-          <td>{{goleo.penal}}</td>
-        </tr>
-        </table>
-    </div>
-    <div class="col-sm-7">
-      
-        <mat-card class="tab">
-            <mat-card-content>
-              <mat-tab-group class="demo-tab-group">
-                <mat-tab label="Plantel">
-                    <table class="table">
+      <div class="col-sm-5">
+        <table class="table">
+          <tr>
+            <th>Equipo Local</th>
+            <th>Equipo visita</th>
+            <th>Resultado</th>
+            <th>Fecha</th>
+            <th>Estadio</th>
+          </tr>
+          <tr *ngFor="let result of resultados.results">
+            <td *ngIf="(result.sport_event.competitors[0].name === 'Limon FC' || result.sport_event.competitors[1].name === 'Limon FC') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[0].name}}</td>
+            <td *ngIf="(result.sport_event.competitors[0].name === 'Limon FC' || result.sport_event.competitors[1].name === 'Limon FC') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.home_score}}</td>
+            <td *ngIf="(result.sport_event.competitors[0].name === 'Limon FC' || result.sport_event.competitors[1].name === 'Limon FC') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.away_score}}</td>
+            <td *ngIf="(result.sport_event.competitors[0].name === 'Limon FC' || result.sport_event.competitors[1].name === 'Limon FC') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[1].name}}</td>
+          </tr>
+          </table>
+      </div>
+      <div class="col-sm-7">
+        
+          <mat-card class="tab">
+              <mat-card-content>
+                <mat-tab-group class="demo-tab-group">
+                  <mat-tab label="Plantel">
+                      <table class="table">
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>#</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Nacionalidad</th>
+                            <th>Posicion</th>
+                          </tr>
+                          <tr *ngFor="let jugador of info.jugadores">
+                            <td>{{jugador.nombre}}</td>
+                            <td>{{jugador.apellido}}</td>
+                            <td>{{jugador.numero}}</td>
+                            <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>
+                            <td>{{jugador.nacionalidad}}</td>
+                            <td>{{jugador.posicion}}</td>
+                          </tr>
+                          </table>
+                  </mat-tab>
+                  <mat-tab label="Goleo">
+                    <div class="demo-tab-content">
+                     Goleadores del equipo
+                     <table class="table">
                         <tr>
                           <th>Nombre</th>
-                          <th>Apellido</th>
-                          <th>#</th>
-                          <th>Fecha de Nacimiento</th>
-                          <th>Nacionalidad</th>
-                          <th>Posicion</th>
+                          <th>Equipo</th>
+                          <th>Goles</th>
+                          <th>Pie</th>
+                          <th>Cabeza</th>
+                          <th>Falta</th>
+                          <th>Penal</th>
                         </tr>
-                        <tr *ngFor="let jugador of limonInfo.jugadores">
-                          <td>{{jugador.nombre}}</td>
-                          <td>{{jugador.apellido}}</td>
-                          <td>{{jugador.numero}}</td>
-                          <td>{{jugador.fechaNacimiento  | date:'shortDate'}}</td>
-                          <td>{{jugador.nacionalidad}}</td>
-                          <td>{{jugador.posicion}}</td>
+                        <tr *ngFor="let goleo of goleo.goleadores">
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.nombre}}</td>
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.equipo}}</td>
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.goles}}</td>
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.pie}}</td>
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.cabeza}}</td>
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.falta}}</td>
+                          <td *ngIf="goleo.equipo === 'LIM'">{{goleo.penal}}</td>
                         </tr>
                         </table>
-                </mat-tab>
-                <mat-tab label="Calendario">
-                  <div class="demo-tab-content">
-                    Calendario del equipo
-                  </div>  
-                </mat-tab>
-                <mat-tab label="Goleo">
-                  <div class="demo-tab-content">
-                   Goleadores del equipo
-                   <table class="table">
-                      <tr>
-                        <th>Nombre</th>
-                        <th>Equipo</th>
-                        <th>Goles</th>
-                        <th>Pie</th>
-                        <th>Cabeza</th>
-                        <th>Falta</th>
-                        <th>Penal</th>
-                      </tr>
-                      <tr *ngFor="let goleo of limonGoleo.goleadores">
-                        <td>{{goleo.nombre}}</td>
-                        <td>{{goleo.equipo}}</td>
-                        <td>{{goleo.goles}}</td>
-                        <td>{{goleo.pie}}</td>
-                        <td>{{goleo.cabeza}}</td>
-                        <td>{{goleo.falta}}</td>
-                        <td>{{goleo.penal}}</td>
-                      </tr>
-                      </table>
-                  </div>  
-                </mat-tab>
-                <mat-tab label="Asistencias">
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Historia">
                     <div class="demo-tab-content">
-                        Asistencias del equipo
-                       </div>
-                </mat-tab>
-                <mat-tab label="Noticias">
-                    <div class="demo-tab-content">
-                        noticas del equipo
-                       </div>  
-                </mat-tab>
-                <mat-tab label="Historia">
-                  <div class="demo-tab-content">
-                    {{limonInfo.historia}} 
-                    </div> 
-                </mat-tab>
-              </mat-tab-group>
-            </mat-card-content>
-          </mat-card>
-
-
-    </div>
-    <div class="col-md-3">twitter del equipo</div>
-  </div>
+                      {{info.historia}} 
+                      </div> 
+                  </mat-tab>
+                </mat-tab-group>
+              </mat-card-content>
+            </mat-card>
   
-  </div>
-
-</body>
-</html>
+      </div>
+      
+    </div>
+    
+    </div>
+  
+  </body>
+  </html>

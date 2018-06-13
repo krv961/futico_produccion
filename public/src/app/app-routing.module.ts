@@ -5,6 +5,7 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import {TablaDePosicionesComponent} from './tabla-de-posiciones/tabla-de-posiciones.component';
+import {CalendarioComponent} from './calendario/calendario.component';
 
 import {CarmelitaComponent} from './carmelita/carmelita.component';
 import {AlajuelenseComponent} from './alajuelense/alajuelense.component';
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'sobre-nosotros', component: SobreNosotrosComponent},
   {path: 'estadisticas', component: EstadisticasComponent},
   {path: 'tabla-de-posiciones', component: TablaDePosicionesComponent},
+  {path: 'calendario', component: CalendarioComponent},
 
   {path: 'alajuelense', component: AlajuelenseComponent},
   {path: 'saprissa', component: SaprissaComponent},
@@ -57,5 +59,5 @@ export const routingComponents =
   [NoticiasComponent, SobreNosotrosComponent, EstadisticasComponent, TablaDePosicionesComponent,
    AlajuelenseComponent, SaprissaComponent, HeredianoComponent, CartaginesComponent, SantosComponent,
    PerezZeledonComponent, LiberiaComponent, LimonComponent, GuadalupeComponent, CarmelitaComponent,
-   GreciaComponent, UcrComponent, InicioComponent,
+   GreciaComponent, UcrComponent, InicioComponent, CalendarioComponent,
    NoEncontradoComponent];

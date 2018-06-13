@@ -38,6 +38,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoleoService } from './services/goleo.service';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { TablaPosicionesService } from './services/tabla-posiciones.service';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { CalendarioService } from './services/calendario.service';
 
 
 
@@ -67,7 +70,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FooterComponent,
     NgStickyDirective,
     InicioComponent,
-    RestComponent
+    RestComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +87,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule
     
   ],
-  providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService],
+  providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService, TablaPosicionesService,
+   CalendarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
