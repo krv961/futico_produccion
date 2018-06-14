@@ -1841,8 +1841,7 @@
   }
   
   .header-top {
-    padding: 30px 0;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -2545,4 +2544,30 @@
   .switch-wrap p {
     margin: 0;
   }
+  .single-service {
+    background-color: #272b59;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+}
+
+.single-service:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: #26a69a;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
   
