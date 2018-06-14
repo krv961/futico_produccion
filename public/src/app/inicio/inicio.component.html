@@ -35,26 +35,44 @@
 					</div>
 				</div>
 		<div class="main-wrapper-first">
-			<!--<header>
-				<div class="container">
-					<div class="header-wrap">
-						<div class="header-top d-flex justify-content-between align-items-center">
-							<div class="logo">
-                                <a href="index.html"><img src="assets/img/logo1.png" alt=""></a>
-							</div>
-							<div class="main-menubar d-flex align-items-center">
-								<nav class="hide">
-									<a href="index.html">Tabla de Posiciones</a>
-									<a href="generic.html">Estadisticas</a>
-									<a href="elements.html">Noticias</a>
-									<a href="elements.html">Sobre Nosotros</a>
-								</nav>
-								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>-->
+        
+            <div class="row justify-content-center height align-items-center">
+                <div class="col-lg-8">
+                    <div class="banner-content text-center">
+                        <h1 class="text-white text-uppercase">Tabla de posiciones</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-area">
+				<div class="container">                       
+							<table class="table table-dark">
+                                <tr>
+                                  <th>Posición</th>
+                                  <th>Equipo</th>
+                                  <th>Puntos</th>
+                                  <th>PJ</th>
+                                  <th>PG</th>
+                                  <th>PE</th>
+                                  <th>PP</th>
+                                  <th>GF</th>
+                                  <th>GC</th>
+                                  <th>GD</th>
+                                </tr>
+                                <tr *ngFor="let equipo of tablaInfo.standings[0].groups[2].team_standings">
+                                  <td>{{equipo.rank}}</td>
+                                  <td>{{equipo.team.name}}</td>
+                                  <td>{{equipo.points}}</td>
+                                  <td>{{equipo.played}}</td>
+                                  <td>{{equipo.win}}</td>
+                                  <td>{{equipo.draw}}</td>
+                                  <td>{{equipo.loss}}</td>
+                                  <td>{{equipo.goals_for}}</td>
+                                  <td>{{equipo.goals_against}}</td>
+                                  <td>{{equipo.goal_diff}}</td>
+                                </tr>
+                              </table>
+			</div>
+        </div>
 			<div class="banner-area">
 				<div class="container">
 					<div class="row justify-content-center height align-items-center">
@@ -62,12 +80,15 @@
 							<div class="banner-content text-center">
 								<span class="text-white top text-uppercase">Todo Sobre</span>
 								<h1 class="text-white text-uppercase">Liga de la primera división de Costa Rica</h1>
-								<a href="#" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></a>
+								<a routerLink="/tabla-de-posiciones" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Ir a la tabla completa</span><span class="lnr lnr-arrow-right"></span></a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+            </div>
+            
+            
+            
 
 			<!-- Start Feature Area -->
 			<section class="featured-area">
@@ -123,7 +144,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/nwb2A8/Campeon_A2017.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -131,12 +152,12 @@
                                         </div>
                                     </div>
                                     <div class="desc">
-                                        <h6 class="text-uppercase text-white">Campeón Apertura</h6>
+                                        <h6 class="text-uppercase text-white align-items-center">Campeón Apertura</h6>
                                         <p class="text-white">Municipal Perez Zeldón se coronó como campeón de apertura 2017</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/iBow58/Campeon_C2018_1.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -149,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/mRC9q8/Tecnico_A2017.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -162,7 +183,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                     <div class="single-service">
                                         <div class="thumb" style="background: url(https://image.ibb.co/jemr3T/Tecnico_C2018.jpg);">
                                             <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -175,7 +196,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/cSmPOT/Portero_A2017.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -188,7 +209,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/ggD4OT/Portero_C2018.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -201,7 +222,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/itAjOT/Sub21_A2017.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -214,7 +235,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/cERfxo/Sub21_C2018.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -227,7 +248,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="single-service">
                                     <div class="thumb" style="background: url(https://image.ibb.co/e5m2A8/Mejor_JA2017.jpg);">
                                         <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -240,7 +261,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                     <div class="single-service">
                                         <div class="thumb" style="background: url(https://image.ibb.co/erthA8/Mejor_JC2018.jpg);">
                                             <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -253,7 +274,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                     <div class="single-service">
                                         <div class="thumb" style="background: url(https://image.ibb.co/ePzpq8/Extranjero_A2017.jpg);">
                                             <div class="overlay overlay-content d-flex justify-content-center align-items-center">
@@ -266,11 +287,10 @@
                                         </div>
                                     </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                     <div class="single-service">
                                         <div class="thumb" style="background: url(https://image.ibb.co/g3W2A8/Extranjero_C2018.jpg);">
                                             <div class="overlay overlay-content d-flex justify-content-center align-items-center">
-                                                <a href="#" class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></a>
                                             </div>
                                         </div>
                                         <div class="desc">
@@ -278,7 +298,7 @@
                                             <p class="text-white">Róger Rojas Lazo - LD. Alajuelense / Goleador Campeonato Banco Popular Clausura 2018</p>
                                         </div>
                                     </div>
-                            </div>
+                                </div>
                         </div>
                     </div>
                 </section>
@@ -339,25 +359,10 @@
             -->
 			<!-- End Amazing Works Area -->
 			<!-- Start Story Area -->
-			<section class="story-area">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-3">
-							<div class="story-title">
-								<h3 class="text-white">En construccion</h3>
-								<span class="text-uppercase text-white">En construccion</span>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="story-box">
-								<h6 class="text-uppercase">En construccion</h6>
-								<p>En construccion</p>
-								<a href="#" class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+            </div>
 			<!-- End Story Area -->
 	
             <!-- Start Footer Widget Area -->
@@ -409,6 +414,7 @@
             </section>
             -->
             <!-- End Footer Widget Area -->
+     
             
 		</div>
 
