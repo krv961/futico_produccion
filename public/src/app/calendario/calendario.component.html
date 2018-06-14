@@ -1,26 +1,3 @@
-<!--
-<td>{{info.competitors[0].name}}</td>
-    <td>{{info.competitors[1].name}}</td>
-    <td *ngIf="info.venue != null">{{info.venue.name}}</td>
--->
-
-  <!-- 
-*ngIf="info.sport_event_status.status !== 'cancelled'"
-  info.sport_event_status.status !== 'cancelled'
-  
-  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.venue != null && info.sport_event.tournament_round.number === 1; else Desconocido">{{info.sport_event.venue.name}}</td>
-    <ng-template #Desconocido>
-      <td>Desconocido</td>
-    </ng-template>
-
-    newDate('info.sport_event.scheduled') | date > newDate('2018-01-01T10:02:32.273') | date && 
-    info.sport_event.scheduled | date > '01/01/2018 | date' && 
-  -->
-
-
-<p>
-  {{calendarioInfo.schema}}
-</p>
 
 <div class="container">
   <h2>Resultados</h2>
@@ -40,68 +17,26 @@
                   <th>Goles</th>
                   <th>Visitante</th>
                 </tr>
-                <tr id="pop" *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[1].name}}</td>
+                <tr>
+                  <td></td>   <td></td>   <td></td>    <td></td>
                 </tr>
               </table>
       </div>
       </div>
     </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Jornada 2</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-            <table class="table">
-                <tr>
-                  <th>Casa</th>
-                  <th>Goles</th>
-                  <th>Goles</th>
-                  <th>Visitante</th>
-                </tr>
-                <tr *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[1].name}}</td>
-                </tr>
-              </table>
-      </div>
-      </div>
-    </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Jornada 3</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-            <table class="table">
-                <tr>
-                  <th>Casa</th>
-                  <th>Goles</th>
-                  <th>Goles</th>
-                  <th>Visitante</th>
-                </tr>
-                <tr *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[1].name}}</td>
-                </tr>
-              </table>
-      </div>
-      </div>
-    </div>
+    
+
+
+
+
+
+
+
+
+
+    
   </div> 
 </div>
 
@@ -159,11 +94,22 @@
   </tr>
 </table>
 -->
-<script>
 
-  function prueba(){
+<!--
+<td>{{info.competitors[0].name}}</td>
+    <td>{{info.competitors[1].name}}</td>
+    <td *ngIf="info.venue != null">{{info.venue.name}}</td>
+-->
 
-    console.log("Prueba arriba!");
-  }
+  <!-- 
+*ngIf="info.sport_event_status.status !== 'cancelled'"
+  info.sport_event_status.status !== 'cancelled'
+  
+  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.venue != null && info.sport_event.tournament_round.number === 1; else Desconocido">{{info.sport_event.venue.name}}</td>
+    <ng-template #Desconocido>
+      <td>Desconocido</td>
+    </ng-template>
 
-</script>
+    newDate('info.sport_event.scheduled') | date > newDate('2018-01-01T10:02:32.273') | date && 
+    info.sport_event.scheduled | date > '01/01/2018 | date' && 
+  -->

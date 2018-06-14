@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { TablaPosicionesService } from '../services/tabla-posiciones.service';
 import { HttpModule } from '@angular/http';
@@ -26,5 +27,3 @@ export class TablaDePosicionesComponent implements OnInit {
   }
 
 }
-
-

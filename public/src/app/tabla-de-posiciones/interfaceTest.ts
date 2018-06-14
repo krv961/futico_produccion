@@ -3,5 +3,5 @@ export interface interfaceTest {
     schema: string,
     tournament: {},
     season: {},
-    standings: {}
+    standings: {} 
   }
