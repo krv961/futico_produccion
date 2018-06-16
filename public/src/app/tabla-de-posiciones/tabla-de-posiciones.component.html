@@ -9,27 +9,23 @@
     <th>PE</th>
     <th>PP</th>
     <th>GF</th>
-    <th>GC</th>
+    <th>GC</th> 
     <th>GD</th>
   </tr>
-  <tr>
-    <td>1</td> <td>Saprissa</td> <td>11</td> <td>6</td> <td>3</td> <td>2</td> <td>1</td> <td>13</td> <td>8</td> <td>5</td>
+  <tr *ngFor="let cuadrangular of cuadrangular.posiciones">
+    <td>{{cuadrangular.posicion}}</td> 
+    <td>{{cuadrangular.nombre}}</td> 
+    <td>{{cuadrangular.pts}}</td> 
+    <td>{{cuadrangular.pj}}</td> 
+    <td>{{cuadrangular.pg}}</td> 
+    <td>{{cuadrangular.pe}}</td> 
+    <td>{{cuadrangular.pp}}</td> 
+    <td>{{cuadrangular.gf}}</td> 
+    <td>{{cuadrangular.gc}}</td> 
+    <td>{{cuadrangular.gd}}</td>
   </tr>
 
-  <tr>
-    <td>2</td> <td>Alajuelense</td> <td>11</td> <td>6</td> <td>3</td> <td>2</td> <td>1</td> <td>10</td> <td>8</td> <td>2</td>
-  </tr>
-
-  <tr>
-    <td>3</td> <td>Herediano</td> <td>9</td> <td>6</td><td>3</td> <td>0</td> <td>3</td> <td>8</td> <td>7</td> <td>1</td>
-  </tr>
-
-  <tr>
-    <td>4</td> <td>Santos</td> <td>3</td> <td>6</td> <td>1</td> <td>0</td> <td>5</td> <td>5</td> <td>13</td> <td>-8</td>
-  </tr>
 </table>
-
-
 
 
 <h1>Clasificacion Actual</h1>
@@ -46,8 +42,17 @@
       <th>GC</th>
       <th>GD</th>
     </tr>
-    <tr>
-      <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>
+    <tr *ngFor="let clasificacion of clasificacion.posiciones">
+      <td>{{clasificacion.posicion}}</td> 
+      <td>{{clasificacion.nombre}}</td> 
+      <td>{{clasificacion.pts}}</td> 
+      <td>{{clasificacion.pj}}</td> 
+      <td>{{clasificacion.pg}}</td> 
+      <td>{{clasificacion.pe}}</td> 
+      <td>{{clasificacion.pp}}</td> 
+      <td>{{clasificacion.gf}}</td> 
+      <td>{{clasificacion.gc}}</td> 
+      <td>{{clasificacion.gd}}</td>
     </tr>
   </table>
 

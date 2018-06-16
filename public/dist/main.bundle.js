@@ -1589,16 +1589,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var GoleoService = /** @class */ (function () {
     function GoleoService(http) {
         this.http = http;
-        this.data = '';
     }
     GoleoService.prototype.getGoles = function (team) {
-        console.log('goleo service tiene ' + JSON.stringify(this.http.get('goleo/' + team)));
-        console.log('se trae la siguiente url ' + 'goleo/' + team);
         return this.http.get('goleo/' + team);
     };
     GoleoService.prototype.getAllGoles = function () {
-        console.log('goleo service tiene ' + JSON.stringify(this.http.get('goleo/')));
-        console.log('se trae la siguiente url ' + 'goleo/');
         return this.http.get('goleo/');
     };
     GoleoService = __decorate([
@@ -1662,9 +1657,7 @@ var InfoService = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablaPosicionesService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__("./node_modules/rxjs/_esm5/Rx.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1676,26 +1669,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-
 var TablaPosicionesService = /** @class */ (function () {
     function TablaPosicionesService(http) {
         this.http = http;
-        this.url = "https://api.sportradar.us/soccer-xt3/other/es/tournaments/sr:tournament:84/standings.json?api_key=wtm44z6e274xu7mva4kwjkry";
     }
-    TablaPosicionesService.prototype.getTabla = function () {
-        return this.http
-            .get(this.url).map(function (response) {
-            return response.json();
-        })
-            .catch(this.handleError);
+    TablaPosicionesService.prototype.getClasificacion = function () {
+        return this.http.get('tabla/clasificacion');
     };
-    TablaPosicionesService.prototype.handleError = function (error) {
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.statusText);
+    TablaPosicionesService.prototype.getCuadrangular = function () {
+        return this.http.get('tabla/cuadrangular');
     };
     TablaPosicionesService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
     ], TablaPosicionesService);
     return TablaPosicionesService;
 }());
@@ -1764,7 +1750,7 @@ module.exports = ""
 /***/ "./src/app/tabla-de-posiciones/tabla-de-posiciones.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Cuadrangular Actual</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Posicion</th>\r\n    <th>Equipo</th>\r\n    <th>Puntos</th>\r\n    <th>PJ</th>\r\n    <th>PG</th>\r\n    <th>PE</th>\r\n    <th>PP</th>\r\n    <th>GF</th>\r\n    <th>GC</th>\r\n    <th>GD</th>\r\n  </tr>\r\n  <tr>\r\n    <td>1</td> <td>Saprissa</td> <td>11</td> <td>6</td> <td>3</td> <td>2</td> <td>1</td> <td>13</td> <td>8</td> <td>5</td>\r\n  </tr>\r\n\r\n  <tr>\r\n    <td>2</td> <td>Alajuelense</td> <td>11</td> <td>6</td> <td>3</td> <td>2</td> <td>1</td> <td>10</td> <td>8</td> <td>2</td>\r\n  </tr>\r\n\r\n  <tr>\r\n    <td>3</td> <td>Herediano</td> <td>9</td> <td>6</td><td>3</td> <td>0</td> <td>3</td> <td>8</td> <td>7</td> <td>1</td>\r\n  </tr>\r\n\r\n  <tr>\r\n    <td>4</td> <td>Santos</td> <td>3</td> <td>6</td> <td>1</td> <td>0</td> <td>5</td> <td>5</td> <td>13</td> <td>-8</td>\r\n  </tr>\r\n</table>\r\n\r\n\r\n\r\n\r\n<h1>Clasificacion Actual</h1>\r\n  <table class=\"table\">\r\n    <tr>\r\n      <th>Posicion</th>\r\n      <th>Equipo</th>\r\n      <th>Puntos</th>\r\n      <th>PJ</th>\r\n      <th>PG</th>\r\n      <th>PE</th>\r\n      <th>PP</th>\r\n      <th>GF</th>\r\n      <th>GC</th>\r\n      <th>GD</th>\r\n    </tr>\r\n    <tr>\r\n      <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>   <td></td>\r\n    </tr>\r\n  </table>\r\n\r\n<!--\r\n<p>{{tablaInfo.schema}}</p>\r\n \r\n<h1>Cuadrangular Actual</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Posicion</th>\r\n    <th>Equipo</th>\r\n    <th>Puntos</th>\r\n    <th>PJ</th>\r\n    <th>PG</th>\r\n    <th>PE</th>\r\n    <th>PP</th>\r\n    <th>GF</th>\r\n    <th>GC</th>\r\n    <th>GD</th>\r\n  </tr>\r\n  <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[2].team_standings\">\r\n    <td>{{equipo.rank}}</td>\r\n    <td>{{equipo.team.name}}</td>\r\n    <td>{{equipo.points}}</td>\r\n    <td>{{equipo.played}}</td>\r\n    <td>{{equipo.win}}</td>\r\n    <td>{{equipo.draw}}</td>\r\n    <td>{{equipo.loss}}</td>\r\n    <td>{{equipo.goals_for}}</td>\r\n    <td>{{equipo.goals_against}}</td>\r\n    <td>{{equipo.goal_diff}}</td>\r\n  </tr>\r\n</table>\r\n\r\n  <h1>Clasificacion Actual</h1>\r\n  <table class=\"table\">\r\n    <tr>\r\n      <th>Posicion</th>\r\n      <th>Equipo</th>\r\n      <th>Puntos</th>\r\n      <th>PJ</th>\r\n      <th>PG</th>\r\n      <th>PE</th>\r\n      <th>PP</th>\r\n      <th>GF</th>\r\n      <th>GC</th>\r\n      <th>GD</th>\r\n    </tr>\r\n    <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[3].team_standings\">\r\n      <td>{{equipo.rank}}</td>\r\n      <td>{{equipo.team.name}}</td>\r\n      <td>{{equipo.points}}</td>\r\n      <td>{{equipo.played}}</td>\r\n      <td>{{equipo.win}}</td>\r\n      <td>{{equipo.draw}}</td>\r\n      <td>{{equipo.loss}}</td>\r\n      <td>{{equipo.goals_for}}</td>\r\n      <td>{{equipo.goals_against}}</td>\r\n      <td>{{equipo.goal_diff}}</td>\r\n    </tr>\r\n  </table>\r\n-->\r\n"
+module.exports = "<h1>Cuadrangular Actual</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Posicion</th>\r\n    <th>Equipo</th>\r\n    <th>Puntos</th>\r\n    <th>PJ</th>\r\n    <th>PG</th>\r\n    <th>PE</th>\r\n    <th>PP</th>\r\n    <th>GF</th>\r\n    <th>GC</th> \r\n    <th>GD</th>\r\n  </tr>\r\n  <tr *ngFor=\"let cuadrangular of cuadrangular.posiciones\">\r\n    <td>{{cuadrangular.posicion}}</td> \r\n    <td>{{cuadrangular.nombre}}</td> \r\n    <td>{{cuadrangular.pts}}</td> \r\n    <td>{{cuadrangular.pj}}</td> \r\n    <td>{{cuadrangular.pg}}</td> \r\n    <td>{{cuadrangular.pe}}</td> \r\n    <td>{{cuadrangular.pp}}</td> \r\n    <td>{{cuadrangular.gf}}</td> \r\n    <td>{{cuadrangular.gc}}</td> \r\n    <td>{{cuadrangular.gd}}</td>\r\n  </tr>\r\n\r\n</table>\r\n\r\n\r\n<h1>Clasificacion Actual</h1>\r\n  <table class=\"table\">\r\n    <tr>\r\n      <th>Posicion</th>\r\n      <th>Equipo</th>\r\n      <th>Puntos</th>\r\n      <th>PJ</th>\r\n      <th>PG</th>\r\n      <th>PE</th>\r\n      <th>PP</th>\r\n      <th>GF</th>\r\n      <th>GC</th>\r\n      <th>GD</th>\r\n    </tr>\r\n    <tr *ngFor=\"let clasificacion of clasificacion.posiciones\">\r\n      <td>{{clasificacion.posicion}}</td> \r\n      <td>{{clasificacion.nombre}}</td> \r\n      <td>{{clasificacion.pts}}</td> \r\n      <td>{{clasificacion.pj}}</td> \r\n      <td>{{clasificacion.pg}}</td> \r\n      <td>{{clasificacion.pe}}</td> \r\n      <td>{{clasificacion.pp}}</td> \r\n      <td>{{clasificacion.gf}}</td> \r\n      <td>{{clasificacion.gc}}</td> \r\n      <td>{{clasificacion.gd}}</td>\r\n    </tr>\r\n  </table>\r\n\r\n<!--\r\n<p>{{tablaInfo.schema}}</p>\r\n \r\n<h1>Cuadrangular Actual</h1>\r\n<table class=\"table\">\r\n  <tr>\r\n    <th>Posicion</th>\r\n    <th>Equipo</th>\r\n    <th>Puntos</th>\r\n    <th>PJ</th>\r\n    <th>PG</th>\r\n    <th>PE</th>\r\n    <th>PP</th>\r\n    <th>GF</th>\r\n    <th>GC</th>\r\n    <th>GD</th>\r\n  </tr>\r\n  <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[2].team_standings\">\r\n    <td>{{equipo.rank}}</td>\r\n    <td>{{equipo.team.name}}</td>\r\n    <td>{{equipo.points}}</td>\r\n    <td>{{equipo.played}}</td>\r\n    <td>{{equipo.win}}</td>\r\n    <td>{{equipo.draw}}</td>\r\n    <td>{{equipo.loss}}</td>\r\n    <td>{{equipo.goals_for}}</td>\r\n    <td>{{equipo.goals_against}}</td>\r\n    <td>{{equipo.goal_diff}}</td>\r\n  </tr>\r\n</table>\r\n\r\n  <h1>Clasificacion Actual</h1>\r\n  <table class=\"table\">\r\n    <tr>\r\n      <th>Posicion</th>\r\n      <th>Equipo</th>\r\n      <th>Puntos</th>\r\n      <th>PJ</th>\r\n      <th>PG</th>\r\n      <th>PE</th>\r\n      <th>PP</th>\r\n      <th>GF</th>\r\n      <th>GC</th>\r\n      <th>GD</th>\r\n    </tr>\r\n    <tr *ngFor=\"let equipo of tablaInfo.standings[0].groups[3].team_standings\">\r\n      <td>{{equipo.rank}}</td>\r\n      <td>{{equipo.team.name}}</td>\r\n      <td>{{equipo.points}}</td>\r\n      <td>{{equipo.played}}</td>\r\n      <td>{{equipo.win}}</td>\r\n      <td>{{equipo.draw}}</td>\r\n      <td>{{equipo.loss}}</td>\r\n      <td>{{equipo.goals_for}}</td>\r\n      <td>{{equipo.goals_against}}</td>\r\n      <td>{{equipo.goal_diff}}</td>\r\n    </tr>\r\n  </table>\r\n-->\r\n"
 
 /***/ }),
 
@@ -1789,14 +1775,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TablaDePosicionesComponent = /** @class */ (function () {
     function TablaDePosicionesComponent(service) {
         this.service = service;
+        this.clasificacion = [];
+        this.cuadrangular = [];
     }
-    TablaDePosicionesComponent.prototype.getTabla = function () {
+    TablaDePosicionesComponent.prototype.getClasificacion = function () {
         var _this = this;
-        this.service.getTabla().subscribe(function (resultArray) { return _this.tablaInfo = resultArray; }, function (error) { return console.log("error: " + error); });
-        console.log(this.tablaInfo);
+        this.service.getClasificacion().subscribe(function (res) { return _this.clasificacion = res; }, function (err) { return console.log(err); });
+    };
+    TablaDePosicionesComponent.prototype.getCuadrangular = function () {
+        var _this = this;
+        this.service.getCuadrangular().subscribe(function (res) { return _this.cuadrangular = res; }, function (err) { return console.log(err); });
     };
     TablaDePosicionesComponent.prototype.ngOnInit = function () {
-        this.getTabla();
+        this.getClasificacion();
+        this.getCuadrangular();
     };
     TablaDePosicionesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({

@@ -11,19 +11,27 @@ import { interfaceTest } from './interfaceTest';
 })
 export class TablaDePosicionesComponent implements OnInit {
 
-  public tablaInfo : interfaceTest[];
+  public clasificacion = [];
+  public cuadrangular = [];
   constructor(private service : TablaPosicionesService) { }
 
-  getTabla(): void {
-    this.service.getTabla().subscribe(
-      resultArray => this.tablaInfo = resultArray
-      , error => console.log("error: " + error)
+  getClasificacion(): void {
+    this.service.getClasificacion().subscribe(
+      res => this.clasificacion = res,
+      err => console.log(err)
     )
-    console.log(this.tablaInfo)
+  }
+
+  getCuadrangular(): void {
+    this.service.getCuadrangular().subscribe(
+      res => this.cuadrangular = res,
+      err => console.log(err)
+    )
   }
 
   ngOnInit():void {
-    this.getTabla();
+    this.getClasificacion();
+    this.getCuadrangular();
   }
 
 }
