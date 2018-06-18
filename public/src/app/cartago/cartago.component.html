@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grecia</title>
+  <title>Cartagines</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
@@ -14,12 +14,13 @@
 </head>
 <body>
 
+  <h1>Nuevo</h1>
 <div class="container-fluid"> 
  
   <div class="row ">
     <div class="col-sm-3">
      
-      <img class="displayed focus pic" src="assets/img/guadalupelogo.png" style="width:200px; height:200px" >
+      <img class="displayed focus pic" src="assets/img/cartagologo.png" style="width:200px; height:200px" >
      
     </div>
     <div class="col-sm-6">
@@ -34,7 +35,7 @@
               <div class="col-sm-2">
                     <div class="cuadro_intro_hover " style="background-color:#cccccc;">
                     <p style="text-align:center;">
-                      <img src="https://image.ibb.co/dt5pgJ/HU7_TJPA73_JAXZLF3_G2_K5_FO526_U.jpg" alt="280517_Grecia_Full1"  class="img-responsive">
+                      <img src="https://image.ibb.co/gVX21J/280517_Grecia_Full1.jpg" alt="280517_Grecia_Full1"  class="img-responsive">
                     </p>
                     <div class="caption">
                       <div class="blur"></div>
@@ -44,7 +45,7 @@
                       </div>
                     </div>
                   </div>
-
+                
               </div>
                 <div class="col-sm-2">
                       <div class="cuadro_intro_hover " style="background-color:#cccccc;">
@@ -64,7 +65,7 @@
                 <div class="col-sm-2">
                       <div class="cuadro_intro_hover" style="background-color:#cccccc;">
                     <p style="text-align:center;">
-                        <img src="https://image.ibb.co/iWLfMJ/DRb2_Yj_ZUMAA07l2.jpg" alt="2754548" class="img-responsive">
+                        <img src="https://image.ibb.co/bUU1Ty/2754548.jpg" alt="2754548" class="img-responsive">
                     </p>
                     <div class="caption">
                       <div class="blur"></div>
@@ -82,30 +83,30 @@
     </div>
     <div class="col-sm-3">
       <div class="row text-center">
-        <a href="https://www.facebook.com/GuadalupeFCCR/" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/guadalupefccr?lang=es" target="_blank" class="fa fa-twitter"></a>
-        <a href="" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/CartaginesCR/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/Cartagines" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/cartaginescr/" target="_blank" class="fa fa-instagram"></a>
     </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-5">
-      <table class="table">
-        <tr>
-          <th>Equipo Local</th>
-          <th>Goles</th>
-          <th>Goles</th>
-          <th>Equipo visita</th>
-        </tr>
-        <tr *ngFor="let result of resultados.resultados">
-          <td>{{result.casa}}</td>
-          <td>{{result.golesCasa}}</td>
-          <td>{{result.golesVisita}}</td>
-          <td>{{result.visita}}</td>
-        </tr>
-        </table>
-    </div>
+      <div class="col-sm-5">
+        <table class="table">
+          <tr>
+            <th>Equipo Local</th>
+            <th>Goles</th>
+            <th>Goles</th>
+            <th>Equipo visita</th>
+          </tr>
+          <tr *ngFor="let result of resultados.resultados">
+            <td>{{result.casa}}</td>
+            <td>{{result.golesCasa}}</td>
+            <td>{{result.golesVisita}}</td>
+            <td>{{result.visita}}</td>
+          </tr>
+          </table>
+      </div>
       <div class="col-sm-7">
         
           <mat-card class="tab">
@@ -145,13 +146,13 @@
                           <th>Penal</th>
                         </tr>
                         <tr *ngFor="let goleo of goleo.goleadores">
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.nombre}}</td>
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.equipo}}</td>
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.goles}}</td>
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.pie}}</td>
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.cabeza}}</td>
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.falta}}</td>
-                          <td *ngIf="goleo.equipo === 'GFC'">{{goleo.penal}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.nombre}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.equipo}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.goles}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.pie}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.cabeza}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.falta}}</td>
+                          <td *ngIf="goleo.equipo === 'CSC'">{{goleo.penal}}</td>
                         </tr>
                         </table>
                     </div>
@@ -173,3 +174,4 @@
   
   </body>
   </html>
+  

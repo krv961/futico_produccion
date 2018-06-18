@@ -95,18 +95,18 @@
       <div class="col-sm-5">
         <table class="table">
           <tr>
-            <th>Casa</th>
+            <th>Equipo Local</th>
             <th>Goles</th>
             <th>Goles</th>
-            <th>Visitante</th>
+            <th>Equipo visita</th>
           </tr>
-          <tr *ngFor="let result of resultados.results">
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[0].name}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.home_score}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.away_score}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Liga Deportiva Alajuelense' || result.sport_event.competitors[1].name === 'Liga Deportiva Alajuelense') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[1].name}}</td>
+          <tr *ngFor="let result of resultados.resultados">
+            <td>{{result.casa}}</td>
+            <td>{{result.golesCasa}}</td>
+            <td>{{result.golesVisita}}</td>
+            <td>{{result.visita}}</td>
           </tr>
-        </table>
+          </table>
       </div>
 
       

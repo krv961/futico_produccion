@@ -42,6 +42,7 @@ import { TablaPosicionesService } from './services/tabla-posiciones.service';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { CalendarioService } from './services/calendario.service';
 import { ResultadosService } from './services/resultados.service';
+import { CartagoComponent } from './cartago/cartago.component';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { ResultadosService } from './services/resultados.service';
     NgStickyDirective,
     InicioComponent,
     RestComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    CartagoComponent
   ],
   imports: [
     BrowserModule,
