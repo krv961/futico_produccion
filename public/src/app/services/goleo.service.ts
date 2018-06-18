@@ -13,6 +13,5 @@ export class GoleoService {
 
   getAllGoles() {
     return this.http.get<any>('goleo/');
-
   }
 }

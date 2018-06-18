@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarioService } from '../services/calendario.service';
 import { HttpModule } from '@angular/http';
-import { calendarioInterface } from './calendarioInterface';
 
 @Component({
   selector: 'app-calendario',
@@ -10,17 +9,15 @@ import { calendarioInterface } from './calendarioInterface';
 })
 export class CalendarioComponent implements OnInit {
 
-  public calendarioInfo : calendarioInterface[];
-  public temp : string;
+  public calendarioInfo = [];
 
   constructor(private service : CalendarioService) { }
 
   getCalendario(): void {
     this.service.getCalendario().subscribe(
-      resultArray => this.calendarioInfo = resultArray
-      , error => console.log("error: " + error)
+      res => this.calendarioInfo = res,
+      err => console.log(err)
     )
-    console.log(this.calendarioInfo)
   }
 
   ngOnInit() {
