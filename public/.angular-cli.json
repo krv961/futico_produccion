@@ -23,7 +23,7 @@
       ],
       "scripts": [
         "./assets/js/main.js"
-
+        
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

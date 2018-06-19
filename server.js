@@ -32,7 +32,7 @@ mongoose.connect('mongodb://admin:admin@ds147659.mlab.com:47659/futicodb', { use
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.sendfile(path.join(__dirname, 'public/dist/index.html'));
 });
 
 // error handler
