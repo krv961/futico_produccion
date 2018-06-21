@@ -7,7 +7,7 @@
 
 footer{
   width: 100%;
-  background: #272B59;
+  background: #333;
   color: white;
   padding: 20px;
 }
@@ -122,7 +122,7 @@ footer{
   color: #101010;
 }
 
-@media screen and (max-width: 1100px;){
+@media screen and (max-width: 1100px){
     .container-body{
       flex-wrap: wrap;
     }

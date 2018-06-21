@@ -2,7 +2,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TablaPosicionesService } from '../services/tabla-posiciones.service';
 import { HttpModule } from '@angular/http';
-import { interfaceTest } from './interfaceTest';
 
 @Component({
   selector: 'app-tabla-de-posiciones',

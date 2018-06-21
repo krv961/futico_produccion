@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import { TablaPosicionesService } from '../services/tabla-posiciones.service';
 import { InfoService } from '../services/info.service';
+import { HttpModule } from '@angular/http';
 
 
 @Component({
@@ -11,10 +13,19 @@ import { InfoService } from '../services/info.service';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { 
-  }
+  public cuadrangular = [];
+  constructor(private service : TablaPosicionesService) { }
 
-  ngOnInit() {
+
+  getCuadrangular(): void {
+    this.service.getCuadrangular().subscribe(
+      res => this.cuadrangular = res,
+      err => console.log(err)
+    )
+  }
+  
+  ngOnInit():void {
+    this.getCuadrangular();
   }
 
 }
