@@ -3,7 +3,7 @@ webpackJsonp(["styles"],{
 /***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\nh2 {\n    border-bottom: 10px solid;\n    border-bottom-color: #26A69A;\n    font-family: 'Raleway', sans-serif;\n    font-size: 65px;\n    font-weight: 900;\n    margin: 0 auto;\n    padding: 20px 0 3px;\n    text-align: center;\n    text-transform: uppercase;\n    width: 40.2%;\n  }"
 
 /***/ }),
 
