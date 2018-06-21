@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { TablaPosicionesService } from '../services/tabla-posiciones.service';
 import { InfoService } from '../services/info.service';
-import { interfaceTest } from './interfaceTest';
+import { HttpModule } from '@angular/http';
 
 
 @Component({
@@ -13,20 +13,20 @@ import { interfaceTest } from './interfaceTest';
 })
 export class InicioComponent implements OnInit {
 
-  public tablaInfo : interfaceTest[];
+
+  public cuadrangular = [];
   constructor(private service : TablaPosicionesService) { }
 
-  getTabla(): void {
-    this.service.getTabla().subscribe(
-      resultArray => this.tablaInfo = resultArray
-      , error => console.log("error: " + error)
-    );
-    console.log(this.tablaInfo);
+
+  getCuadrangular(): void {
+    this.service.getCuadrangular().subscribe(
+      res => this.cuadrangular = res,
+      err => console.log(err)
+    )
   }
-
-
-  ngOnInit(): void {
-    this.getTabla();
+  
+  ngOnInit():void {
+    this.getCuadrangular();
   }
 
 }

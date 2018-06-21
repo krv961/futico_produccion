@@ -7,6 +7,9 @@ var logger = require('morgan');
 const api = require('./routes/api');
 const tabla = require('./routes/tabla');
 const goleo = require('./routes/goleo');
+const calendario = require('./routes/calendario');
+const resultados = require('./routes/resultados');
+
 var indexRouter = require('./routes/index');
 var app = express();
 
@@ -23,6 +26,9 @@ app.use('/', indexRouter);
 app.use('/api', api);
 app.use('/tabla', tabla);
 app.use('/goleo', goleo );
+app.use('/calendario', calendario);
+app.use('/resultados', resultados);
+
 //mongoose db connection
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');//si no sirve poner <>
@@ -32,7 +38,7 @@ mongoose.connect('mongodb://admin:admin@ds147659.mlab.com:47659/futicodb', { use
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.sendfile(path.join(__dirname, 'public/dist/index.html'));
 });
 
 // error handler

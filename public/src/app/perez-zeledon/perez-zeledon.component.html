@@ -90,23 +90,22 @@
   </div>
 
   <div class="row">
-      <div class="col-sm-5">
-        <table class="table">
-          <tr>
-            <th>Equipo Local</th>
-            <th>Equipo visita</th>
-            <th>Resultado</th>
-            <th>Fecha</th>
-            <th>Estadio</th>
-          </tr>
-          <tr *ngFor="let result of resultados.results">
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Perez Zeledon' || result.sport_event.competitors[1].name === 'Perez Zeledon') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[0].name}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Perez Zeledon' || result.sport_event.competitors[1].name === 'Perez Zeledon') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.home_score}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Perez Zeledon' || result.sport_event.competitors[1].name === 'Perez Zeledon') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.away_score}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Perez Zeledon' || result.sport_event.competitors[1].name === 'Perez Zeledon') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[1].name}}</td>
-          </tr>
-          </table>
-      </div>
+    <div class="col-sm-5">
+      <table class="table">
+        <tr>
+          <th>Equipo Local</th>
+          <th>Goles</th>
+          <th>Goles</th>
+          <th>Equipo visita</th>
+        </tr>
+        <tr *ngFor="let result of resultados.resultados">
+          <td>{{result.casa}}</td>
+          <td>{{result.golesCasa}}</td>
+          <td>{{result.golesVisita}}</td>
+          <td>{{result.visita}}</td>
+        </tr>
+        </table>
+    </div>
       <div class="col-sm-7">
         
           <mat-card class="tab">

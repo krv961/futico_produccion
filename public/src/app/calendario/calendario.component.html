@@ -1,109 +1,865 @@
-<!--
-<td>{{info.competitors[0].name}}</td>
-    <td>{{info.competitors[1].name}}</td>
-    <td *ngIf="info.venue != null">{{info.venue.name}}</td>
--->
-
-  <!-- 
-*ngIf="info.sport_event_status.status !== 'cancelled'"
-  info.sport_event_status.status !== 'cancelled'
-  
-  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.venue != null && info.sport_event.tournament_round.number === 1; else Desconocido">{{info.sport_event.venue.name}}</td>
-    <ng-template #Desconocido>
-      <td>Desconocido</td>
-    </ng-template>
-
-    newDate('info.sport_event.scheduled') | date > newDate('2018-01-01T10:02:32.273') | date && 
-    info.sport_event.scheduled | date > '01/01/2018 | date' && 
-  -->
-
-
-<p>
-  {{calendarioInfo.schema}}
-</p>
-
+<!--Final-->
 <div class="container">
-  <h2>Resultados</h2>
+
+
+  <h2>Final</h2>
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Jornada 1</a>
+          <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">Vuelta</a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
         <div class="panel-body">
-            <table class="table">
-                <tr>
-                  <th>Casa</th>
-                  <th>Goles</th>
-                  <th>Goles</th>
-                  <th>Visitante</th>
-                </tr>
-                <tr id="pop" *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 1">{{info.sport_event.competitors[1].name}}</td>
-                </tr>
-              </table>
-      </div>
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.final2">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
+  </div>
 
+  <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Jornada 2</a>
+          <a data-toggle="collapse" data-parent="#accordion2" href="#collapse2">Ida</a>
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body">
-            <table class="table">
-                <tr>
-                  <th>Casa</th>
-                  <th>Goles</th>
-                  <th>Goles</th>
-                  <th>Visitante</th>
-                </tr>
-                <tr *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 2">{{info.sport_event.competitors[1].name}}</td>
-                </tr>
-              </table>
-      </div>
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.final1">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
+  </div>
 
+</div>
+
+
+<!--Cuadrangular-->
+<div class="container">
+  <h2>Cuadrangular</h2>
+
+  <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Jornada 3</a>
+          <a data-toggle="collapse" data-parent="#accordion3" href="#collapse3">Jornada6</a>
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
         <div class="panel-body">
-            <table class="table">
-                <tr>
-                  <th>Casa</th>
-                  <th>Goles</th>
-                  <th>Goles</th>
-                  <th>Visitante</th>
-                </tr>
-                <tr *ngFor="let info of calendarioInfo.results">
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[0].name}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.home_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event_status.away_score}}</td>
-                  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event_status.status !== 'postponed' && info.sport_event.tournament_round.number === 3">{{info.sport_event.competitors[1].name}}</td>
-                </tr>
-              </table>
-      </div>
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.cuadrangular6">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-  </div> 
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion4" href="#collapse4">Jornada5</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.cuadrangular5">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion5" href="#collapse5">Jornada4</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.cuadrangular4">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion6" href="#collapse6">Jornada3</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.cuadrangular3">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion8" href="#collapse8">Jornada2</a>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.cuadrangular2">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion9" href="#collapse9">Jornada1</a>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.cuadrangular1">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
+
+<!--Jornadas-->
+<div class="container">
+  <h2>Clasificacion</h2>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordiona" href="#collapsea">Jornada22</a>
+        </h4>
+      </div>
+      <div id="collapsea" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada22">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionb" href="#collapseb">Jornada21</a>
+        </h4>
+      </div>
+      <div id="collapseb" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada21">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionc" href="#collapsec">Jornada20</a>
+        </h4>
+      </div>
+      <div id="collapsec" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada20">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordiond" href="#collapsed">Jornada19</a>
+        </h4>
+      </div>
+      <div id="collapsed" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada19">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordione" href="#collapsee">Jornada18</a>
+        </h4>
+      </div>
+      <div id="collapsee" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada18">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionf" href="#collapsef">Jornada17</a>
+        </h4>
+      </div>
+      <div id="collapsef" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada17">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordiong" href="#collapseg">Jornada16</a>
+        </h4>
+      </div>
+      <div id="collapseg" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada16">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionh" href="#collapseh">Jornada15</a>
+        </h4>
+      </div>
+      <div id="collapseh" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada15">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordioni" href="#collapsei">Jornada14</a>
+        </h4>
+      </div>
+      <div id="collapsei" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada14">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionj" href="#collapsej">Jornada13</a>
+        </h4>
+      </div>
+      <div id="collapsej" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada13">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionk" href="#collapsek">Jornada12</a>
+        </h4>
+      </div>
+      <div id="collapsek" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada12">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionl" href="#collapsel">Jornada11</a>
+        </h4>
+      </div>
+      <div id="collapsel" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada11">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionm" href="#collapsem">Jornada10</a>
+        </h4>
+      </div>
+      <div id="collapsem" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada10">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionn" href="#collapsen">Jornada9</a>
+        </h4>
+      </div>
+      <div id="collapsen" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada9">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordiono" href="#collapseo">Jornada8</a>
+        </h4>
+      </div>
+      <div id="collapseo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada8">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionp" href="#collapsep">Jornada7</a>
+        </h4>
+      </div>
+      <div id="collapsep" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada7">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionq" href="#collapseq">Jornada6</a>
+        </h4>
+      </div>
+      <div id="collapseq" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada6">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionr" href="#collapser">Jornada5</a>
+        </h4>
+      </div>
+      <div id="collapser" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada5">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordions" href="#collapses">Jornada4</a>
+        </h4>
+      </div>
+      <div id="collapses" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada4">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordiont" href="#collapset">Jornada3</a>
+        </h4>
+      </div>
+      <div id="collapset" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada3">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionu" href="#collapseu">Jornada2</a>
+        </h4>
+      </div>
+      <div id="collapseu" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada2">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordionv" href="#collapsev">Jornada1</a>
+        </h4>
+      </div>
+      <div id="collapsev" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>Casa</th>
+              <th>Goles</th>
+              <th>Goles</th>
+              <th>Visitante</th>
+            </tr>
+            <tr *ngFor="let c of calendarioInfo.jornada1">
+              <td>{{c.casa}}</td>
+              <td>{{c.golesCasa}}</td>
+              <td>{{c.golesVisita}}</td>
+              <td>{{c.visita}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 
 <!--
@@ -159,11 +915,22 @@
   </tr>
 </table>
 -->
-<script>
 
-  function prueba(){
+<!--
+<td>{{info.competitors[0].name}}</td>
+    <td>{{info.competitors[1].name}}</td>
+    <td *ngIf="info.venue != null">{{info.venue.name}}</td>
+-->
 
-    console.log("Prueba arriba!");
-  }
+<!-- 
+*ngIf="info.sport_event_status.status !== 'cancelled'"
+  info.sport_event_status.status !== 'cancelled'
+  
+  <td *ngIf="info.sport_event_status.status !== 'cancelled' && info.sport_event.venue != null && info.sport_event.tournament_round.number === 1; else Desconocido">{{info.sport_event.venue.name}}</td>
+    <ng-template #Desconocido>
+      <td>Desconocido</td>
+    </ng-template>
 
-</script>
+    newDate('info.sport_event.scheduled') | date > newDate('2018-01-01T10:02:32.273') | date && 
+    info.sport_event.scheduled | date > '01/01/2018 | date' && 
+  -->

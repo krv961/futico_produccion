@@ -6,7 +6,7 @@
 }
 .w3l_header {
     font-size: 50px;
-    color: #99bc59;
+    color: black;
     letter-spacing: 1px;
     position: relative;
     font-weight: 600;
@@ -14,7 +14,6 @@
     text-transform: capitalize;
 }
 .w3l_header:after {
-    border-top: 2px solid #99bc59;
     display: block;
     width: 81px;
     content: "";
@@ -125,6 +124,7 @@ a.w3_play_icon1:hover {
     -webkit-box-shadow: 0 0 40px #aaa;
     -moz-box-shadow: 0 0 40px #aaa;
     box-shadow: 0 0 40px #aaa;
+    transform: scale(1.03);
 }
 .team1 h3 {
     text-align: center;
@@ -138,7 +138,7 @@ a.w3_play_icon1:hover {
     font-size: 18px;
     margin: 10px 0 0;
     letter-spacing: 1px;
-    color: #99bc59;
+    color: #26A69A;
     font-weight: normal;
 }
 .team1 p {

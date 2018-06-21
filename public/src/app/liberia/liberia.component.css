@@ -22,7 +22,7 @@
     color: white;
   }
   
-  .fa-youtube {
+  .fa-instagram {
     background: #bb0000;
     color: white;
   }
@@ -105,12 +105,6 @@ color: white;
 
 p {
   font-family: Lato;
-}
-
-.history{
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
 }
 
 
@@ -256,8 +250,8 @@ body{font-family: 'Raleway', sans-serif;}
 		width: 100%;
   }
   
-  .carmen{
-    margin-left: 50px;
-  }
 
-  
+  .small{
+    width:160px;
+    height:160px;
+  }

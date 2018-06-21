@@ -22,6 +22,7 @@ import {UcrComponent} from './ucr/ucr.component';
 import {InicioComponent} from './inicio/inicio.component';
 
 import {NoEncontradoComponent} from './no-encontrado/no-encontrado.component';
+import { CartagoComponent } from './cartago/cartago.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
@@ -60,4 +61,4 @@ export const routingComponents =
    AlajuelenseComponent, SaprissaComponent, HeredianoComponent, CartaginesComponent, SantosComponent,
    PerezZeledonComponent, LiberiaComponent, LimonComponent, GuadalupeComponent, CarmelitaComponent,
    GreciaComponent, UcrComponent, InicioComponent, CalendarioComponent,
-   NoEncontradoComponent];
+   NoEncontradoComponent, CartagoComponent];
