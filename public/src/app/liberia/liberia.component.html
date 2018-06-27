@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grecia</title>
+  <title>Liberia</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: white">
 
 <div class="container-fluid"> 
  
@@ -82,8 +82,8 @@
     </div>
     <div class="col-sm-3">
       <div class="row text-center">
-        <a href="https://www.facebook.com/municipalgrecia/" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/MunicipalGrecia" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/ADMLiberia/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/MunicipalLibe" target="_blank" class="fa fa-twitter"></a>
         <a href="" target="_blank" class="fa fa-instagram"></a>
     </div>
     </div>
@@ -94,16 +94,15 @@
         <table class="table">
           <tr>
             <th>Equipo Local</th>
+            <th>Goles</th>
+            <th>Goles</th>
             <th>Equipo visita</th>
-            <th>Resultado</th>
-            <th>Fecha</th>
-            <th>Estadio</th>
           </tr>
-          <tr *ngFor="let result of resultados.results">
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Municipal Liberia' || result.sport_event.competitors[1].name === 'Municipal Liberia') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[0].name}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Municipal Liberia' || result.sport_event.competitors[1].name === 'Municipal Liberia') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.home_score}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Municipal Liberia' || result.sport_event.competitors[1].name === 'Municipal Liberia') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event_status.away_score}}</td>
-            <td *ngIf="(result.sport_event.competitors[0].name === 'Municipal Liberia' || result.sport_event.competitors[1].name === 'Municipal Liberia') && result.sport_event_status.status !== 'cancelled' && result.sport_event_status.status !== 'postponed'">{{result.sport_event.competitors[1].name}}</td>
+          <tr *ngFor="let result of resultados.resultados">
+            <td>{{result.casa}}</td>
+            <td>{{result.golesCasa}}</td>
+            <td>{{result.golesVisita}}</td>
+            <td>{{result.visita}}</td>
           </tr>
           </table>
       </div>
@@ -174,3 +173,4 @@
   
   </body>
   </html>
+  

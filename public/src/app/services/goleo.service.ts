@@ -6,16 +6,12 @@ export class GoleoService {
 
   constructor(private http: HttpClient) { }
 
-  private data = '';
   getGoles(team) {
-    console.log('se trae la siguiente url ' + 'goleo/' + team);
-    return this.http.get<any>('goleo');
+    return this.http.get<any>('goleo/' + team);
+
   }
 
   getAllGoles() {
-    console.log('goleo service tiene ' + JSON.stringify(this.http.get<any>('goleo/')));
-    console.log('se trae la siguiente url ' + 'goleo/');
     return this.http.get<any>('goleo/');
-
   }
 }

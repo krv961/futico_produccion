@@ -41,8 +41,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { TablaPosicionesService } from './services/tabla-posiciones.service';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { CalendarioService } from './services/calendario.service';
-
-
+import { ResultadosService } from './services/resultados.service';
+import { CartagoComponent } from './cartago/cartago.component';
 
 
 @NgModule({
@@ -71,7 +71,8 @@ import { CalendarioService } from './services/calendario.service';
     NgStickyDirective,
     InicioComponent,
     RestComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    CartagoComponent
   ],
   imports: [
     BrowserModule,
@@ -88,7 +89,7 @@ import { CalendarioService } from './services/calendario.service';
     
   ],
   providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService, TablaPosicionesService,
-   CalendarioService],
+   CalendarioService, ResultadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
