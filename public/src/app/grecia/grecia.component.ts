@@ -1,3 +1,4 @@
+
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TeamService } from '../team.service';
 import { GoleoService } from '../services/goleo.service';
@@ -53,4 +54,3 @@ export class GreciaComponent implements OnInit {
   }
 
 }
-
