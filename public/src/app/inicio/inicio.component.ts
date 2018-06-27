@@ -27,6 +27,15 @@ export class InicioComponent implements OnInit {
   
   ngOnInit():void {
     this.getCuadrangular();
+
   }
+
+  getVideoTag() {
+    return `<video autoplay loop muted width="100%" height="100%" >
+    <source src="../../assets/videoplayback.mp4" type="video/webm" />
+  </video>`;
+  }
+
+
 
 }
