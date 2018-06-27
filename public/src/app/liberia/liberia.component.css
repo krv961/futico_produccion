@@ -67,9 +67,7 @@ color: white;
   .demo-tab-content {
     padding: 16px;
   }
-  body{
-    background-color: #26a69a;
-  }
+
 
   .table{
       background-color: #e8e8e8;
@@ -157,17 +155,7 @@ example-container {
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,900,800,700,600);
 body{font-family: 'Raleway', sans-serif;}
-  h2 {
-  border-bottom: 10px solid red;
-  font-family: 'Raleway', sans-serif;
-  font-size: 65px;
-  font-weight: 900;
-  margin: 0 auto;
-  padding: 20px 0 3px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 40.2%;
-}
+
 
 
 .row.text-center p {
