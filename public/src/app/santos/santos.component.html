@@ -91,16 +91,18 @@
       </div>
     </div>
 
-    <div class="row">
+    <div style="padding-top: 50px" class="row">
       <div class="col-sm-5">
         <table class="table">
           <tr>
+            <th>Jornada</th>
             <th>Equipo Local</th>
             <th>Goles</th>
             <th>Goles</th>
             <th>Equipo visita</th>
           </tr>
           <tr *ngFor="let result of resultados.resultados">
+            <td>{{result.jornada}}</td>
             <td>{{result.casa}}</td>
             <td>{{result.golesCasa}}</td>
             <td>{{result.golesVisita}}</td>

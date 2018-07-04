@@ -36,13 +36,14 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoleoService } from './services/goleo.service';
-import {MatTableModule} from '@angular/material/table';
+import {MatTableModule, MatSortModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { TablaPosicionesService } from './services/tabla-posiciones.service';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { CalendarioService } from './services/calendario.service';
 import { ResultadosService } from './services/resultados.service';
-import { CartagoComponent } from './cartago/cartago.component';
+import { CartagoComponent } from './cartago/cartago.component';	
+
 
 
 @NgModule({
@@ -85,7 +86,8 @@ import { CartagoComponent } from './cartago/cartago.component';
     BrowserAnimationsModule,
     HttpModule,
     MatTableModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSortModule
     
   ],
   providers: [HttpClientModule, HttpClient, HttpModule, TeamService, GoleoService, TablaPosicionesService,

@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <div class="container-fluid">
 
     <div class="row ">
@@ -91,16 +90,18 @@
       </div>
     </div>
 
-    <div class="row">
+    <div style="padding-top: 50px" class="row">
       <div class="col-sm-5">
         <table class="table">
           <tr>
+            <th>Jornada</th>
             <th>Equipo Local</th>
             <th>Goles</th>
             <th>Goles</th>
             <th>Equipo visita</th>
           </tr>
           <tr *ngFor="let result of resultados.resultados">
+              <td>{{result.jornada}}</td>
             <td>{{result.casa}}</td>
             <td>{{result.golesCasa}}</td>
             <td>{{result.golesVisita}}</td>
@@ -109,7 +110,7 @@
           </table>
       </div>
 
-      
+
       <div class="col-sm-7">
 
         <mat-card class="tab">
@@ -141,7 +142,6 @@
                   <table class="table">
                     <tr>
                       <th>Nombre</th>
-                      <th>Equipo</th>
                       <th>Goles</th>
                       <th>Pie</th>
                       <th>Cabeza</th>
@@ -150,7 +150,6 @@
                     </tr>
                     <tr *ngFor="let goleo of goleo.goleadores">
                       <td *ngIf="goleo.equipo === 'LDA'">{{goleo.nombre}}</td>
-                      <td *ngIf="goleo.equipo === 'LDA'">{{goleo.equipo}}</td>
                       <td *ngIf="goleo.equipo === 'LDA'">{{goleo.goles}}</td>
                       <td *ngIf="goleo.equipo === 'LDA'">{{goleo.pie}}</td>
                       <td *ngIf="goleo.equipo === 'LDA'">{{goleo.cabeza}}</td>
