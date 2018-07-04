@@ -97,14 +97,16 @@
             <th>Jornada</th>
             <th>Equipo Local</th>
             <th>Goles</th>
+            <th>-</th>
             <th>Goles</th>
             <th>Equipo visita</th>
           </tr>
           <tr *ngFor="let result of resultados.resultados">
               <td>{{result.jornada}}</td>
             <td>{{result.casa}}</td>
-            <td>{{result.golesCasa}}</td>
-            <td>{{result.golesVisita}}</td>
+            <td style="text-align: center">{{result.golesCasa}}</td>
+            <td>vs</td>
+            <td style="text-align: center">{{result.golesVisita}}</td>
             <td>{{result.visita}}</td>
           </tr>
           </table>
