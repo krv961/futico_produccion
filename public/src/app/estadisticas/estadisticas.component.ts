@@ -69,7 +69,7 @@ export class EstadisticasComponent implements OnInit {
       data: {
         labels: ["LDA", "SAP", "CSH", "SAN", "GRE", "LIM", "CSC", "GUA", "ADC", "PZ", "UCR", "LIB"],
         datasets: [{
-          label: '# partidos ganados',
+          label: '# partidos perdidos',
           data: [6, 5, 6, 8, 10, 8, 12, 7, 11, 8, 9, 13],
           backgroundColor: [
             '#61BEB5',
