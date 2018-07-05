@@ -32,9 +32,9 @@ export class InicioComponent implements OnInit {
 
   getVideoTag() {
     return `<video autoplay loop muted width="100%" height="100%" >
-    <source src="../../assets/Video.webm" type="video/webm" />
+    <source src="../../assets/img/Video.webm" type="video/webm" />
   </video>`;
-  
+
   }
 
 
