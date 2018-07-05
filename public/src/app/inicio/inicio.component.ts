@@ -34,6 +34,7 @@ export class InicioComponent implements OnInit {
     return `<video autoplay loop muted width="100%" height="100%" >
     <source src="../../assets/Video.webm" type="video/webm" />
   </video>`;
+  
   }
 
 
