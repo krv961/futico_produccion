@@ -32742,7 +32742,7 @@ var InicioComponent = /** @class */ (function () {
         this.getCuadrangular();
     };
     InicioComponent.prototype.getVideoTag = function () {
-        return "<video autoplay loop muted width=\"100%\" height=\"100%\" >\n    <source src=\"../../assets/videoplayback.mp4\" type=\"video/webm\" />\n  </video>";
+        return "<video autoplay loop muted width=\"100%\" height=\"100%\" >\n    <source src=\"../../assets/Video.webm\" type=\"video/webm\" />\n  </video>";
     };
     InicioComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
